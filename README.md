@@ -4,7 +4,7 @@ Aplikasi desktop yang memfasilitasi donasi pakaian bekas sebagai solusi permasal
 
 Kelompok 9 (MNYG)
 
-Ketua Kelompok:
+Ketua Kelompok: SALWA NAYLA ADISTRI - 22/493200/TK/54017
 
 Anggota 1:
 
