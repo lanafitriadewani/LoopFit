@@ -8,4 +8,4 @@ Ketua Kelompok:
 
 Anggota 1: LANA FITRIA DEWANI - 22/494292/TK/54203
 
-Anggota 2:
+Anggota 2: OVIE KHAIRA ZAYYAN - 22/494801/TK/54315
