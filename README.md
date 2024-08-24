@@ -6,6 +6,6 @@ Kelompok 9 (MNYG)
 
 Ketua Kelompok:
 
-Anggota 1:
+Anggota 1: LANA FITRIA DEWANI - 22/494292/TK/54203
 
 Anggota 2:
