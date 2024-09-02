@@ -9,3 +9,7 @@ Ketua Kelompok: SALWA NAYLA ADISTRI - 22/493200/TK/54017
 Anggota 1: LANA FITRIA DEWANI - 22/494292/TK/54203
 
 Anggota 2: OVIE KHAIRA ZAYYAN - 22/494801/TK/54315
+
+#Class Diagram
+
+![class-diagram-loopfit drawio (2)](https://github.com/user-attachments/assets/fa764af7-ff98-474e-bf65-c5ffed636d4c)
