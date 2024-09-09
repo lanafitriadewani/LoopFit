@@ -1,0 +1,193 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Junior Project\\LoopFit\\LoopFit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|solutionrelative:catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|solutionrelative:address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\donate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|solutionrelative:donate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|solutionrelative:history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\content.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|solutionrelative:content.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\droppoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|solutionrelative:droppoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\pickupprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|solutionrelative:pickupprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|solutionrelative:notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2783ADFB-4DB2-4023-BCEC-3B6C955ADB69}|LoopFit.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "History.cs",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\History.cs",
+              "RelativeDocumentMoniker": "History.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\History.cs",
+              "RelativeToolTip": "History.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T06:40:11.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Donate.cs",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\Donate.cs",
+              "RelativeDocumentMoniker": "Donate.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\Donate.cs",
+              "RelativeToolTip": "Donate.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAWwBMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T06:32:43.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Content.cs",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\Content.cs",
+              "RelativeDocumentMoniker": "Content.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\Content.cs",
+              "RelativeToolTip": "Content.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T06:36:57.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\Address.cs",
+              "RelativeDocumentMoniker": "Address.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\Address.cs",
+              "RelativeToolTip": "Address.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T06:40:52.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\User.cs",
+              "RelativeDocumentMoniker": "User.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\User.cs",
+              "RelativeToolTip": "User.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAWwBQAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T06:28:51.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Catalog.cs",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\Catalog.cs",
+              "RelativeDocumentMoniker": "Catalog.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\Catalog.cs",
+              "RelativeToolTip": "Catalog.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswBsAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T06:37:51.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DropPoint.cs",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\DropPoint.cs",
+              "RelativeDocumentMoniker": "DropPoint.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\DropPoint.cs",
+              "RelativeToolTip": "DropPoint.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T06:35:56.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PickupProgress.cs",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\PickupProgress.cs",
+              "RelativeDocumentMoniker": "PickupProgress.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\PickupProgress.cs",
+              "RelativeToolTip": "PickupProgress.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAYwBQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T06:39:37.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\Notification.cs",
+              "RelativeDocumentMoniker": "Notification.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\Notification.cs",
+              "RelativeToolTip": "Notification.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAuwBoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T06:39:00.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T06:28:17.784Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
