@@ -13,3 +13,7 @@ Anggota 2: OVIE KHAIRA ZAYYAN - 22/494801/TK/54315
 # Class Diagram
 
 ![class-diagram-loopfit drawio (2)](https://github.com/user-attachments/assets/fa764af7-ff98-474e-bf65-c5ffed636d4c)
+
+# Entity Relationship Diagram
+
+![LoopFitERD drawio (1)](https://github.com/user-attachments/assets/ea3e949a-00d6-409a-899f-a52809f6a573)
