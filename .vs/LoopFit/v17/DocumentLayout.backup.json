@@ -1,0 +1,198 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Junior Project\\LoopFit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\editprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|solutionrelative:loopfit\\editprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|solutionrelative:loopfit\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\editprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|solutionrelative:loopfit\\editprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|solutionrelative:loopfit\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|solutionrelative:loopfit\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|C:\\Junior Project\\LoopFit\\loopfit\\content.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|solutionrelative:loopfit\\content.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\verifemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|solutionrelative:loopfit\\verifemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|solutionrelative:loopfit\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|solutionrelative:loopfit\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|c:\\junior project\\loopfit\\loopfit\\homedashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC6A027D-6C92-49B1-8FD8-F595CF336AF7}|LoopFit\\LoopFit.csproj|solutionrelative:loopfit\\homedashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditProfile.cs",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\EditProfile.cs",
+              "RelativeDocumentMoniker": "LoopFit\\EditProfile.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\EditProfile.cs",
+              "RelativeToolTip": "LoopFit\\EditProfile.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAswJ4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:04:41.832Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditProfile.cs [Design]",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\EditProfile.cs",
+              "RelativeDocumentMoniker": "LoopFit\\EditProfile.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\EditProfile.cs [Design]",
+              "RelativeToolTip": "LoopFit\\EditProfile.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T11:55:45.441Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Profile.cs",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\Profile.cs",
+              "RelativeDocumentMoniker": "LoopFit\\Profile.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\Profile.cs",
+              "RelativeToolTip": "LoopFit\\Profile.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAiwB8AAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T11:41:49.727Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\User.cs",
+              "RelativeDocumentMoniker": "LoopFit\\User.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\User.cs",
+              "RelativeToolTip": "LoopFit\\User.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAmwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T13:14:52.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SignUp.cs",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\SignUp.cs",
+              "RelativeDocumentMoniker": "LoopFit\\SignUp.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\SignUp.cs",
+              "RelativeToolTip": "LoopFit\\SignUp.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:04:16.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\Login.cs",
+              "RelativeDocumentMoniker": "LoopFit\\Login.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\Login.cs",
+              "RelativeToolTip": "LoopFit\\Login.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T11:47:30.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Profile.cs [Design]",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\Profile.cs",
+              "RelativeDocumentMoniker": "LoopFit\\Profile.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\Profile.cs [Design]",
+              "RelativeToolTip": "LoopFit\\Profile.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T11:31:18.424Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Content.cs [Design]",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\Content.cs",
+              "RelativeDocumentMoniker": "LoopFit\\Content.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\Content.cs [Design]",
+              "RelativeToolTip": "LoopFit\\Content.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:21:34.716Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VerifEmail.cs",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\VerifEmail.cs",
+              "RelativeDocumentMoniker": "LoopFit\\VerifEmail.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\VerifEmail.cs",
+              "RelativeToolTip": "LoopFit\\VerifEmail.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:07:18.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeDashboard.cs",
+              "DocumentMoniker": "C:\\Junior Project\\LoopFit\\LoopFit\\HomeDashboard.cs",
+              "RelativeDocumentMoniker": "LoopFit\\HomeDashboard.cs",
+              "ToolTip": "C:\\Junior Project\\LoopFit\\LoopFit\\HomeDashboard.cs",
+              "RelativeToolTip": "LoopFit\\HomeDashboard.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwBoAAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T13:14:51.802Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
