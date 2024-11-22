@@ -23,6 +23,7 @@ namespace LoopFit
             User.DisplayProfileImage(User.Username, picProfile);
             InitializeWebView();
             LoadVideoData();
+            LanguageHelper.UpdateUI(this);
         }
 
         private async void InitializeWebView()

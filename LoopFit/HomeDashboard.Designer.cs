@@ -37,28 +37,28 @@
             btnLogOut = new Button();
             panel1 = new Panel();
             btnProduct = new Button();
-            lblWelcome = new Label();
-            txtDescription = new TextBox();
+            lblWelcome_Home = new Label();
+            txtDescription_Home = new TextBox();
             pnlWelcome = new Panel();
             lblFirstName = new Label();
             linkLabel3 = new LinkLabel();
             pictureBox3 = new PictureBox();
-            linkLabel2 = new LinkLabel();
+            linkLabel2_Home = new LinkLabel();
             btnDonate = new Button();
             btnContent = new Button();
             picSosmed = new PictureBox();
             picProduct = new PictureBox();
             picDonate = new PictureBox();
-            lblDescProduct = new Label();
-            lblSosmed = new Label();
+            lblDescProduct_Home = new Label();
+            lblSosmed_Home = new Label();
             picInstagram = new PictureBox();
             picTiktok = new PictureBox();
             picTwitter = new PictureBox();
-            lblDonate = new Label();
-            lblDescDonate = new Label();
-            lblContent = new Label();
-            lblProduct = new Label();
-            lblDescContent = new Label();
+            lblDonate_Home = new Label();
+            lblDescDonate_Home = new Label();
+            lblContent_Home = new Label();
+            lblProduct_Home = new Label();
+            lblDescContent_Home = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picProfile).BeginInit();
             panel1.SuspendLayout();
@@ -189,33 +189,33 @@
             btnProduct.UseVisualStyleBackColor = false;
             btnProduct.Click += btnProduct_Click;
             // 
-            // lblWelcome
+            // lblWelcome_Home
             // 
-            lblWelcome.AutoSize = true;
-            lblWelcome.BackColor = Color.Transparent;
-            lblWelcome.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            lblWelcome.ForeColor = Color.FromArgb(100, 23, 61);
-            lblWelcome.Location = new Point(14, 38);
-            lblWelcome.Margin = new Padding(2, 0, 2, 0);
-            lblWelcome.Name = "lblWelcome";
-            lblWelcome.Size = new Size(136, 60);
-            lblWelcome.TabIndex = 0;
-            lblWelcome.Text = "Hello";
+            lblWelcome_Home.AutoSize = true;
+            lblWelcome_Home.BackColor = Color.Transparent;
+            lblWelcome_Home.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            lblWelcome_Home.ForeColor = Color.FromArgb(100, 23, 61);
+            lblWelcome_Home.Location = new Point(14, 38);
+            lblWelcome_Home.Margin = new Padding(2, 0, 2, 0);
+            lblWelcome_Home.Name = "lblWelcome_Home";
+            lblWelcome_Home.Size = new Size(136, 60);
+            lblWelcome_Home.TabIndex = 0;
+            lblWelcome_Home.Text = "Hello";
             // 
-            // txtDescription
+            // txtDescription_Home
             // 
-            txtDescription.BackColor = Color.FromArgb(215, 169, 205);
-            txtDescription.BorderStyle = BorderStyle.None;
-            txtDescription.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            txtDescription.ForeColor = Color.FromArgb(100, 23, 61);
-            txtDescription.Location = new Point(22, 99);
-            txtDescription.Margin = new Padding(2);
-            txtDescription.Multiline = true;
-            txtDescription.Name = "txtDescription";
-            txtDescription.ReadOnly = true;
-            txtDescription.Size = new Size(912, 77);
-            txtDescription.TabIndex = 1;
-            txtDescription.Text = resources.GetString("txtDescription.Text");
+            txtDescription_Home.BackColor = Color.FromArgb(215, 169, 205);
+            txtDescription_Home.BorderStyle = BorderStyle.None;
+            txtDescription_Home.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            txtDescription_Home.ForeColor = Color.FromArgb(100, 23, 61);
+            txtDescription_Home.Location = new Point(22, 99);
+            txtDescription_Home.Margin = new Padding(2);
+            txtDescription_Home.Multiline = true;
+            txtDescription_Home.Name = "txtDescription_Home";
+            txtDescription_Home.ReadOnly = true;
+            txtDescription_Home.Size = new Size(912, 77);
+            txtDescription_Home.TabIndex = 1;
+            txtDescription_Home.Text = resources.GetString("txtDescription_Home.Text");
             // 
             // pnlWelcome
             // 
@@ -223,9 +223,9 @@
             pnlWelcome.Controls.Add(lblFirstName);
             pnlWelcome.Controls.Add(linkLabel3);
             pnlWelcome.Controls.Add(pictureBox3);
-            pnlWelcome.Controls.Add(linkLabel2);
-            pnlWelcome.Controls.Add(txtDescription);
-            pnlWelcome.Controls.Add(lblWelcome);
+            pnlWelcome.Controls.Add(linkLabel2_Home);
+            pnlWelcome.Controls.Add(txtDescription_Home);
+            pnlWelcome.Controls.Add(lblWelcome_Home);
             pnlWelcome.Dock = DockStyle.Top;
             pnlWelcome.Location = new Point(246, 0);
             pnlWelcome.Margin = new Padding(2);
@@ -271,19 +271,19 @@
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
             // 
-            // linkLabel2
+            // linkLabel2_Home
             // 
-            linkLabel2.AutoSize = true;
-            linkLabel2.BackColor = Color.Transparent;
-            linkLabel2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            linkLabel2.LinkColor = Color.FromArgb(80, 23, 61);
-            linkLabel2.Location = new Point(825, 22);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(104, 25);
-            linkLabel2.TabIndex = 40;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "Contact Us";
-            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            linkLabel2_Home.AutoSize = true;
+            linkLabel2_Home.BackColor = Color.Transparent;
+            linkLabel2_Home.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            linkLabel2_Home.LinkColor = Color.FromArgb(80, 23, 61);
+            linkLabel2_Home.Location = new Point(825, 22);
+            linkLabel2_Home.Name = "linkLabel2_Home";
+            linkLabel2_Home.Size = new Size(104, 25);
+            linkLabel2_Home.TabIndex = 40;
+            linkLabel2_Home.TabStop = true;
+            linkLabel2_Home.Text = "Contact Us";
+            linkLabel2_Home.LinkClicked += linkLabel2_LinkClicked;
             // 
             // btnDonate
             // 
@@ -355,33 +355,33 @@
             picDonate.TabStop = false;
             picDonate.Click += picDonate_Click;
             // 
-            // lblDescProduct
+            // lblDescProduct_Home
             // 
-            lblDescProduct.AutoSize = true;
-            lblDescProduct.BackColor = Color.FromArgb(208, 154, 208);
-            lblDescProduct.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDescProduct.ForeColor = Color.FromArgb(100, 23, 61);
-            lblDescProduct.Location = new Point(1007, 487);
-            lblDescProduct.Margin = new Padding(2, 0, 2, 0);
-            lblDescProduct.MaximumSize = new Size(180, 0);
-            lblDescProduct.Name = "lblDescProduct";
-            lblDescProduct.Size = new Size(180, 40);
-            lblDescProduct.TabIndex = 39;
-            lblDescProduct.Text = "Find our recycled clothing products.";
-            lblDescProduct.Click += lblDescProduct_Click;
+            lblDescProduct_Home.AutoSize = true;
+            lblDescProduct_Home.BackColor = Color.FromArgb(208, 154, 208);
+            lblDescProduct_Home.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDescProduct_Home.ForeColor = Color.FromArgb(100, 23, 61);
+            lblDescProduct_Home.Location = new Point(1007, 487);
+            lblDescProduct_Home.Margin = new Padding(2, 0, 2, 0);
+            lblDescProduct_Home.MaximumSize = new Size(180, 0);
+            lblDescProduct_Home.Name = "lblDescProduct_Home";
+            lblDescProduct_Home.Size = new Size(180, 40);
+            lblDescProduct_Home.TabIndex = 39;
+            lblDescProduct_Home.Text = "Find our recycled clothing products.";
+            lblDescProduct_Home.Click += lblDescProduct_Click;
             // 
-            // lblSosmed
+            // lblSosmed_Home
             // 
-            lblSosmed.AutoSize = true;
-            lblSosmed.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSosmed.ForeColor = Color.FromArgb(100, 23, 61);
-            lblSosmed.Location = new Point(720, 632);
-            lblSosmed.Margin = new Padding(2, 0, 2, 0);
-            lblSosmed.Name = "lblSosmed";
-            lblSosmed.Size = new Size(175, 20);
-            lblSosmed.TabIndex = 30;
-            lblSosmed.Text = "Follow Our Social Media";
-            lblSosmed.TextAlign = ContentAlignment.MiddleCenter;
+            lblSosmed_Home.AutoSize = true;
+            lblSosmed_Home.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSosmed_Home.ForeColor = Color.FromArgb(100, 23, 61);
+            lblSosmed_Home.Location = new Point(720, 632);
+            lblSosmed_Home.Margin = new Padding(2, 0, 2, 0);
+            lblSosmed_Home.Name = "lblSosmed_Home";
+            lblSosmed_Home.Size = new Size(175, 20);
+            lblSosmed_Home.TabIndex = 30;
+            lblSosmed_Home.Text = "Follow Our Social Media";
+            lblSosmed_Home.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // picInstagram
             // 
@@ -419,77 +419,77 @@
             picTwitter.TabStop = false;
             picTwitter.Click += picTwitter_Click;
             // 
-            // lblDonate
+            // lblDonate_Home
             // 
-            lblDonate.AutoSize = true;
-            lblDonate.BackColor = Color.FromArgb(208, 154, 208);
-            lblDonate.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblDonate.ForeColor = Color.FromArgb(100, 23, 61);
-            lblDonate.Location = new Point(432, 454);
-            lblDonate.Margin = new Padding(2, 0, 2, 0);
-            lblDonate.Name = "lblDonate";
-            lblDonate.Size = new Size(81, 28);
-            lblDonate.TabIndex = 34;
-            lblDonate.Text = "Donate";
-            lblDonate.Click += lblDonate_Click;
+            lblDonate_Home.AutoSize = true;
+            lblDonate_Home.BackColor = Color.FromArgb(208, 154, 208);
+            lblDonate_Home.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblDonate_Home.ForeColor = Color.FromArgb(100, 23, 61);
+            lblDonate_Home.Location = new Point(432, 454);
+            lblDonate_Home.Margin = new Padding(2, 0, 2, 0);
+            lblDonate_Home.Name = "lblDonate_Home";
+            lblDonate_Home.Size = new Size(81, 28);
+            lblDonate_Home.TabIndex = 34;
+            lblDonate_Home.Text = "Donate";
+            lblDonate_Home.Click += lblDonate_Click;
             // 
-            // lblDescDonate
+            // lblDescDonate_Home
             // 
-            lblDescDonate.AutoSize = true;
-            lblDescDonate.BackColor = Color.FromArgb(208, 154, 208);
-            lblDescDonate.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDescDonate.ForeColor = Color.FromArgb(100, 23, 61);
-            lblDescDonate.Location = new Point(432, 487);
-            lblDescDonate.Margin = new Padding(2, 0, 2, 0);
-            lblDescDonate.MaximumSize = new Size(180, 0);
-            lblDescDonate.Name = "lblDescDonate";
-            lblDescDonate.Size = new Size(146, 40);
-            lblDescDonate.TabIndex = 35;
-            lblDescDonate.Text = "Donate your clothes easily here.\r\n";
-            lblDescDonate.Click += lblDescDonate_Click;
+            lblDescDonate_Home.AutoSize = true;
+            lblDescDonate_Home.BackColor = Color.FromArgb(208, 154, 208);
+            lblDescDonate_Home.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDescDonate_Home.ForeColor = Color.FromArgb(100, 23, 61);
+            lblDescDonate_Home.Location = new Point(432, 487);
+            lblDescDonate_Home.Margin = new Padding(2, 0, 2, 0);
+            lblDescDonate_Home.MaximumSize = new Size(180, 0);
+            lblDescDonate_Home.Name = "lblDescDonate_Home";
+            lblDescDonate_Home.Size = new Size(146, 40);
+            lblDescDonate_Home.TabIndex = 35;
+            lblDescDonate_Home.Text = "Donate your clothes easily here.\r\n";
+            lblDescDonate_Home.Click += lblDescDonate_Click;
             // 
-            // lblContent
+            // lblContent_Home
             // 
-            lblContent.AutoSize = true;
-            lblContent.BackColor = Color.FromArgb(208, 154, 208);
-            lblContent.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblContent.ForeColor = Color.FromArgb(100, 23, 61);
-            lblContent.Location = new Point(720, 454);
-            lblContent.Margin = new Padding(2, 0, 2, 0);
-            lblContent.Name = "lblContent";
-            lblContent.Size = new Size(87, 28);
-            lblContent.TabIndex = 36;
-            lblContent.Text = "Content";
-            lblContent.Click += lblContent_Click;
+            lblContent_Home.AutoSize = true;
+            lblContent_Home.BackColor = Color.FromArgb(208, 154, 208);
+            lblContent_Home.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblContent_Home.ForeColor = Color.FromArgb(100, 23, 61);
+            lblContent_Home.Location = new Point(720, 454);
+            lblContent_Home.Margin = new Padding(2, 0, 2, 0);
+            lblContent_Home.Name = "lblContent_Home";
+            lblContent_Home.Size = new Size(87, 28);
+            lblContent_Home.TabIndex = 36;
+            lblContent_Home.Text = "Content";
+            lblContent_Home.Click += lblContent_Click;
             // 
-            // lblProduct
+            // lblProduct_Home
             // 
-            lblProduct.AutoSize = true;
-            lblProduct.BackColor = Color.FromArgb(208, 154, 208);
-            lblProduct.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProduct.ForeColor = Color.FromArgb(100, 23, 61);
-            lblProduct.Location = new Point(1007, 454);
-            lblProduct.Margin = new Padding(2, 0, 2, 0);
-            lblProduct.Name = "lblProduct";
-            lblProduct.Size = new Size(127, 28);
-            lblProduct.TabIndex = 37;
-            lblProduct.Text = "Our Product";
-            lblProduct.Click += lblProduct_Click;
+            lblProduct_Home.AutoSize = true;
+            lblProduct_Home.BackColor = Color.FromArgb(208, 154, 208);
+            lblProduct_Home.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblProduct_Home.ForeColor = Color.FromArgb(100, 23, 61);
+            lblProduct_Home.Location = new Point(1007, 454);
+            lblProduct_Home.Margin = new Padding(2, 0, 2, 0);
+            lblProduct_Home.Name = "lblProduct_Home";
+            lblProduct_Home.Size = new Size(127, 28);
+            lblProduct_Home.TabIndex = 37;
+            lblProduct_Home.Text = "Our Product";
+            lblProduct_Home.Click += lblProduct_Click;
             // 
-            // lblDescContent
+            // lblDescContent_Home
             // 
-            lblDescContent.AutoSize = true;
-            lblDescContent.BackColor = Color.FromArgb(208, 154, 208);
-            lblDescContent.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDescContent.ForeColor = Color.FromArgb(100, 23, 61);
-            lblDescContent.Location = new Point(720, 487);
-            lblDescContent.Margin = new Padding(2, 0, 2, 0);
-            lblDescContent.MaximumSize = new Size(180, 0);
-            lblDescContent.Name = "lblDescContent";
-            lblDescContent.Size = new Size(160, 40);
-            lblDescContent.TabIndex = 38;
-            lblDescContent.Text = "See how LoopFit processes your clothes.";
-            lblDescContent.Click += lblDescContent_Click;
+            lblDescContent_Home.AutoSize = true;
+            lblDescContent_Home.BackColor = Color.FromArgb(208, 154, 208);
+            lblDescContent_Home.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDescContent_Home.ForeColor = Color.FromArgb(100, 23, 61);
+            lblDescContent_Home.Location = new Point(720, 487);
+            lblDescContent_Home.Margin = new Padding(2, 0, 2, 0);
+            lblDescContent_Home.MaximumSize = new Size(180, 0);
+            lblDescContent_Home.Name = "lblDescContent_Home";
+            lblDescContent_Home.Size = new Size(160, 40);
+            lblDescContent_Home.TabIndex = 38;
+            lblDescContent_Home.Text = "See how LoopFit processes your clothes.";
+            lblDescContent_Home.Click += lblDescContent_Click;
             // 
             // HomeDashboard
             // 
@@ -497,16 +497,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Thistle;
             ClientSize = new Size(1348, 721);
-            Controls.Add(lblDescProduct);
-            Controls.Add(lblDescContent);
-            Controls.Add(lblProduct);
-            Controls.Add(lblContent);
-            Controls.Add(lblDescDonate);
-            Controls.Add(lblDonate);
+            Controls.Add(lblDescProduct_Home);
+            Controls.Add(lblDescContent_Home);
+            Controls.Add(lblProduct_Home);
+            Controls.Add(lblContent_Home);
+            Controls.Add(lblDescDonate_Home);
+            Controls.Add(lblDonate_Home);
             Controls.Add(picTwitter);
             Controls.Add(picTiktok);
             Controls.Add(picInstagram);
-            Controls.Add(lblSosmed);
+            Controls.Add(lblSosmed_Home);
             Controls.Add(picDonate);
             Controls.Add(picProduct);
             Controls.Add(picSosmed);
@@ -545,25 +545,25 @@
         private Button btnLogOut;
         private Panel panel1;
         private Button btnProduct;
-        private Label lblWelcome;
-        private TextBox txtDescription;
+        private Label lblWelcome_Home;
+        private TextBox txtDescription_Home;
         private Panel pnlWelcome;
         private Button btnDonate;
         private Button btnContent;
         private PictureBox picSosmed;
         private PictureBox picProduct;
         private PictureBox picDonate;
-        private Label lblDescProduct;
-        private Label lblSosmed;
+        private Label lblDescProduct_Home;
+        private Label lblSosmed_Home;
         private PictureBox picInstagram;
         private PictureBox picTiktok;
         private PictureBox picTwitter;
-        private Label lblDonate;
-        private Label lblDescDonate;
-        private Label lblContent;
-        private Label lblProduct;
-        private Label lblDescContent;
-        private LinkLabel linkLabel2;
+        private Label lblDonate_Home;
+        private Label lblDescDonate_Home;
+        private Label lblContent_Home;
+        private Label lblProduct_Home;
+        private Label lblDescContent_Home;
+        private LinkLabel linkLabel2_Home;
         private LinkLabel linkLabel3;
         private PictureBox pictureBox3;
         private Label lblFirstName;

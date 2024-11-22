@@ -16,6 +16,7 @@ namespace LoopFit
         {
             InitializeComponent();
             User.DisplayProfileImage(User.Username, picProfile);
+            LanguageHelper.UpdateUI(this);
         }
 
         private void btnUploadImage_Click(object sender, EventArgs e)

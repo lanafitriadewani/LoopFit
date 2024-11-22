@@ -28,6 +28,8 @@ namespace LoopFit
 
             User.DisplayProfileImage(User.Username, picProfile);
 
+            LanguageHelper.UpdateUI(this);
+
             // Inisialisasi peta dengan masing-masing koordinat yang berbeda dan menambahkan marker
             map1 = CreateMapControl(new PointLatLng(-7.7877454, 110.3741478)); // Jakarta
             map2 = CreateMapControl(new PointLatLng(-7.7570287, 110.3933283)); // Tokyo

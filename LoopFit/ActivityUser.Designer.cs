@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActivityUser));
-            btnLoadActivityUser = new Button();
+            btnLoadActivityUser_Activity = new Button();
             dgvActivityUser = new DataGridView();
             btnLogOut = new Button();
             btnActivity = new Button();
@@ -39,11 +39,11 @@
             picProfile = new PictureBox();
             panel1 = new Panel();
             panel3 = new Panel();
-            label3 = new Label();
+            txtDescription_Activity = new Label();
             pictureBox3 = new PictureBox();
             lblLoopFit = new LinkLabel();
             lblContactUs = new LinkLabel();
-            lblDonate1 = new Label();
+            lblActivity_Activity = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvActivityUser).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picProfile).BeginInit();
@@ -51,20 +51,20 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
-            // btnLoadActivityUser
+            // btnLoadActivityUser_Activity
             // 
-            btnLoadActivityUser.BackColor = Color.FromArgb(178, 113, 178);
-            btnLoadActivityUser.FlatStyle = FlatStyle.Popup;
-            btnLoadActivityUser.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnLoadActivityUser.ForeColor = Color.FromArgb(100, 23, 61);
-            btnLoadActivityUser.Location = new Point(1212, 630);
-            btnLoadActivityUser.Margin = new Padding(2);
-            btnLoadActivityUser.Name = "btnLoadActivityUser";
-            btnLoadActivityUser.Size = new Size(97, 36);
-            btnLoadActivityUser.TabIndex = 34;
-            btnLoadActivityUser.Text = "Load";
-            btnLoadActivityUser.UseVisualStyleBackColor = false;
-            btnLoadActivityUser.Click += btnLoadActivityUser_Click;
+            btnLoadActivityUser_Activity.BackColor = Color.FromArgb(178, 113, 178);
+            btnLoadActivityUser_Activity.FlatStyle = FlatStyle.Popup;
+            btnLoadActivityUser_Activity.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLoadActivityUser_Activity.ForeColor = Color.FromArgb(100, 23, 61);
+            btnLoadActivityUser_Activity.Location = new Point(1212, 630);
+            btnLoadActivityUser_Activity.Margin = new Padding(2);
+            btnLoadActivityUser_Activity.Name = "btnLoadActivityUser_Activity";
+            btnLoadActivityUser_Activity.Size = new Size(97, 36);
+            btnLoadActivityUser_Activity.TabIndex = 34;
+            btnLoadActivityUser_Activity.Text = "Load";
+            btnLoadActivityUser_Activity.UseVisualStyleBackColor = false;
+            btnLoadActivityUser_Activity.Click += btnLoadActivityUser_Click;
             // 
             // dgvActivityUser
             // 
@@ -178,30 +178,30 @@
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(215, 169, 205);
-            panel3.Controls.Add(label3);
+            panel3.Controls.Add(txtDescription_Activity);
             panel3.Controls.Add(pictureBox3);
             panel3.Controls.Add(lblLoopFit);
             panel3.Controls.Add(lblContactUs);
-            panel3.Controls.Add(lblDonate1);
+            panel3.Controls.Add(lblActivity_Activity);
             panel3.Location = new Point(245, 0);
             panel3.Margin = new Padding(2);
             panel3.Name = "panel3";
             panel3.Size = new Size(1102, 206);
             panel3.TabIndex = 40;
             // 
-            // label3
+            // txtDescription_Activity
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.FromArgb(100, 23, 61);
-            label3.Location = new Point(25, 105);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.MaximumSize = new Size(1000, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(983, 69);
-            label3.TabIndex = 89;
-            label3.Text = resources.GetString("label3.Text");
+            txtDescription_Activity.AutoSize = true;
+            txtDescription_Activity.BackColor = Color.Transparent;
+            txtDescription_Activity.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            txtDescription_Activity.ForeColor = Color.FromArgb(100, 23, 61);
+            txtDescription_Activity.Location = new Point(25, 105);
+            txtDescription_Activity.Margin = new Padding(2, 0, 2, 0);
+            txtDescription_Activity.MaximumSize = new Size(1000, 0);
+            txtDescription_Activity.Name = "txtDescription_Activity";
+            txtDescription_Activity.Size = new Size(983, 69);
+            txtDescription_Activity.TabIndex = 89;
+            txtDescription_Activity.Text = resources.GetString("txtDescription_Activity.Text");
             // 
             // pictureBox3
             // 
@@ -245,18 +245,18 @@
             lblContactUs.Text = "Contact Us";
             lblContactUs.LinkClicked += lblContactUs_LinkClicked;
             // 
-            // lblDonate1
+            // lblActivity_Activity
             // 
-            lblDonate1.AutoSize = true;
-            lblDonate1.BackColor = Color.Transparent;
-            lblDonate1.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            lblDonate1.ForeColor = Color.FromArgb(100, 23, 61);
-            lblDonate1.Location = new Point(14, 38);
-            lblDonate1.Margin = new Padding(2, 0, 2, 0);
-            lblDonate1.Name = "lblDonate1";
-            lblDonate1.Size = new Size(185, 60);
-            lblDonate1.TabIndex = 0;
-            lblDonate1.Text = "Activity";
+            lblActivity_Activity.AutoSize = true;
+            lblActivity_Activity.BackColor = Color.Transparent;
+            lblActivity_Activity.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            lblActivity_Activity.ForeColor = Color.FromArgb(100, 23, 61);
+            lblActivity_Activity.Location = new Point(14, 38);
+            lblActivity_Activity.Margin = new Padding(2, 0, 2, 0);
+            lblActivity_Activity.Name = "lblActivity_Activity";
+            lblActivity_Activity.Size = new Size(185, 60);
+            lblActivity_Activity.TabIndex = 0;
+            lblActivity_Activity.Text = "Activity";
             // 
             // ActivityUser
             // 
@@ -265,7 +265,7 @@
             BackColor = Color.Thistle;
             ClientSize = new Size(1348, 721);
             Controls.Add(panel3);
-            Controls.Add(btnLoadActivityUser);
+            Controls.Add(btnLoadActivityUser_Activity);
             Controls.Add(dgvActivityUser);
             Controls.Add(btnLogOut);
             Controls.Add(btnActivity);
@@ -286,7 +286,7 @@
 
         #endregion
 
-        private Button btnLoadActivityUser;
+        private Button btnLoadActivityUser_Activity;
         private DataGridView dgvActivityUser;
         private Button btnLogOut;
         private Button btnActivity;
@@ -296,10 +296,10 @@
         private LinkLabel llProfile;
         private PictureBox picProfile;
         private Panel panel3;
-        private Label label3;
+        private Label txtDescription_Activity;
         private PictureBox pictureBox3;
         private LinkLabel lblLoopFit;
         private LinkLabel lblContactUs;
-        private Label lblDonate1;
+        private Label lblActivity_Activity;
     }
 }

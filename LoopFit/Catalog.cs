@@ -20,6 +20,7 @@ namespace LoopFit
             InitializeComponent();
             User.DisplayProfileImage(User.Username, picProfile);
             LoadProductData();
+            LanguageHelper.UpdateUI(this);
         }
 
         private void llProfile_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="txtDescription.Text" xml:space="preserve">
+  <data name="txtDescription_Home.Text" xml:space="preserve">
     <value>Let’s take action for a sustainable future! With LoopFit, you can donate your clothes, track the recycling process by our content, and explore unique products made from upcycled fabrics. Together, we can reduce textile waste and embrace a circular economy!</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />

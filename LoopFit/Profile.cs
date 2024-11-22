@@ -22,6 +22,7 @@ namespace LoopFit
             InitializeComponent();
             User.DisplayProfileImage(User.Username, picProfile);
             LoadUserData();
+            LanguageHelper.UpdateUI(this);
         }
 
         private void LoadUserData()
@@ -40,14 +41,14 @@ namespace LoopFit
                         if (reader.Read())
                         {
                             // Retrieve and display user data
-                            lblDataUser.Text = reader["username"].ToString();
-                            lblDataFullName.Text = $"{reader["firstname"]} {reader["lastname"]}";
-                            lblDataEmail.Text = reader["email"].ToString();
-                            lblDataPhone.Text = reader["phonenumber"].ToString();
+                            lblDataUser_Profile.Text = reader["username"].ToString();
+                            lblDataFullName_Profile.Text = $"{reader["firstname"]} {reader["lastname"]}";
+                            lblDataEmail_Profile.Text = reader["email"].ToString();
+                            lblDataPhone_Profile.Text = reader["phonenumber"].ToString();
 
                             // Mask password with stars
                             string password = reader["password"].ToString();
-                            lblDataPassword.Text = new string('*', password.Length);
+                            lblDataPassword_Profile.Text = new string('*', password.Length);
 
                             // Optionally display profile image if available
                             byte[] profileImageBytes = reader["profileimage"] as byte[];
@@ -104,11 +105,23 @@ namespace LoopFit
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogOut_Profile_Click(object sender, EventArgs e)
         {
             WelcomePage welcomepage = new WelcomePage();
             welcomepage.Show();
             this.Hide();
+        }
+
+        private void btnSubmitLanguage_Click(object sender, EventArgs e)
+        {
+            if (rbIndo_Profile.Checked)
+            {
+                LanguageHelper.SetLanguage("indonesia");
+            }
+            else if (rbEnglish_Profile.Checked)
+            {
+                LanguageHelper.SetLanguage("english");
+            }
         }
     }
 }

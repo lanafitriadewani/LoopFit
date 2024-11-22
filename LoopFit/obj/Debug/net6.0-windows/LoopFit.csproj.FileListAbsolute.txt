@@ -78,3 +78,7 @@ D:\LANA\UGM\DTETI\S5\JUNPRO\LoopFit\LoopFit\obj\Debug\net6.0-windows\LoopFit.Cre
 D:\LANA\UGM\DTETI\S5\JUNPRO\LoopFit\LoopFit\obj\Debug\net6.0-windows\LoopFit.ForgetPassword.resources
 D:\LANA\UGM\DTETI\S5\JUNPRO\LoopFit\LoopFit\obj\Debug\net6.0-windows\LoopFit.AboutUs.resources
 D:\LANA\UGM\DTETI\S5\JUNPRO\LoopFit\LoopFit\obj\Debug\net6.0-windows\LoopFit.ContactUs.resources
+D:\LANA\UGM\DTETI\S5\JUNPRO\LoopFit\LoopFit\bin\Debug\net6.0-windows\id\LoopFit.resources.dll
+D:\LANA\UGM\DTETI\S5\JUNPRO\LoopFit\LoopFit\obj\Debug\net6.0-windows\LoopFit.Resources.resources
+D:\LANA\UGM\DTETI\S5\JUNPRO\LoopFit\LoopFit\obj\Debug\net6.0-windows\LoopFit.Resources.id.resources
+D:\LANA\UGM\DTETI\S5\JUNPRO\LoopFit\LoopFit\obj\Debug\net6.0-windows\id\LoopFit.resources.dll

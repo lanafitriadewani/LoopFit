@@ -22,6 +22,11 @@
         },
         "runtime": {
           "LoopFit.dll": {}
+        },
+        "resources": {
+          "id/LoopFit.resources.dll": {
+            "locale": "id"
+          }
         }
       },
       "EntityFramework/6.4.4": {

@@ -24,6 +24,7 @@ namespace LoopFit
             this.username = username;
             LoadUserData();
             User.DisplayProfileImage(User.Username, picProfile);
+            LanguageHelper.UpdateUI(this);
         }
         private void LoadUserData()
         {

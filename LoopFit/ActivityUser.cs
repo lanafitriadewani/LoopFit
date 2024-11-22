@@ -17,6 +17,7 @@ namespace LoopFit
         {
             InitializeComponent();
             User.DisplayProfileImage(User.Username, picProfile);
+            LanguageHelper.UpdateUI(this);
         }
 
         private void llProfile_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -23,6 +23,7 @@ namespace LoopFit
             User.ResetEmailVerification();
             User.DisplayProfileImage(User.Username, picProfile);
             CheckProfileImage();
+            LanguageHelper.UpdateUI(this);
         }
 
         private void LoadUserData()
