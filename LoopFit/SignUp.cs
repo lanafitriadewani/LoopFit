@@ -41,18 +41,96 @@ namespace LoopFit
             User.ResetEmailVerification();
         }
 
+        private (bool emailExists, bool phoneExists) CheckEmailAndPhoneStatus(string email, string phoneNumber)
+        {
+            string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=admin;Database=loopfit";
+            string query = "SELECT email, phonenumber FROM \"User\" WHERE email = @Email OR phonenumber = @PhoneNumber";
+
+            bool emailExists = false;
+            bool phoneExists = false;
+
+            try
+            {
+                using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Email", email);
+                        command.Parameters.AddWithValue("@PhoneNumber", phoneNumber);
+
+                        using (NpgsqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                if (reader["email"] != DBNull.Value && reader["email"].ToString() == email)
+                                {
+                                    emailExists = true;
+                                }
+                                if (reader["phonenumber"] != DBNull.Value && reader["phonenumber"].ToString() == phoneNumber)
+                                {
+                                    phoneExists = true;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error saat memeriksa database: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return (emailExists, phoneExists);
+        }
+
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             try
             {
+                // Validasi apakah semua textbox sudah diisi
+                if (string.IsNullOrWhiteSpace(tbFirstName.Text) ||
+                    string.IsNullOrWhiteSpace(tbLastName.Text) ||
+                    string.IsNullOrWhiteSpace(tbEmail.Text) ||
+                    string.IsNullOrWhiteSpace(tbPhoneNum.Text))
+                {
+                    MessageBox.Show("Harap isi semua data dengan lengkap.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Menghentikan eksekusi jika ada field yang kosong
+                }
+
+                string email = tbEmail.Text;
+                string phoneNumber = tbPhoneNum.Text;
+
+                // Cek keberadaan email dan nomor telepon di database
+                var (emailExists, phoneExists) = CheckEmailAndPhoneStatus(email, phoneNumber);
+
+                if (emailExists && phoneExists)
+                {
+                    MessageBox.Show("Email dan nomor telepon sudah terdaftar.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Hentikan eksekusi jika keduanya sudah ada
+                }
+                else if (emailExists)
+                {
+                    MessageBox.Show("Email sudah terdaftar. Harap gunakan email lain.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Hentikan eksekusi jika hanya email yang ada
+                }
+                else if (phoneExists)
+                {
+                    MessageBox.Show("Nomor telepon sudah terdaftar. Harap gunakan nomor lain.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Hentikan eksekusi jika hanya nomor telepon yang ada
+                }
+
+                // Assign data ke properti User
                 User.FirstName = tbFirstName.Text;
                 User.LastName = tbLastName.Text;
-                User.Email = tbEmail.Text;
-                User.PhoneNumber = tbPhoneNum.Text;
+                User.Email = email;
+                User.PhoneNumber = phoneNumber;
 
+                // Kirim email verifikasi
                 User.SendVerificationEmail(User.Email);
 
-
+                // Tampilkan form verifikasi email
                 VerifEmail verifemail = new VerifEmail(User.Email);
                 verifemail.Show();
                 this.Hide();
@@ -77,9 +155,9 @@ namespace LoopFit
             {
                 // Tentukan scope Google API (email, profil)
                 string[] scopes = {
-                    "https://www.googleapis.com/auth/userinfo.email",
-                    "https://www.googleapis.com/auth/userinfo.profile"
-                };
+            "https://www.googleapis.com/auth/userinfo.email",
+            "https://www.googleapis.com/auth/userinfo.profile"
+        };
 
                 string tokenPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
                     "LoopFit_" + DateTime.Now.ToString("yyyyMMddHHmmss"), "token.json");
@@ -114,20 +192,69 @@ namespace LoopFit
                 request.PersonFields = "names,emailAddresses";
                 Person profile = await request.ExecuteAsync();
 
+                string email = profile.EmailAddresses?[0]?.Value ?? "Not Available";
+
+                // Periksa apakah email sudah terdaftar di database
+                if (IsEmailRegistered(email))
+                {
+                    MessageBox.Show("Email sudah terdaftar. Harap gunakan email lain atau login dengan akun yang sesuai.",
+                        "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Hentikan proses jika email sudah ada
+                }
+
                 // Simpan informasi pengguna ke dalam atribut User
                 User.FirstName = profile.Names?[0]?.GivenName ?? "Not Available";
                 User.LastName = profile.Names?[0]?.FamilyName ?? "Not Available";
-                User.Email = profile.EmailAddresses?[0]?.Value ?? "Not Available";
-                User.PhoneNumber = "Unfilled";  // Mengisi Phone Number otomatis dengan "Unfilled"
+                User.Email = email;
+                User.PhoneNumber = "Unfilled"; // Mengisi Phone Number otomatis dengan "Unfilled"
 
-                // Pindahkan ke form Verifikasi Email (atau form berikutnya yang Anda inginkan)
-                UnameAndPassword unameandpassword = new UnameAndPassword();
-                unameandpassword.Show();
-                this.Hide();
+                // Membuat Username dan Password otomatis
+                User.Username = (User.FirstName + User.LastName).ToLower();
+                User.Password = (User.FirstName + User.LastName).ToLower();
+
+                // Simpan pengguna ke database
+                string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=admin;Database=loopfit";
+                if (User.SaveUserToDatabase(connectionString))
+                {
+                    MessageBox.Show("Pendaftaran berhasil. Silakan login dengan akun Anda.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Pindahkan ke form login
+                    Login login = new Login();
+                    login.Show();
+                    this.Hide();
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error during authentication: {ex.Message}");
+            }
+        }
+
+        private bool IsEmailRegistered(string email)
+        {
+            string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=admin;Database=loopfit";
+            string query = "SELECT COUNT(*) FROM \"User\" WHERE email = @Email";
+
+            try
+            {
+                using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Email", email);
+
+                        int count = Convert.ToInt32(command.ExecuteScalar());
+                        return count > 0; // Mengembalikan true jika email ditemukan
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error saat memeriksa email di database: " + ex.Message,
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
         }
 

@@ -47,6 +47,13 @@ namespace LoopFit
             string input = tbUname.Text; // Masukkan input sementara
             User.Password = tbPassword.Text;
 
+            // Cek jika input Username atau Password kosong
+            if (string.IsNullOrEmpty(input) || string.IsNullOrEmpty(User.Password))
+            {
+                MessageBox.Show("Username atau Password tidak boleh kosong.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Menghentikan proses login jika ada input kosong
+            }
+
             string role, email, username;
             if (User.ValidateUser("Host=localhost;Port=5432;Username=postgres;Password=admin;Database=loopfit", input, User.Password, out role, out username, out email))
             {
@@ -69,7 +76,7 @@ namespace LoopFit
             }
             else
             {
-                MessageBox.Show("Username or password is incorrect.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Username atau password salah.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
