@@ -11,7 +11,7 @@ namespace LoopFit
     {
         public static void UpdateUI(Control parentControl)
         {
-            /// Update all labels in the parent control and its children
+            // Update all labels in the parent control and its children
             foreach (var label in parentControl.Controls.OfType<Label>())
             {
                 string resourceKey = label.Name + ".Text";
@@ -33,14 +33,76 @@ namespace LoopFit
                 }
             }
 
-            // Check other controls as needed (e.g., TextBox, LinkLabel, etc.)
-            foreach (Control otherControl in parentControl.Controls)
+            // Update all radio buttons in the parent control and its children
+            foreach (var radioButton in parentControl.Controls.OfType<RadioButton>())
             {
-                // Only call UpdateUI if the control is of type Control (or subclass of Control)
-                if (otherControl is Control)
+                string resourceKey = radioButton.Name + ".Text";
+                var radioButtonText = Resources.ResourceManager.GetString(resourceKey);
+                if (radioButtonText != null)
                 {
-                    UpdateUI(otherControl); // Recursively call for nested controls
+                    radioButton.Text = radioButtonText;
                 }
+            }
+
+            // Update all combo boxes in the parent control and its children
+            foreach (var comboBox in parentControl.Controls.OfType<ComboBox>())
+            {
+                UpdateComboBoxItems(comboBox);
+            }
+
+            // Recursively update nested controls
+            foreach (Control nestedControl in parentControl.Controls)
+            {
+                UpdateUI(nestedControl); // Recursive call for nested controls
+            }
+        }
+
+        public static void UpdateComboBoxItems(ComboBox comboBox)
+        {
+            // Clear existing items
+            comboBox.Items.Clear();
+
+            // Add items based on ComboBox name
+            switch (comboBox.Name)
+            {
+                case "cbClothType":
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("InnerTop"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("OuterTop"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Pants"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Skirt"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Hijab"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Overall"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Other"));
+                    break;
+
+                case "cbMaterial":
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Cotton"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Linen"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Silk"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Wool"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Polyester"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Nylon"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Denim"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Leather"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Satin"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Jersey"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Other"));
+                    break;
+
+                case "cbClothColour":
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Red"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Orange"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Yellow"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Green"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Blue"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Indigo"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Violet"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Black"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("White"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Grey"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Brown"));
+                    comboBox.Items.Add(Resources.ResourceManager.GetString("Other"));
+                    break;
             }
         }
 

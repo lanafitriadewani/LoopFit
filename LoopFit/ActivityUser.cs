@@ -67,18 +67,23 @@ namespace LoopFit
                 {
                     connection.Open();
 
-                    // Query untuk mendapatkan data dari tabel donate
+                    // Query untuk mendapatkan data dari tabel donate yang terkait dengan username
                     string query = @"
-                SELECT 
-                    donateid, fixedprice, status, droppointloc, estimatedprice, 
-                    clothingtype, isusable, material, isaccepted, pattern, 
-                    colour, frontclothes, backclothes 
-                FROM donate 
-                ORDER BY donateid";
+                        SELECT 
+                            d.donateid, d.fixedprice, d.status, d.droppointloc, d.estimatedprice, 
+                            d.clothingtype, d.isusable, d.material, d.isaccepted, d.pattern, 
+                            d.colour, d.frontclothes, d.backclothes 
+                        FROM donate d
+                        INNER JOIN ""User"" u ON d.userid = u.userid
+                        WHERE u.username = @username
+                        ORDER BY d.donateid";
 
                     // Membuat command untuk menjalankan query
                     using (var command = new NpgsqlCommand(query, connection))
                     {
+                        // Menambahkan parameter username
+                        command.Parameters.AddWithValue("@username", User.Username);
+
                         // Adapter untuk mengisi data ke dalam DataTable
                         using (var adapter = new NpgsqlDataAdapter(command))
                         {
@@ -106,7 +111,6 @@ namespace LoopFit
                     }
                 }
             }
-
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

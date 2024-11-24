@@ -32,17 +32,17 @@
             tbVerifNum2 = new TextBox();
             tbVerifNum3 = new TextBox();
             tbVerifNum4 = new TextBox();
-            lblDesc = new Label();
-            lblSignUp = new Label();
-            btnSignUp = new Button();
-            llLogin = new LinkLabel();
-            lblAlready = new Label();
+            lblDesc_Verif = new Label();
+            lblSignUp_VerifEmail = new Label();
+            btnVerify_VerifEmail = new Button();
+            llLogin_VerifEmail = new LinkLabel();
+            lblAlready_VerifEmail = new Label();
             pictureBox2 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
             linkLabel1 = new LinkLabel();
             pictureBox3 = new PictureBox();
-            lblBack = new Label();
+            lblBack_VerifEmail = new Label();
             picBack = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -93,61 +93,62 @@
             tbVerifNum4.TabIndex = 22;
             tbVerifNum4.TextAlign = HorizontalAlignment.Center;
             // 
-            // lblDesc
+            // lblDesc_Verif
             // 
-            lblDesc.AutoSize = true;
-            lblDesc.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDesc.ForeColor = Color.FromArgb(100, 23, 61);
-            lblDesc.ImageAlign = ContentAlignment.TopLeft;
-            lblDesc.Location = new Point(474, 197);
-            lblDesc.MaximumSize = new Size(472, 0);
-            lblDesc.Name = "lblDesc";
-            lblDesc.Size = new Size(9, 20);
-            lblDesc.TabIndex = 23;
-            lblDesc.Text = "\r\n";
+            lblDesc_Verif.AutoSize = true;
+            lblDesc_Verif.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDesc_Verif.ForeColor = Color.FromArgb(100, 23, 61);
+            lblDesc_Verif.ImageAlign = ContentAlignment.TopLeft;
+            lblDesc_Verif.Location = new Point(474, 197);
+            lblDesc_Verif.MaximumSize = new Size(472, 0);
+            lblDesc_Verif.Name = "lblDesc_Verif";
+            lblDesc_Verif.Size = new Size(9, 20);
+            lblDesc_Verif.TabIndex = 23;
+            lblDesc_Verif.Text = "\r\n";
             // 
-            // lblSignUp
+            // lblSignUp_VerifEmail
             // 
-            lblSignUp.AutoSize = true;
-            lblSignUp.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSignUp.ForeColor = Color.FromArgb(100, 23, 61);
-            lblSignUp.Location = new Point(474, 137);
-            lblSignUp.Name = "lblSignUp";
-            lblSignUp.Size = new Size(425, 46);
-            lblSignUp.TabIndex = 24;
-            lblSignUp.Text = "Verify your email address";
+            lblSignUp_VerifEmail.AutoSize = true;
+            lblSignUp_VerifEmail.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSignUp_VerifEmail.ForeColor = Color.FromArgb(100, 23, 61);
+            lblSignUp_VerifEmail.Location = new Point(474, 137);
+            lblSignUp_VerifEmail.Name = "lblSignUp_VerifEmail";
+            lblSignUp_VerifEmail.Size = new Size(425, 46);
+            lblSignUp_VerifEmail.TabIndex = 24;
+            lblSignUp_VerifEmail.Text = "Verify your email address";
             // 
-            // btnSignUp
+            // btnVerify_VerifEmail
             // 
-            btnSignUp.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSignUp.Location = new Point(655, 358);
-            btnSignUp.Margin = new Padding(3, 4, 3, 4);
-            btnSignUp.Name = "btnSignUp";
-            btnSignUp.Size = new Size(113, 49);
-            btnSignUp.TabIndex = 25;
-            btnSignUp.Text = "Verify";
-            btnSignUp.UseVisualStyleBackColor = true;
-            btnSignUp.Click += btnVerify_Click;
+            btnVerify_VerifEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnVerify_VerifEmail.Location = new Point(655, 358);
+            btnVerify_VerifEmail.Margin = new Padding(3, 4, 3, 4);
+            btnVerify_VerifEmail.Name = "btnVerify_VerifEmail";
+            btnVerify_VerifEmail.Size = new Size(113, 49);
+            btnVerify_VerifEmail.TabIndex = 25;
+            btnVerify_VerifEmail.Text = "Verify";
+            btnVerify_VerifEmail.UseVisualStyleBackColor = true;
+            btnVerify_VerifEmail.Click += btnVerify_Click;
             // 
-            // llLogin
+            // llLogin_VerifEmail
             // 
-            llLogin.AutoSize = true;
-            llLogin.Location = new Point(759, 421);
-            llLogin.Name = "llLogin";
-            llLogin.Size = new Size(57, 20);
-            llLogin.TabIndex = 27;
-            llLogin.TabStop = true;
-            llLogin.Text = "Resend";
+            llLogin_VerifEmail.AutoSize = true;
+            llLogin_VerifEmail.Location = new Point(759, 421);
+            llLogin_VerifEmail.Name = "llLogin_VerifEmail";
+            llLogin_VerifEmail.Size = new Size(57, 20);
+            llLogin_VerifEmail.TabIndex = 27;
+            llLogin_VerifEmail.TabStop = true;
+            llLogin_VerifEmail.Text = "Resend";
+            llLogin_VerifEmail.LinkClicked += llLogin_VerifEmail_LinkClicked;
             // 
-            // lblAlready
+            // lblAlready_VerifEmail
             // 
-            lblAlready.AutoSize = true;
-            lblAlready.ForeColor = Color.FromArgb(100, 23, 61);
-            lblAlready.Location = new Point(604, 421);
-            lblAlready.Name = "lblAlready";
-            lblAlready.Size = new Size(156, 20);
-            lblAlready.TabIndex = 26;
-            lblAlready.Text = "Didn't receive a code?";
+            lblAlready_VerifEmail.AutoSize = true;
+            lblAlready_VerifEmail.ForeColor = Color.FromArgb(100, 23, 61);
+            lblAlready_VerifEmail.Location = new Point(604, 421);
+            lblAlready_VerifEmail.Name = "lblAlready_VerifEmail";
+            lblAlready_VerifEmail.Size = new Size(156, 20);
+            lblAlready_VerifEmail.TabIndex = 26;
+            lblAlready_VerifEmail.Text = "Didn't receive a code?";
             // 
             // pictureBox2
             // 
@@ -211,18 +212,18 @@
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
             // 
-            // lblBack
+            // lblBack_VerifEmail
             // 
-            lblBack.AutoSize = true;
-            lblBack.BackColor = Color.Transparent;
-            lblBack.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            lblBack.ForeColor = Color.FromArgb(100, 23, 61);
-            lblBack.Location = new Point(474, 30);
-            lblBack.Name = "lblBack";
-            lblBack.Size = new Size(53, 25);
-            lblBack.TabIndex = 50;
-            lblBack.Text = "Back";
-            lblBack.Click += lblBack_Click;
+            lblBack_VerifEmail.AutoSize = true;
+            lblBack_VerifEmail.BackColor = Color.Transparent;
+            lblBack_VerifEmail.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            lblBack_VerifEmail.ForeColor = Color.FromArgb(100, 23, 61);
+            lblBack_VerifEmail.Location = new Point(474, 30);
+            lblBack_VerifEmail.Name = "lblBack_VerifEmail";
+            lblBack_VerifEmail.Size = new Size(53, 25);
+            lblBack_VerifEmail.TabIndex = 50;
+            lblBack_VerifEmail.Text = "Back";
+            lblBack_VerifEmail.Click += lblBack_Click;
             // 
             // picBack
             // 
@@ -244,18 +245,18 @@
             BackColor = Color.Thistle;
             BackgroundImage = Properties.Resources.Untitled_design__6_;
             ClientSize = new Size(1006, 597);
-            Controls.Add(lblBack);
+            Controls.Add(lblBack_VerifEmail);
             Controls.Add(picBack);
             Controls.Add(linkLabel1);
             Controls.Add(pictureBox3);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(pictureBox2);
-            Controls.Add(llLogin);
-            Controls.Add(lblAlready);
-            Controls.Add(btnSignUp);
-            Controls.Add(lblSignUp);
-            Controls.Add(lblDesc);
+            Controls.Add(llLogin_VerifEmail);
+            Controls.Add(lblAlready_VerifEmail);
+            Controls.Add(btnVerify_VerifEmail);
+            Controls.Add(lblSignUp_VerifEmail);
+            Controls.Add(lblDesc_Verif);
             Controls.Add(tbVerifNum4);
             Controls.Add(tbVerifNum3);
             Controls.Add(tbVerifNum2);
@@ -275,17 +276,17 @@
         private TextBox tbVerifNum2;
         private TextBox tbVerifNum3;
         private TextBox tbVerifNum4;
-        private Label lblDesc;
-        private Label lblSignUp;
-        private Button btnSignUp;
-        private LinkLabel llLogin;
-        private Label lblAlready;
+        private Label lblDesc_Verif;
+        private Label lblSignUp_VerifEmail;
+        private Button btnVerify_VerifEmail;
+        private LinkLabel llLogin_VerifEmail;
+        private Label lblAlready_VerifEmail;
         private PictureBox pictureBox2;
         private Label label4;
         private Label label3;
         private LinkLabel linkLabel1;
         private PictureBox pictureBox3;
-        private Label lblBack;
+        private Label lblBack_VerifEmail;
         private PictureBox picBack;
     }
 }

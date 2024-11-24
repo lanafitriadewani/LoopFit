@@ -21,29 +21,17 @@ namespace LoopFit
 
         private void btnUploadImage_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                pbClothImage.Image = Image.FromFile(openFileDialog.FileName);
-            }
+            Helper.UploadImage(pbClothImage);
         }
 
         private void btnUploadImage2_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                pbClothImage2.Image = Image.FromFile(openFileDialog.FileName);
-            }
+            Helper.UploadImage(pbClothImage2);
         }
 
         private void DonateClothInfo_Load(object sender, EventArgs e)
         {
-            cbClothType.Items.Add("Inner Top");
+            /*cbClothType.Items.Add("Inner Top");
             cbClothType.Items.Add("Outer Top");
             cbClothType.Items.Add("Pants");
             cbClothType.Items.Add("Skirt");
@@ -74,8 +62,10 @@ namespace LoopFit
             cbClothColour.Items.Add("White");
             cbClothColour.Items.Add("Grey");
             cbClothColour.Items.Add("Brown");
-            cbClothColour.Items.Add("Other");
+            cbClothColour.Items.Add("Other");*/
         }
+
+        
 
         private void btnClothInfoNext_Click(object sender, EventArgs e)
         {
@@ -83,12 +73,12 @@ namespace LoopFit
             {
                 // Validasi: Periksa apakah semua data telah diisi
                 if (string.IsNullOrWhiteSpace(cbClothType.Text) || // Jenis pakaian
-                    (!rbCondUsable.Checked && !rbCondNonUsable.Checked) || // Kondisi pakaian
+                    (!rbCondUsable_Info.Checked && !rbCondNonUsable_Info.Checked) || // Kondisi pakaian
                     string.IsNullOrWhiteSpace(cbMaterial.Text) || // Material pakaian
                     pbClothImage.Image == null || // Gambar depan
                     pbClothImage2.Image == null || // Gambar belakang
                     string.IsNullOrWhiteSpace(cbClothColour.Text) || // Warna pakaian
-                    (!rbPatternYes.Checked && !rbPatternNo.Checked)) // Pola pakaian
+                    (!rbPatternYes_Info.Checked && !rbPatternNo_Info.Checked)) // Pola pakaian
                 {
                     MessageBox.Show("Please complete all the required data before proceeding.",
                                     "Incomplete Data",
@@ -99,7 +89,7 @@ namespace LoopFit
 
                 // Semua validasi terpenuhi, lanjutkan proses
                 Donate.ClothingType = cbClothType.Text;
-                Donate.IsUsable = rbCondUsable.Checked;
+                Donate.IsUsable = rbCondUsable_Info.Checked;
                 Donate.Material = cbMaterial.Text;
 
                 using (MemoryStream msFront = new MemoryStream())
@@ -115,7 +105,7 @@ namespace LoopFit
                 }
 
                 Donate.Colour = cbClothColour.Text;
-                Donate.Pattern = rbPatternYes.Checked;
+                Donate.Pattern = rbPatternYes_Info.Checked;
                 Donate.EstimatedPrice = Donate.GetEstimatedPrice();
 
                 // Buat instance form ConfirmDonate dan set label harga

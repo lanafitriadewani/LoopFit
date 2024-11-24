@@ -93,7 +93,7 @@
             picProfile.Margin = new Padding(2);
             picProfile.Name = "picProfile";
             picProfile.Size = new Size(56, 49);
-            picProfile.SizeMode = PictureBoxSizeMode.Zoom;
+            picProfile.SizeMode = PictureBoxSizeMode.StretchImage;
             picProfile.TabIndex = 0;
             picProfile.TabStop = false;
             picProfile.Click += picProfile_Click;
@@ -357,6 +357,7 @@
             picUserProfile.Margin = new Padding(2);
             picUserProfile.Name = "picUserProfile";
             picUserProfile.Size = new Size(300, 300);
+            picUserProfile.SizeMode = PictureBoxSizeMode.StretchImage;
             picUserProfile.TabIndex = 5;
             picUserProfile.TabStop = false;
             // 

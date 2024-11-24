@@ -29,67 +29,68 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WelcomePage));
-            lblSignUp = new Label();
-            btnLogin = new Button();
-            btnSignUp = new Button();
-            label1 = new Label();
+            lblSignUp_Welcome = new Label();
+            btnLogin_Welcome = new Button();
+            btnSignUp_Welcome = new Button();
+            label1_Welcome = new Label();
             SuspendLayout();
             // 
-            // lblSignUp
+            // lblSignUp_Welcome
             // 
-            lblSignUp.AutoSize = true;
-            lblSignUp.BackColor = Color.Transparent;
-            lblSignUp.Font = new Font("Segoe UI", 30F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSignUp.ForeColor = Color.FromArgb(100, 23, 61);
-            lblSignUp.Location = new Point(12, 154);
-            lblSignUp.Name = "lblSignUp";
-            lblSignUp.Size = new Size(311, 134);
-            lblSignUp.TabIndex = 25;
-            lblSignUp.Text = "Welcome to\r\nLoopFit!";
+            lblSignUp_Welcome.AutoSize = true;
+            lblSignUp_Welcome.BackColor = Color.Transparent;
+            lblSignUp_Welcome.Font = new Font("Segoe UI", 30F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSignUp_Welcome.ForeColor = Color.FromArgb(100, 23, 61);
+            lblSignUp_Welcome.Location = new Point(12, 146);
+            lblSignUp_Welcome.MaximumSize = new Size(340, 0);
+            lblSignUp_Welcome.Name = "lblSignUp_Welcome";
+            lblSignUp_Welcome.Size = new Size(325, 134);
+            lblSignUp_Welcome.TabIndex = 25;
+            lblSignUp_Welcome.Text = "Welcome to LoopFit!";
             // 
-            // btnLogin
+            // btnLogin_Welcome
             // 
-            btnLogin.BackColor = Color.FromArgb(208, 154, 208);
-            btnLogin.FlatAppearance.BorderSize = 0;
-            btnLogin.FlatStyle = FlatStyle.Flat;
-            btnLogin.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnLogin.ForeColor = Color.FromArgb(100, 23, 61);
-            btnLogin.Location = new Point(25, 416);
-            btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(111, 44);
-            btnLogin.TabIndex = 27;
-            btnLogin.Text = "Login";
-            btnLogin.UseVisualStyleBackColor = false;
-            btnLogin.Click += btnLogin_Click;
+            btnLogin_Welcome.BackColor = Color.FromArgb(208, 154, 208);
+            btnLogin_Welcome.FlatAppearance.BorderSize = 0;
+            btnLogin_Welcome.FlatStyle = FlatStyle.Flat;
+            btnLogin_Welcome.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLogin_Welcome.ForeColor = Color.FromArgb(100, 23, 61);
+            btnLogin_Welcome.Location = new Point(25, 417);
+            btnLogin_Welcome.Name = "btnLogin_Welcome";
+            btnLogin_Welcome.Size = new Size(111, 44);
+            btnLogin_Welcome.TabIndex = 27;
+            btnLogin_Welcome.Text = "Login";
+            btnLogin_Welcome.UseVisualStyleBackColor = false;
+            btnLogin_Welcome.Click += btnLogin_Click;
             // 
-            // btnSignUp
+            // btnSignUp_Welcome
             // 
-            btnSignUp.BackColor = Color.Thistle;
-            btnSignUp.FlatAppearance.BorderColor = Color.FromArgb(208, 154, 208);
-            btnSignUp.FlatAppearance.BorderSize = 3;
-            btnSignUp.FlatStyle = FlatStyle.Flat;
-            btnSignUp.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSignUp.ForeColor = Color.FromArgb(100, 23, 61);
-            btnSignUp.Location = new Point(160, 416);
-            btnSignUp.Name = "btnSignUp";
-            btnSignUp.Size = new Size(111, 44);
-            btnSignUp.TabIndex = 28;
-            btnSignUp.Text = "Sign Up";
-            btnSignUp.UseVisualStyleBackColor = false;
-            btnSignUp.Click += btnSignUp_Click;
+            btnSignUp_Welcome.BackColor = Color.Thistle;
+            btnSignUp_Welcome.FlatAppearance.BorderColor = Color.FromArgb(208, 154, 208);
+            btnSignUp_Welcome.FlatAppearance.BorderSize = 3;
+            btnSignUp_Welcome.FlatStyle = FlatStyle.Flat;
+            btnSignUp_Welcome.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSignUp_Welcome.ForeColor = Color.FromArgb(100, 23, 61);
+            btnSignUp_Welcome.Location = new Point(160, 417);
+            btnSignUp_Welcome.Name = "btnSignUp_Welcome";
+            btnSignUp_Welcome.Size = new Size(111, 44);
+            btnSignUp_Welcome.TabIndex = 28;
+            btnSignUp_Welcome.Text = "Sign Up";
+            btnSignUp_Welcome.UseVisualStyleBackColor = false;
+            btnSignUp_Welcome.Click += btnSignUp_Click;
             // 
-            // label1
+            // label1_Welcome
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(100, 23, 61);
-            label1.Location = new Point(21, 299);
-            label1.MaximumSize = new Size(420, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(416, 92);
-            label1.TabIndex = 29;
-            label1.Text = resources.GetString("label1.Text");
+            label1_Welcome.AutoSize = true;
+            label1_Welcome.BackColor = Color.Transparent;
+            label1_Welcome.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label1_Welcome.ForeColor = Color.FromArgb(100, 23, 61);
+            label1_Welcome.Location = new Point(21, 291);
+            label1_Welcome.MaximumSize = new Size(420, 0);
+            label1_Welcome.Name = "label1_Welcome";
+            label1_Welcome.Size = new Size(416, 92);
+            label1_Welcome.TabIndex = 29;
+            label1_Welcome.Text = resources.GetString("label1_Welcome.Text");
             // 
             // WelcomePage
             // 
@@ -97,10 +98,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1006, 597);
-            Controls.Add(label1);
-            Controls.Add(btnSignUp);
-            Controls.Add(btnLogin);
-            Controls.Add(lblSignUp);
+            Controls.Add(label1_Welcome);
+            Controls.Add(btnSignUp_Welcome);
+            Controls.Add(btnLogin_Welcome);
+            Controls.Add(lblSignUp_Welcome);
             Name = "WelcomePage";
             Text = "WelcomePage";
             ResumeLayout(false);
@@ -108,9 +109,9 @@
         }
 
         #endregion
-        private Label lblSignUp;
-        private Button btnLogin;
-        private Button btnSignUp;
-        private Label label1;
+        private Label lblSignUp_Welcome;
+        private Button btnLogin_Welcome;
+        private Button btnSignUp_Welcome;
+        private Label label1_Welcome;
     }
 }

@@ -22,7 +22,6 @@ namespace LoopFit
             LoadUserData();
             User.ResetEmailVerification();
             User.DisplayProfileImage(User.Username, picProfile);
-            CheckProfileImage();
             LanguageHelper.UpdateUI(this);
         }
 
@@ -71,44 +70,6 @@ namespace LoopFit
             }
         }
 
-        private void CheckProfileImage()
-        {
-            // Connection string to the PostgreSQL database
-            string conn = "Host=localhost; Port=5432;Username=postgres;Password=admin;Database=loopfit";
-
-            using (var connection = new NpgsqlConnection(conn))
-            {
-                connection.Open();
-                string query = "SELECT profileimage FROM \"User\" WHERE username = @username";
-
-                using (var command = new NpgsqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@username", currentUsername); // Use the logged-in username
-
-                    using (var reader = command.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            // Check if profileimage is NULL or has data
-                            if (reader["profileimage"] == DBNull.Value || reader["profileimage"] == null)
-                            {
-                                btnChangeImage.Text = "Upload Image"; // No image
-                            }
-                            else
-                            {
-                                btnChangeImage.Text = "Change Image"; // Image exists
-                            }
-                        }
-                        else
-                        {
-                            MessageBox.Show("User not found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
-                }
-            }
-        }
-
-
         private void btnSendVerifCode_Click(object sender, EventArgs e)
         {
             User.NewEmail = tbEmail.Text;
@@ -117,28 +78,19 @@ namespace LoopFit
 
         private void btnVerify_Click(object sender, EventArgs e)
         {
-            string inputCode = tbVerifCode.Text;
-            if (inputCode == User.generatedVerificationCode)
+            if (User.IsEmailVerified(tbVerifCode.Text))
             {
-                User.isEmailVerified = true; // Tandai bahwa email telah diverifikasi
-                MessageBox.Show("Verifikasi berhasil!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Verification successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                User.isEmailVerified = false; // Tetapkan ke false jika kode salah
-                MessageBox.Show("Kode verifikasi salah!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("The verification code is incorrect!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void btnChangeImage_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                profilePic.Image = Image.FromFile(openFileDialog.FileName);
-            }
+            Helper.UploadImage(profilePic);
         }
 
         private void btnSubmitEdit_Click(object sender, EventArgs e)
@@ -159,7 +111,7 @@ namespace LoopFit
                 // 1. Belum menekan tombol "Send Verification"
                 if (string.IsNullOrEmpty(User.generatedVerificationCode))
                 {
-                    MessageBox.Show("Anda belum memverifikasi email baru. Silakan tekan tombol 'Send Code' untuk mengirimkan kode verifikasi ke email baru Anda.",
+                    MessageBox.Show("You have not verified your new email. Please press the 'Send Code' button to send a verification code to your new email.", 
                         "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
@@ -167,7 +119,7 @@ namespace LoopFit
                 // 2. Sudah menekan "Send Verification" tetapi belum menginputkan kode
                 if (string.IsNullOrWhiteSpace(tbVerifCode.Text))
                 {
-                    MessageBox.Show("Anda belum menginputkan code yang Anda dapatkan di email baru. Silakan input code dan tekan tombol 'Verify' untuk memverifikasi code Anda.",
+                    MessageBox.Show("You have not entered the code you received in the new email. Please enter the code and press the 'Verify' button to verify your code.", 
                         "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
@@ -175,14 +127,12 @@ namespace LoopFit
                 // 3. Sudah menginputkan kode tetapi belum menekan "Verify"
                 if (!User.isEmailVerified)
                 {
-                    MessageBox.Show("Code verifikasi Anda masih salah. Silakan periksa kembali code pada email baru dan tekan tombol 'Verify' untuk memverifikasi code Anda.",
+                    MessageBox.Show("Your verification code is still wrong. Please check the code in the new email again and press the 'Verify' button to verify your code.", 
                         "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
             }
-
-
 
             string conn = "Host=localhost; Port=5432;Username=postgres;Password=admin;Database=loopfit";
             byte[] profileImageBytes = null;
@@ -202,22 +152,12 @@ namespace LoopFit
                 connection.Open();
 
                 // Validasi jika username baru sudah digunakan oleh pengguna lain
-                if (newUsername != currentUsername)
+                if (newUsername != currentUsername && User.IsUsernameTaken(newUsername))
                 {
-                    string queryCheckUsername = "SELECT COUNT(*) FROM \"User\" WHERE username = @newUsername";
-                    using (var command = new NpgsqlCommand(queryCheckUsername, connection))
-                    {
-                        command.Parameters.AddWithValue("@newUsername", newUsername);
-
-                        int usernameExists = Convert.ToInt32(command.ExecuteScalar());
-                        if (usernameExists > 0)
-                        {
-                            MessageBox.Show("Username sudah digunakan. Pilih username lain.",
-                                "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-                    }
+                    MessageBox.Show("Username is already in use. Please choose another username.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
+
 
                 // Jika password baru diisi
                 if (!string.IsNullOrEmpty(newPassword) || !string.IsNullOrEmpty(confirmPassword))
@@ -225,7 +165,7 @@ namespace LoopFit
                     // Periksa apakah password dan konfirmasi password cocok
                     if (newPassword != confirmPassword)
                     {
-                        MessageBox.Show("Password yang dimasukkan tidak sama!",
+                        MessageBox.Show("The password entered does not match!",
                             "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
@@ -245,7 +185,7 @@ namespace LoopFit
                         }
                         else
                         {
-                            MessageBox.Show("Pengguna tidak ditemukan!",
+                            MessageBox.Show("User not found!",
                                 "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
                         }
@@ -253,28 +193,15 @@ namespace LoopFit
                 }
 
                 // Update data pengguna termasuk gambar profil
-                string queryUpdate = "UPDATE \"User\" SET username = @newUsername, firstname = @firstname, lastname = @lastname, email = @email, phonenumber = @phonenumber, password = @password, profileimage = @profileimage WHERE username = @currentUsername";
+                User.UpdateUserData(newUsername, newFirstName, newLastName, newEmail, newPhoneNumber, newPassword, profileImageBytes);
 
-                using (var command = new NpgsqlCommand(queryUpdate, connection))
-                {
-                    command.Parameters.AddWithValue("@newUsername", newUsername);
-                    command.Parameters.AddWithValue("@firstname", newFirstName);
-                    command.Parameters.AddWithValue("@lastname", newLastName);
-                    command.Parameters.AddWithValue("@email", newEmail);
-                    command.Parameters.AddWithValue("@phonenumber", newPhoneNumber);
-                    command.Parameters.AddWithValue("@password", newPassword);
-                    command.Parameters.AddWithValue("@profileimage", (object)profileImageBytes ?? DBNull.Value); // Masukkan gambar sebagai byte array
-                    command.Parameters.AddWithValue("@currentUsername", currentUsername);
-
-                    command.ExecuteNonQuery();
-                }
 
                 // Perbarui username dalam class User
                 User.Username = newUsername;
 
                 User.Email = newEmail;
 
-                MessageBox.Show("Data berhasil diperbarui!",
+                MessageBox.Show("Data updated successfully!",
                     "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 

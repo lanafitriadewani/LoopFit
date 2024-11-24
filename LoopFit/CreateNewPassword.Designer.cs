@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblForgetPass = new Label();
+            lblForgetPass_Create = new Label();
             linkLabel1 = new LinkLabel();
             pictureBox3 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
             pictureBox2 = new PictureBox();
             btnConfirm = new Button();
-            lblConfirmPass = new Label();
+            lblConfirmPass_Create = new Label();
             tbConfirmPass = new TextBox();
             tbNewPass = new TextBox();
-            lblNewPass = new Label();
-            label1 = new Label();
-            lblBack = new Label();
+            lblNewPass_Create = new Label();
+            label1_Create = new Label();
+            lblBack_Create = new Label();
             picBack = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picBack).BeginInit();
             SuspendLayout();
             // 
-            // lblForgetPass
+            // lblForgetPass_Create
             // 
-            lblForgetPass.AutoSize = true;
-            lblForgetPass.BackColor = Color.Transparent;
-            lblForgetPass.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            lblForgetPass.ForeColor = Color.FromArgb(100, 23, 61);
-            lblForgetPass.Location = new Point(468, 122);
-            lblForgetPass.Name = "lblForgetPass";
-            lblForgetPass.Size = new Size(348, 46);
-            lblForgetPass.TabIndex = 90;
-            lblForgetPass.Text = "Reset your Password";
+            lblForgetPass_Create.AutoSize = true;
+            lblForgetPass_Create.BackColor = Color.Transparent;
+            lblForgetPass_Create.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            lblForgetPass_Create.ForeColor = Color.FromArgb(100, 23, 61);
+            lblForgetPass_Create.Location = new Point(468, 122);
+            lblForgetPass_Create.Name = "lblForgetPass_Create";
+            lblForgetPass_Create.Size = new Size(348, 46);
+            lblForgetPass_Create.TabIndex = 90;
+            lblForgetPass_Create.Text = "Reset your Password";
             // 
             // linkLabel1
             // 
@@ -136,17 +136,17 @@
             btnConfirm.UseVisualStyleBackColor = false;
             btnConfirm.Click += btnConfirm_Click;
             // 
-            // lblConfirmPass
+            // lblConfirmPass_Create
             // 
-            lblConfirmPass.AutoSize = true;
-            lblConfirmPass.BackColor = Color.Transparent;
-            lblConfirmPass.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            lblConfirmPass.ForeColor = Color.FromArgb(100, 23, 61);
-            lblConfirmPass.Location = new Point(474, 319);
-            lblConfirmPass.Name = "lblConfirmPass";
-            lblConfirmPass.Size = new Size(207, 25);
-            lblConfirmPass.TabIndex = 94;
-            lblConfirmPass.Text = "Confirm New Password";
+            lblConfirmPass_Create.AutoSize = true;
+            lblConfirmPass_Create.BackColor = Color.Transparent;
+            lblConfirmPass_Create.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            lblConfirmPass_Create.ForeColor = Color.FromArgb(100, 23, 61);
+            lblConfirmPass_Create.Location = new Point(474, 319);
+            lblConfirmPass_Create.Name = "lblConfirmPass_Create";
+            lblConfirmPass_Create.Size = new Size(216, 25);
+            lblConfirmPass_Create.TabIndex = 94;
+            lblConfirmPass_Create.Text = "Confirm New Password :";
             // 
             // tbConfirmPass
             // 
@@ -168,45 +168,45 @@
             tbNewPass.TabIndex = 92;
             tbNewPass.UseSystemPasswordChar = true;
             // 
-            // lblNewPass
+            // lblNewPass_Create
             // 
-            lblNewPass.AutoSize = true;
-            lblNewPass.BackColor = Color.Transparent;
-            lblNewPass.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            lblNewPass.ForeColor = Color.FromArgb(100, 23, 61);
-            lblNewPass.Location = new Point(474, 235);
-            lblNewPass.Margin = new Padding(2, 0, 2, 0);
-            lblNewPass.Name = "lblNewPass";
-            lblNewPass.Size = new Size(143, 25);
-            lblNewPass.TabIndex = 91;
-            lblNewPass.Text = "New Password :";
+            lblNewPass_Create.AutoSize = true;
+            lblNewPass_Create.BackColor = Color.Transparent;
+            lblNewPass_Create.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNewPass_Create.ForeColor = Color.FromArgb(100, 23, 61);
+            lblNewPass_Create.Location = new Point(474, 235);
+            lblNewPass_Create.Margin = new Padding(2, 0, 2, 0);
+            lblNewPass_Create.Name = "lblNewPass_Create";
+            lblNewPass_Create.Size = new Size(143, 25);
+            lblNewPass_Create.TabIndex = 91;
+            lblNewPass_Create.Text = "New Password :";
             // 
-            // label1
+            // label1_Create
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(100, 23, 61);
-            label1.Location = new Point(474, 173);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.MaximumSize = new Size(500, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(361, 23);
-            label1.TabIndex = 96;
-            label1.Text = "Create your new password and don't forget it!";
+            label1_Create.AutoSize = true;
+            label1_Create.BackColor = Color.Transparent;
+            label1_Create.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label1_Create.ForeColor = Color.FromArgb(100, 23, 61);
+            label1_Create.Location = new Point(474, 173);
+            label1_Create.Margin = new Padding(2, 0, 2, 0);
+            label1_Create.MaximumSize = new Size(500, 0);
+            label1_Create.Name = "label1_Create";
+            label1_Create.Size = new Size(361, 23);
+            label1_Create.TabIndex = 96;
+            label1_Create.Text = "Create your new password and don't forget it!";
             // 
-            // lblBack
+            // lblBack_Create
             // 
-            lblBack.AutoSize = true;
-            lblBack.BackColor = Color.Transparent;
-            lblBack.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            lblBack.ForeColor = Color.FromArgb(100, 23, 61);
-            lblBack.Location = new Point(468, 27);
-            lblBack.Name = "lblBack";
-            lblBack.Size = new Size(53, 25);
-            lblBack.TabIndex = 98;
-            lblBack.Text = "Back";
-            lblBack.Click += lblBack_Click;
+            lblBack_Create.AutoSize = true;
+            lblBack_Create.BackColor = Color.Transparent;
+            lblBack_Create.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            lblBack_Create.ForeColor = Color.FromArgb(100, 23, 61);
+            lblBack_Create.Location = new Point(468, 27);
+            lblBack_Create.Name = "lblBack_Create";
+            lblBack_Create.Size = new Size(53, 25);
+            lblBack_Create.TabIndex = 98;
+            lblBack_Create.Text = "Back";
+            lblBack_Create.Click += lblBack_Click;
             // 
             // picBack
             // 
@@ -227,15 +227,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Untitled_design__6_;
             ClientSize = new Size(1006, 597);
-            Controls.Add(lblBack);
+            Controls.Add(lblBack_Create);
             Controls.Add(picBack);
-            Controls.Add(label1);
+            Controls.Add(label1_Create);
             Controls.Add(btnConfirm);
-            Controls.Add(lblConfirmPass);
+            Controls.Add(lblConfirmPass_Create);
             Controls.Add(tbConfirmPass);
             Controls.Add(tbNewPass);
-            Controls.Add(lblNewPass);
-            Controls.Add(lblForgetPass);
+            Controls.Add(lblNewPass_Create);
+            Controls.Add(lblForgetPass_Create);
             Controls.Add(linkLabel1);
             Controls.Add(pictureBox3);
             Controls.Add(label4);
@@ -252,19 +252,19 @@
 
         #endregion
 
-        private Label lblForgetPass;
+        private Label lblForgetPass_Create;
         private LinkLabel linkLabel1;
         private PictureBox pictureBox3;
         private Label label4;
         private Label label3;
         private PictureBox pictureBox2;
         private Button btnConfirm;
-        private Label lblConfirmPass;
+        private Label lblConfirmPass_Create;
         private TextBox tbConfirmPass;
         private TextBox tbNewPass;
-        private Label lblNewPass;
-        private Label label1;
-        private Label lblBack;
+        private Label lblNewPass_Create;
+        private Label label1_Create;
+        private Label lblBack_Create;
         private PictureBox picBack;
     }
 }

@@ -7,6 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.PeopleService.v1.Data;
+using Google.Apis.PeopleService.v1;
+using Google.Apis.Services;
+using Google.Apis.Util.Store;
 
 namespace LoopFit
 {
@@ -27,6 +32,12 @@ namespace LoopFit
         public User()
         {
 
+        }
+
+        private static NpgsqlConnection GetDbConnection()
+        {
+            string conn = "Host=localhost; Port=5432;Username=postgres;Password=admin;Database=loopfit";
+            return new NpgsqlConnection(conn);
         }
 
         public static bool SaveUserToDatabase(string connstring)
@@ -213,7 +224,7 @@ namespace LoopFit
                             }
                             else
                             {
-                                Console.WriteLine("Email tidak ditemukan.");
+                                Console.WriteLine("Email not found.");
                             }
                         }
                     }
@@ -221,7 +232,7 @@ namespace LoopFit
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Terjadi kesalahan: " + ex.Message);
+                Console.WriteLine("An error occured: " + ex.Message);
             }
 
             return username;  // Mengembalikan username yang ditemukan
@@ -338,10 +349,217 @@ namespace LoopFit
             }
         }
 
-        public bool VerifyCode(string userInput)
+        public static bool UpdatePassword(string connString, string email, string newPassword)
         {
-            return userInput == generatedVerificationCode;
+            using (var conn = new NpgsqlConnection(connString))
+            {
+                try
+                {
+                    conn.Open();
+                    string sql = @"UPDATE ""User"" SET password = @Password WHERE email = @Email";
+                    using (var cmd = new NpgsqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("Password", newPassword); // Consider hashing the password here
+                        cmd.Parameters.AddWithValue("Email", email);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+            }
         }
+
+        public static bool IsUsernameTaken(string username)
+        {
+            using (var connection = GetDbConnection())
+            {
+                connection.Open();
+                string queryCheckUsername = "SELECT COUNT(*) FROM \"User\" WHERE username = @newUsername";
+                using (var command = new NpgsqlCommand(queryCheckUsername, connection))
+                {
+                    command.Parameters.AddWithValue("@newUsername", username);
+                    int usernameExists = Convert.ToInt32(command.ExecuteScalar());
+                    return usernameExists > 0;
+                }
+            }
+        }
+
+        public static bool IsUsernameRegistered(string username, string connectionString)
+        {
+            string query = "SELECT COUNT(*) FROM \"User\" WHERE username = @Username";
+
+            try
+            {
+                using (var connection = new NpgsqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    using (var command = new NpgsqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Username", username);
+
+                        int count = Convert.ToInt32(command.ExecuteScalar());
+                        return count > 0; // Mengembalikan true jika username ditemukan
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error while checking username in database: " + ex.Message,
+                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+        public static void UpdateUserData(string newUsername, string newFirstName, string newLastName, string newEmail, string newPhoneNumber, string newPassword, byte[] profileImageBytes)
+        {
+            using (var connection = GetDbConnection())
+            {
+                connection.Open();
+                string queryUpdate = "UPDATE \"User\" SET username = @newUsername, firstname = @firstname, lastname = @lastname, email = @email, phonenumber = @phonenumber, password = @password, profileimage = @profileimage WHERE username = @currentUsername";
+                using (var command = new NpgsqlCommand(queryUpdate, connection))
+                {
+                    command.Parameters.AddWithValue("@newUsername", newUsername);
+                    command.Parameters.AddWithValue("@firstname", newFirstName);
+                    command.Parameters.AddWithValue("@lastname", newLastName);
+                    command.Parameters.AddWithValue("@email", newEmail);
+                    command.Parameters.AddWithValue("@phonenumber", newPhoneNumber);
+                    command.Parameters.AddWithValue("@password", newPassword);
+                    command.Parameters.AddWithValue("@profileimage", (object)profileImageBytes ?? DBNull.Value);
+                    command.Parameters.AddWithValue("@currentUsername", User.Username);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public static bool IsEmailVerified(string inputCode)
+        {
+            return inputCode == User.generatedVerificationCode && User.isEmailVerified;
+        }
+
+        public static bool IsEmailRegistered(string connString, string email)
+        {
+            using (var conn = new NpgsqlConnection(connString))
+            {
+                try
+                {
+                    conn.Open();
+                    string sql = @"SELECT COUNT(*) FROM ""User"" WHERE email = @Email";
+                    using (var cmd = new NpgsqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Email", email);
+
+                        // Mengambil hasil query
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+                        return count > 0;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+            }
+        }
+
+        public static (bool emailExists, bool phoneExists) CheckEmailAndPhoneStatus(string email, string phoneNumber)
+        {
+            string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=admin;Database=loopfit";
+            string query = "SELECT email, phonenumber FROM \"User\" WHERE email = @Email OR phonenumber = @PhoneNumber";
+
+            bool emailExists = false;
+            bool phoneExists = false;
+
+            try
+            {
+                using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Email", email);
+                        command.Parameters.AddWithValue("@PhoneNumber", phoneNumber);
+
+                        using (NpgsqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                if (reader["email"] != DBNull.Value && reader["email"].ToString() == email)
+                                {
+                                    emailExists = true;
+                                }
+                                if (reader["phonenumber"] != DBNull.Value && reader["phonenumber"].ToString() == phoneNumber)
+                                {
+                                    phoneExists = true;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error while checking database: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return (emailExists, phoneExists);
+        }
+
+        public static async Task<Person> AuthenticateWithGoogleAsync(string clientSecretJson, string applicationName)
+        {
+            try
+            {
+                // Tentukan scope Google API
+                string[] scopes = {
+            "https://www.googleapis.com/auth/userinfo.email",
+            "https://www.googleapis.com/auth/userinfo.profile"
+        };
+
+                string tokenPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                    "LoopFit_" + DateTime.Now.ToString("yyyyMMddHHmmss"), "token.json");
+
+                if (File.Exists(tokenPath))
+                {
+                    File.Delete(tokenPath); // Menghapus token lama
+                }
+
+                // Parse kredensial dari string JSON
+                UserCredential credential;
+                using (var stream = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(clientSecretJson)))
+                {
+                    var clientSecrets = GoogleClientSecrets.FromStream(stream);
+                    credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
+                        clientSecrets.Secrets,
+                        scopes,
+                        "user",
+                        CancellationToken.None,
+                        new FileDataStore(tokenPath, true)); // Menyimpan token baru
+                }
+
+                // Inisialisasi layanan People API
+                var service = new PeopleServiceService(new BaseClientService.Initializer
+                {
+                    HttpClientInitializer = credential,
+                    ApplicationName = applicationName
+                });
+
+                // Dapatkan informasi pengguna menggunakan People API
+                var request = service.People.Get("people/me");
+                request.PersonFields = "names,emailAddresses";
+                return await request.ExecuteAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error during Google authentication: {ex.Message}");
+            }
+        }
+
 
     }
 }

@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="txtDescription.Text" xml:space="preserve">
-    <value>We’re here to connect and assist you! If you have any questions, feedback, or need further information about LoopFit, feel free to reach out. Our team is ready to help with inquiries about donations, recycled products, or collaboration opportunities.</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="picTwitter.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2851,5 +2848,8 @@
         93Z5Ge7uMgv/9XOYR7D8H8HSn4r/nAJ3XToJ7rx0LNyJpXxn50H4n9fgv+6Nhd/FTue/hdsv/R3c1vU/
         wu2X/Tu4vcc/hUnn/yV7eZoxwzkdOvx/CsAd1NbdBjIAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="txtDescription_Contact.Text" xml:space="preserve">
+    <value>We’re here to connect and assist you! If you have any questions, feedback, or need further information about LoopFit, feel free to reach out. Our team is ready to help with inquiries about donations, recycled products, or collaboration opportunities.</value>
   </data>
 </root>

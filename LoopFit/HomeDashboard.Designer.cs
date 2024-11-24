@@ -38,8 +38,8 @@
             panel1 = new Panel();
             btnProduct = new Button();
             lblWelcome_Home = new Label();
-            txtDescription_Home = new TextBox();
             pnlWelcome = new Panel();
+            lblDescription_Home = new Label();
             lblFirstName = new Label();
             linkLabel3 = new LinkLabel();
             pictureBox3 = new PictureBox();
@@ -183,7 +183,7 @@
             btnProduct.Location = new Point(989, 268);
             btnProduct.Margin = new Padding(2);
             btnProduct.Name = "btnProduct";
-            btnProduct.Size = new Size(210, 282);
+            btnProduct.Size = new Size(210, 294);
             btnProduct.TabIndex = 25;
             btnProduct.TextAlign = ContentAlignment.BottomCenter;
             btnProduct.UseVisualStyleBackColor = false;
@@ -202,29 +202,14 @@
             lblWelcome_Home.TabIndex = 0;
             lblWelcome_Home.Text = "Hello";
             // 
-            // txtDescription_Home
-            // 
-            txtDescription_Home.BackColor = Color.FromArgb(215, 169, 205);
-            txtDescription_Home.BorderStyle = BorderStyle.None;
-            txtDescription_Home.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            txtDescription_Home.ForeColor = Color.FromArgb(100, 23, 61);
-            txtDescription_Home.Location = new Point(22, 99);
-            txtDescription_Home.Margin = new Padding(2);
-            txtDescription_Home.Multiline = true;
-            txtDescription_Home.Name = "txtDescription_Home";
-            txtDescription_Home.ReadOnly = true;
-            txtDescription_Home.Size = new Size(912, 77);
-            txtDescription_Home.TabIndex = 1;
-            txtDescription_Home.Text = resources.GetString("txtDescription_Home.Text");
-            // 
             // pnlWelcome
             // 
             pnlWelcome.BackColor = Color.FromArgb(215, 169, 205);
+            pnlWelcome.Controls.Add(lblDescription_Home);
             pnlWelcome.Controls.Add(lblFirstName);
             pnlWelcome.Controls.Add(linkLabel3);
             pnlWelcome.Controls.Add(pictureBox3);
             pnlWelcome.Controls.Add(linkLabel2_Home);
-            pnlWelcome.Controls.Add(txtDescription_Home);
             pnlWelcome.Controls.Add(lblWelcome_Home);
             pnlWelcome.Dock = DockStyle.Top;
             pnlWelcome.Location = new Point(246, 0);
@@ -232,6 +217,20 @@
             pnlWelcome.Name = "pnlWelcome";
             pnlWelcome.Size = new Size(1102, 210);
             pnlWelcome.TabIndex = 22;
+            // 
+            // lblDescription_Home
+            // 
+            lblDescription_Home.AutoSize = true;
+            lblDescription_Home.BackColor = Color.Transparent;
+            lblDescription_Home.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDescription_Home.ForeColor = Color.FromArgb(100, 23, 61);
+            lblDescription_Home.Location = new Point(22, 99);
+            lblDescription_Home.Margin = new Padding(2, 0, 2, 0);
+            lblDescription_Home.MaximumSize = new Size(1000, 0);
+            lblDescription_Home.Name = "lblDescription_Home";
+            lblDescription_Home.Size = new Size(962, 75);
+            lblDescription_Home.TabIndex = 44;
+            lblDescription_Home.Text = resources.GetString("lblDescription_Home.Text");
             // 
             // lblFirstName
             // 
@@ -294,7 +293,7 @@
             btnDonate.Location = new Point(415, 268);
             btnDonate.Margin = new Padding(2);
             btnDonate.Name = "btnDonate";
-            btnDonate.Size = new Size(210, 282);
+            btnDonate.Size = new Size(210, 294);
             btnDonate.TabIndex = 23;
             btnDonate.TextAlign = ContentAlignment.BottomCenter;
             btnDonate.UseVisualStyleBackColor = false;
@@ -309,7 +308,7 @@
             btnContent.Location = new Point(702, 268);
             btnContent.Margin = new Padding(2);
             btnContent.Name = "btnContent";
-            btnContent.Size = new Size(210, 282);
+            btnContent.Size = new Size(210, 294);
             btnContent.TabIndex = 24;
             btnContent.TextAlign = ContentAlignment.BottomCenter;
             btnContent.UseVisualStyleBackColor = false;
@@ -546,7 +545,7 @@
         private Panel panel1;
         private Button btnProduct;
         private Label lblWelcome_Home;
-        private TextBox txtDescription_Home;
+        private Label lblDescription_Home;
         private Panel pnlWelcome;
         private Button btnDonate;
         private Button btnContent;
@@ -567,5 +566,6 @@
         private LinkLabel linkLabel3;
         private PictureBox pictureBox3;
         private Label lblFirstName;
+        private Label label1;
     }
 }

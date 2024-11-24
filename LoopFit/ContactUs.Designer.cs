@@ -38,20 +38,20 @@
             btnLogOut = new Button();
             linkLabel3 = new LinkLabel();
             pictureBox4 = new PictureBox();
-            linkLabel2 = new LinkLabel();
-            lblAboutUs = new Label();
+            linkLabel2_Contact = new LinkLabel();
+            lblOurContact_Contact = new Label();
             lblResAddress = new Label();
-            lblAddress = new Label();
+            lblAddress_Contact = new Label();
             lblResPhoneNum = new Label();
-            lblPhoneNum = new Label();
+            lblPhoneNum_Contact = new Label();
             lblResEmail = new Label();
             lblEmail = new Label();
-            txtDescription = new TextBox();
-            textBox1 = new TextBox();
             picTwitter = new PictureBox();
             picTiktok = new PictureBox();
             picInstagram = new PictureBox();
-            lblSosmed = new Label();
+            lblSosmed_Contact = new Label();
+            txtDescription_Contact = new Label();
+            tbDesc2_Contact = new Label();
             ((System.ComponentModel.ISupportInitialize)picProfile).BeginInit();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -189,32 +189,32 @@
             pictureBox4.TabStop = false;
             pictureBox4.Click += pictureBox4_Click;
             // 
-            // linkLabel2
+            // linkLabel2_Contact
             // 
-            linkLabel2.AutoSize = true;
-            linkLabel2.BackColor = Color.Transparent;
-            linkLabel2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            linkLabel2.LinkColor = Color.FromArgb(80, 23, 61);
-            linkLabel2.Location = new Point(1094, 37);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(104, 25);
-            linkLabel2.TabIndex = 48;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "Contact Us";
-            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            linkLabel2_Contact.AutoSize = true;
+            linkLabel2_Contact.BackColor = Color.Transparent;
+            linkLabel2_Contact.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            linkLabel2_Contact.LinkColor = Color.FromArgb(80, 23, 61);
+            linkLabel2_Contact.Location = new Point(1094, 37);
+            linkLabel2_Contact.Name = "linkLabel2_Contact";
+            linkLabel2_Contact.Size = new Size(104, 25);
+            linkLabel2_Contact.TabIndex = 48;
+            linkLabel2_Contact.TabStop = true;
+            linkLabel2_Contact.Text = "Contact Us";
+            linkLabel2_Contact.LinkClicked += linkLabel2_LinkClicked;
             // 
-            // lblAboutUs
+            // lblOurContact_Contact
             // 
-            lblAboutUs.AutoSize = true;
-            lblAboutUs.BackColor = Color.Transparent;
-            lblAboutUs.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            lblAboutUs.ForeColor = Color.FromArgb(100, 23, 61);
-            lblAboutUs.Location = new Point(321, 46);
-            lblAboutUs.Margin = new Padding(2, 0, 2, 0);
-            lblAboutUs.Name = "lblAboutUs";
-            lblAboutUs.Size = new Size(275, 60);
-            lblAboutUs.TabIndex = 47;
-            lblAboutUs.Text = "Our Contact";
+            lblOurContact_Contact.AutoSize = true;
+            lblOurContact_Contact.BackColor = Color.Transparent;
+            lblOurContact_Contact.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            lblOurContact_Contact.ForeColor = Color.FromArgb(100, 23, 61);
+            lblOurContact_Contact.Location = new Point(321, 61);
+            lblOurContact_Contact.Margin = new Padding(2, 0, 2, 0);
+            lblOurContact_Contact.Name = "lblOurContact_Contact";
+            lblOurContact_Contact.Size = new Size(275, 60);
+            lblOurContact_Contact.TabIndex = 47;
+            lblOurContact_Contact.Text = "Our Contact";
             // 
             // lblResAddress
             // 
@@ -228,17 +228,17 @@
             lblResAddress.TabIndex = 56;
             lblResAddress.Text = "Jl. Kaliurang Km. 7, Yogyakarta, Indonesia.";
             // 
-            // lblAddress
+            // lblAddress_Contact
             // 
-            lblAddress.AutoSize = true;
-            lblAddress.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblAddress.ForeColor = Color.FromArgb(100, 23, 61);
-            lblAddress.Location = new Point(337, 348);
-            lblAddress.Margin = new Padding(2, 0, 2, 0);
-            lblAddress.Name = "lblAddress";
-            lblAddress.Size = new Size(98, 28);
-            lblAddress.TabIndex = 55;
-            lblAddress.Text = "Address :";
+            lblAddress_Contact.AutoSize = true;
+            lblAddress_Contact.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAddress_Contact.ForeColor = Color.FromArgb(100, 23, 61);
+            lblAddress_Contact.Location = new Point(337, 348);
+            lblAddress_Contact.Margin = new Padding(2, 0, 2, 0);
+            lblAddress_Contact.Name = "lblAddress_Contact";
+            lblAddress_Contact.Size = new Size(98, 28);
+            lblAddress_Contact.TabIndex = 55;
+            lblAddress_Contact.Text = "Address :";
             // 
             // lblResPhoneNum
             // 
@@ -252,17 +252,17 @@
             lblResPhoneNum.TabIndex = 54;
             lblResPhoneNum.Text = "+62 8586897721";
             // 
-            // lblPhoneNum
+            // lblPhoneNum_Contact
             // 
-            lblPhoneNum.AutoSize = true;
-            lblPhoneNum.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPhoneNum.ForeColor = Color.FromArgb(100, 23, 61);
-            lblPhoneNum.Location = new Point(337, 305);
-            lblPhoneNum.Margin = new Padding(2, 0, 2, 0);
-            lblPhoneNum.Name = "lblPhoneNum";
-            lblPhoneNum.Size = new Size(165, 28);
-            lblPhoneNum.TabIndex = 53;
-            lblPhoneNum.Text = "Phone Number :";
+            lblPhoneNum_Contact.AutoSize = true;
+            lblPhoneNum_Contact.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPhoneNum_Contact.ForeColor = Color.FromArgb(100, 23, 61);
+            lblPhoneNum_Contact.Location = new Point(337, 305);
+            lblPhoneNum_Contact.Margin = new Padding(2, 0, 2, 0);
+            lblPhoneNum_Contact.Name = "lblPhoneNum_Contact";
+            lblPhoneNum_Contact.Size = new Size(165, 28);
+            lblPhoneNum_Contact.TabIndex = 53;
+            lblPhoneNum_Contact.Text = "Phone Number :";
             // 
             // lblResEmail
             // 
@@ -287,36 +287,6 @@
             lblEmail.Size = new Size(75, 28);
             lblEmail.TabIndex = 51;
             lblEmail.Text = "Email :";
-            // 
-            // txtDescription
-            // 
-            txtDescription.BackColor = Color.Thistle;
-            txtDescription.BorderStyle = BorderStyle.None;
-            txtDescription.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            txtDescription.ForeColor = Color.FromArgb(100, 23, 61);
-            txtDescription.Location = new Point(337, 157);
-            txtDescription.Margin = new Padding(2);
-            txtDescription.Multiline = true;
-            txtDescription.Name = "txtDescription";
-            txtDescription.ReadOnly = true;
-            txtDescription.Size = new Size(941, 77);
-            txtDescription.TabIndex = 57;
-            txtDescription.Text = resources.GetString("txtDescription.Text");
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = Color.Thistle;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.FromArgb(100, 23, 61);
-            textBox1.Location = new Point(338, 425);
-            textBox1.Margin = new Padding(2);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(912, 77);
-            textBox1.TabIndex = 58;
-            textBox1.Text = "Your thoughts and concerns matter to us as we work together toward a sustainable future. Don’t hesitate to get in touch!";
             // 
             // picTwitter
             // 
@@ -354,18 +324,44 @@
             picInstagram.TabStop = false;
             picInstagram.Click += picInstagram_Click;
             // 
-            // lblSosmed
+            // lblSosmed_Contact
             // 
-            lblSosmed.AutoSize = true;
-            lblSosmed.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSosmed.ForeColor = Color.FromArgb(100, 23, 61);
-            lblSosmed.Location = new Point(712, 623);
-            lblSosmed.Margin = new Padding(2, 0, 2, 0);
-            lblSosmed.Name = "lblSosmed";
-            lblSosmed.Size = new Size(175, 20);
-            lblSosmed.TabIndex = 59;
-            lblSosmed.Text = "Follow Our Social Media";
-            lblSosmed.TextAlign = ContentAlignment.MiddleCenter;
+            lblSosmed_Contact.AutoSize = true;
+            lblSosmed_Contact.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSosmed_Contact.ForeColor = Color.FromArgb(100, 23, 61);
+            lblSosmed_Contact.Location = new Point(712, 623);
+            lblSosmed_Contact.Margin = new Padding(2, 0, 2, 0);
+            lblSosmed_Contact.Name = "lblSosmed_Contact";
+            lblSosmed_Contact.Size = new Size(175, 20);
+            lblSosmed_Contact.TabIndex = 59;
+            lblSosmed_Contact.Text = "Follow Our Social Media";
+            lblSosmed_Contact.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // txtDescription_Contact
+            // 
+            txtDescription_Contact.AutoSize = true;
+            txtDescription_Contact.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            txtDescription_Contact.ForeColor = Color.FromArgb(100, 23, 61);
+            txtDescription_Contact.Location = new Point(321, 159);
+            txtDescription_Contact.Margin = new Padding(2, 0, 2, 0);
+            txtDescription_Contact.MaximumSize = new Size(950, 0);
+            txtDescription_Contact.Name = "txtDescription_Contact";
+            txtDescription_Contact.Size = new Size(943, 69);
+            txtDescription_Contact.TabIndex = 63;
+            txtDescription_Contact.Text = resources.GetString("txtDescription_Contact.Text");
+            // 
+            // tbDesc2_Contact
+            // 
+            tbDesc2_Contact.AutoSize = true;
+            tbDesc2_Contact.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            tbDesc2_Contact.ForeColor = Color.FromArgb(100, 23, 61);
+            tbDesc2_Contact.Location = new Point(321, 431);
+            tbDesc2_Contact.Margin = new Padding(2, 0, 2, 0);
+            tbDesc2_Contact.MaximumSize = new Size(950, 0);
+            tbDesc2_Contact.Name = "tbDesc2_Contact";
+            tbDesc2_Contact.Size = new Size(936, 23);
+            tbDesc2_Contact.TabIndex = 64;
+            tbDesc2_Contact.Text = "Your thoughts and concerns matter to us as we work together toward a sustainable future. Don’t hesitate to get in touch!";
             // 
             // ContactUs
             // 
@@ -373,23 +369,23 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Thistle;
             ClientSize = new Size(1348, 721);
+            Controls.Add(tbDesc2_Contact);
+            Controls.Add(txtDescription_Contact);
             Controls.Add(picTwitter);
             Controls.Add(picTiktok);
             Controls.Add(picInstagram);
-            Controls.Add(lblSosmed);
-            Controls.Add(textBox1);
-            Controls.Add(txtDescription);
+            Controls.Add(lblSosmed_Contact);
             Controls.Add(lblResAddress);
-            Controls.Add(lblAddress);
+            Controls.Add(lblAddress_Contact);
             Controls.Add(lblResPhoneNum);
-            Controls.Add(lblPhoneNum);
+            Controls.Add(lblPhoneNum_Contact);
             Controls.Add(lblResEmail);
             Controls.Add(lblEmail);
             Controls.Add(panel1);
             Controls.Add(linkLabel3);
             Controls.Add(pictureBox4);
-            Controls.Add(linkLabel2);
-            Controls.Add(lblAboutUs);
+            Controls.Add(linkLabel2_Contact);
+            Controls.Add(lblOurContact_Contact);
             Name = "ContactUs";
             Text = "ContactUs";
             ((System.ComponentModel.ISupportInitialize)picProfile).EndInit();
@@ -415,19 +411,19 @@
         private Button btnLogOut;
         private LinkLabel linkLabel3;
         private PictureBox pictureBox4;
-        private LinkLabel linkLabel2;
-        private Label lblAboutUs;
+        private LinkLabel linkLabel2_Contact;
+        private Label lblOurContact_Contact;
         private Label lblResAddress;
-        private Label lblAddress;
+        private Label lblAddress_Contact;
         private Label lblResPhoneNum;
-        private Label lblPhoneNum;
+        private Label lblPhoneNum_Contact;
         private Label lblResEmail;
         private Label lblEmail;
-        private TextBox txtDescription;
-        private TextBox textBox1;
         private PictureBox picTwitter;
         private PictureBox picTiktok;
         private PictureBox picInstagram;
-        private Label lblSosmed;
+        private Label lblSosmed_Contact;
+        private Label txtDescription_Contact;
+        private Label tbDesc2_Contact;
     }
 }

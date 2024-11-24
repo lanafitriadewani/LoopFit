@@ -16,7 +16,12 @@ namespace LoopFit
         public VerifEmail(string email)
         {
             InitializeComponent();
-            lblDesc.Text = $"We emailed you a four-digit to {email}. Enter the code below to confirm your email address.";
+
+            string descriptionText = string.Format(Resources.EmailVerificationDescription, email);
+
+            lblDesc_Verif.Text = descriptionText;
+
+            LanguageHelper.UpdateUI(this);
         }
 
         public string generatedVerificationCode;
@@ -25,7 +30,7 @@ namespace LoopFit
             string inputCode = tbVerifNum1.Text + tbVerifNum2.Text + tbVerifNum3.Text + tbVerifNum4.Text;
             if (inputCode == User.generatedVerificationCode)
             {
-                MessageBox.Show("Verifikasi berhasil!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Verification successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 UnameAndPassword unameandpassword = new UnameAndPassword();
                 unameandpassword.Show();
@@ -33,7 +38,7 @@ namespace LoopFit
             }
             else
             {
-                MessageBox.Show("Kode verifikasi salah!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("The verification code is incorrect!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -64,6 +69,13 @@ namespace LoopFit
             WelcomePage welcomepage = new WelcomePage();
             welcomepage.Show();
             this.Hide();
+        }
+
+        private void llLogin_VerifEmail_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            User.ResetEmailVerification();
+            User.SendVerificationEmail(User.Email);
+            MessageBox.Show("A new verification code has been sent to your email.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

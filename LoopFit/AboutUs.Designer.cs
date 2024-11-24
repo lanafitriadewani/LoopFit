@@ -39,17 +39,17 @@
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            txtDescription3 = new TextBox();
-            txtDescription2 = new TextBox();
-            txtDescription1 = new TextBox();
-            lblAboutUs = new Label();
-            linkLabel3 = new LinkLabel();
+            lblAboutUs_AboutUs = new Label();
+            lblLoopFit_AboutUs = new LinkLabel();
             pictureBox4 = new PictureBox();
-            linkLabel2 = new LinkLabel();
+            lblContactUs_AboutUs = new LinkLabel();
             picTwitter = new PictureBox();
             picTiktok = new PictureBox();
             picInstagram = new PictureBox();
-            lblSosmed = new Label();
+            lblSosmed_AboutUs = new Label();
+            lblDesc_AboutUs1 = new Label();
+            lblDesc_AboutUs2 = new Label();
+            lblDesc_AboutUs3 = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picProfile).BeginInit();
             panel1.SuspendLayout();
@@ -197,77 +197,32 @@
             pictureBox1.TabIndex = 31;
             pictureBox1.TabStop = false;
             // 
-            // txtDescription3
+            // lblAboutUs_AboutUs
             // 
-            txtDescription3.BackColor = Color.Thistle;
-            txtDescription3.BorderStyle = BorderStyle.None;
-            txtDescription3.Font = new Font("Segoe UI Semibold", 10.875F, FontStyle.Bold, GraphicsUnit.Point);
-            txtDescription3.ForeColor = Color.FromArgb(100, 23, 61);
-            txtDescription3.Location = new Point(337, 548);
-            txtDescription3.Margin = new Padding(2);
-            txtDescription3.Multiline = true;
-            txtDescription3.Name = "txtDescription3";
-            txtDescription3.ReadOnly = true;
-            txtDescription3.Size = new Size(391, 32);
-            txtDescription3.TabIndex = 28;
-            txtDescription3.Text = "Together, we close the loop for a better planet.";
+            lblAboutUs_AboutUs.AutoSize = true;
+            lblAboutUs_AboutUs.BackColor = Color.Transparent;
+            lblAboutUs_AboutUs.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAboutUs_AboutUs.ForeColor = Color.FromArgb(100, 23, 61);
+            lblAboutUs_AboutUs.Location = new Point(337, 46);
+            lblAboutUs_AboutUs.Margin = new Padding(2, 0, 2, 0);
+            lblAboutUs_AboutUs.Name = "lblAboutUs_AboutUs";
+            lblAboutUs_AboutUs.Size = new Size(217, 60);
+            lblAboutUs_AboutUs.TabIndex = 27;
+            lblAboutUs_AboutUs.Text = "About Us";
             // 
-            // txtDescription2
+            // lblLoopFit_AboutUs
             // 
-            txtDescription2.BackColor = Color.Thistle;
-            txtDescription2.BorderStyle = BorderStyle.None;
-            txtDescription2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            txtDescription2.ForeColor = Color.FromArgb(100, 23, 61);
-            txtDescription2.Location = new Point(337, 449);
-            txtDescription2.Margin = new Padding(2);
-            txtDescription2.Multiline = true;
-            txtDescription2.Name = "txtDescription2";
-            txtDescription2.ReadOnly = true;
-            txtDescription2.Size = new Size(912, 77);
-            txtDescription2.TabIndex = 29;
-            txtDescription2.Text = resources.GetString("txtDescription2.Text");
-            // 
-            // txtDescription1
-            // 
-            txtDescription1.BackColor = Color.Thistle;
-            txtDescription1.BorderStyle = BorderStyle.None;
-            txtDescription1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            txtDescription1.ForeColor = Color.FromArgb(100, 23, 61);
-            txtDescription1.Location = new Point(337, 363);
-            txtDescription1.Margin = new Padding(2);
-            txtDescription1.Multiline = true;
-            txtDescription1.Name = "txtDescription1";
-            txtDescription1.ReadOnly = true;
-            txtDescription1.Size = new Size(924, 77);
-            txtDescription1.TabIndex = 30;
-            txtDescription1.Text = resources.GetString("txtDescription1.Text");
-            // 
-            // lblAboutUs
-            // 
-            lblAboutUs.AutoSize = true;
-            lblAboutUs.BackColor = Color.Transparent;
-            lblAboutUs.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            lblAboutUs.ForeColor = Color.FromArgb(100, 23, 61);
-            lblAboutUs.Location = new Point(304, 46);
-            lblAboutUs.Margin = new Padding(2, 0, 2, 0);
-            lblAboutUs.Name = "lblAboutUs";
-            lblAboutUs.Size = new Size(217, 60);
-            lblAboutUs.TabIndex = 27;
-            lblAboutUs.Text = "About Us";
-            // 
-            // linkLabel3
-            // 
-            linkLabel3.AutoSize = true;
-            linkLabel3.BackColor = Color.Transparent;
-            linkLabel3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            linkLabel3.LinkColor = Color.FromArgb(80, 23, 61);
-            linkLabel3.Location = new Point(1239, 37);
-            linkLabel3.Name = "linkLabel3";
-            linkLabel3.Size = new Size(75, 25);
-            linkLabel3.TabIndex = 45;
-            linkLabel3.TabStop = true;
-            linkLabel3.Text = "LoopFit";
-            linkLabel3.LinkClicked += linkLabel3_LinkClicked;
+            lblLoopFit_AboutUs.AutoSize = true;
+            lblLoopFit_AboutUs.BackColor = Color.Transparent;
+            lblLoopFit_AboutUs.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblLoopFit_AboutUs.LinkColor = Color.FromArgb(80, 23, 61);
+            lblLoopFit_AboutUs.Location = new Point(1239, 37);
+            lblLoopFit_AboutUs.Name = "lblLoopFit_AboutUs";
+            lblLoopFit_AboutUs.Size = new Size(75, 25);
+            lblLoopFit_AboutUs.TabIndex = 45;
+            lblLoopFit_AboutUs.TabStop = true;
+            lblLoopFit_AboutUs.Text = "LoopFit";
+            lblLoopFit_AboutUs.LinkClicked += linkLabel3_LinkClicked;
             // 
             // pictureBox4
             // 
@@ -281,19 +236,19 @@
             pictureBox4.TabStop = false;
             pictureBox4.Click += pictureBox4_Click;
             // 
-            // linkLabel2
+            // lblContactUs_AboutUs
             // 
-            linkLabel2.AutoSize = true;
-            linkLabel2.BackColor = Color.Transparent;
-            linkLabel2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            linkLabel2.LinkColor = Color.FromArgb(80, 23, 61);
-            linkLabel2.Location = new Point(1077, 37);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(104, 25);
-            linkLabel2.TabIndex = 43;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "Contact Us";
-            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            lblContactUs_AboutUs.AutoSize = true;
+            lblContactUs_AboutUs.BackColor = Color.Transparent;
+            lblContactUs_AboutUs.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblContactUs_AboutUs.LinkColor = Color.FromArgb(80, 23, 61);
+            lblContactUs_AboutUs.Location = new Point(1077, 37);
+            lblContactUs_AboutUs.Name = "lblContactUs_AboutUs";
+            lblContactUs_AboutUs.Size = new Size(104, 25);
+            lblContactUs_AboutUs.TabIndex = 43;
+            lblContactUs_AboutUs.TabStop = true;
+            lblContactUs_AboutUs.Text = "Contact Us";
+            lblContactUs_AboutUs.LinkClicked += linkLabel2_LinkClicked;
             // 
             // picTwitter
             // 
@@ -331,18 +286,60 @@
             picInstagram.TabStop = false;
             picInstagram.Click += picInstagram_Click;
             // 
-            // lblSosmed
+            // lblSosmed_AboutUs
             // 
-            lblSosmed.AutoSize = true;
-            lblSosmed.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSosmed.ForeColor = Color.FromArgb(100, 23, 61);
-            lblSosmed.Location = new Point(698, 629);
-            lblSosmed.Margin = new Padding(2, 0, 2, 0);
-            lblSosmed.Name = "lblSosmed";
-            lblSosmed.Size = new Size(175, 20);
-            lblSosmed.TabIndex = 63;
-            lblSosmed.Text = "Follow Our Social Media";
-            lblSosmed.TextAlign = ContentAlignment.MiddleCenter;
+            lblSosmed_AboutUs.AutoSize = true;
+            lblSosmed_AboutUs.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSosmed_AboutUs.ForeColor = Color.FromArgb(100, 23, 61);
+            lblSosmed_AboutUs.Location = new Point(698, 629);
+            lblSosmed_AboutUs.Margin = new Padding(2, 0, 2, 0);
+            lblSosmed_AboutUs.Name = "lblSosmed_AboutUs";
+            lblSosmed_AboutUs.Size = new Size(175, 20);
+            lblSosmed_AboutUs.TabIndex = 63;
+            lblSosmed_AboutUs.Text = "Follow Our Social Media";
+            lblSosmed_AboutUs.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblDesc_AboutUs1
+            // 
+            lblDesc_AboutUs1.AutoSize = true;
+            lblDesc_AboutUs1.BackColor = Color.Transparent;
+            lblDesc_AboutUs1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDesc_AboutUs1.ForeColor = Color.FromArgb(100, 23, 61);
+            lblDesc_AboutUs1.Location = new Point(337, 351);
+            lblDesc_AboutUs1.Margin = new Padding(2, 0, 2, 0);
+            lblDesc_AboutUs1.MaximumSize = new Size(925, 0);
+            lblDesc_AboutUs1.Name = "lblDesc_AboutUs1";
+            lblDesc_AboutUs1.Size = new Size(921, 75);
+            lblDesc_AboutUs1.TabIndex = 67;
+            lblDesc_AboutUs1.Text = resources.GetString("lblDesc_AboutUs1.Text");
+            // 
+            // lblDesc_AboutUs2
+            // 
+            lblDesc_AboutUs2.AutoSize = true;
+            lblDesc_AboutUs2.BackColor = Color.Transparent;
+            lblDesc_AboutUs2.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDesc_AboutUs2.ForeColor = Color.FromArgb(100, 23, 61);
+            lblDesc_AboutUs2.Location = new Point(337, 439);
+            lblDesc_AboutUs2.Margin = new Padding(2, 0, 2, 0);
+            lblDesc_AboutUs2.MaximumSize = new Size(925, 0);
+            lblDesc_AboutUs2.Name = "lblDesc_AboutUs2";
+            lblDesc_AboutUs2.Size = new Size(914, 75);
+            lblDesc_AboutUs2.TabIndex = 68;
+            lblDesc_AboutUs2.Text = resources.GetString("lblDesc_AboutUs2.Text");
+            // 
+            // lblDesc_AboutUs3
+            // 
+            lblDesc_AboutUs3.AutoSize = true;
+            lblDesc_AboutUs3.BackColor = Color.Transparent;
+            lblDesc_AboutUs3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblDesc_AboutUs3.ForeColor = Color.FromArgb(100, 23, 61);
+            lblDesc_AboutUs3.Location = new Point(337, 554);
+            lblDesc_AboutUs3.Margin = new Padding(2, 0, 2, 0);
+            lblDesc_AboutUs3.MaximumSize = new Size(925, 0);
+            lblDesc_AboutUs3.Name = "lblDesc_AboutUs3";
+            lblDesc_AboutUs3.Size = new Size(411, 25);
+            lblDesc_AboutUs3.TabIndex = 69;
+            lblDesc_AboutUs3.Text = "Together, we close the loop for a better planet.";
             // 
             // AboutUs
             // 
@@ -350,20 +347,20 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Thistle;
             ClientSize = new Size(1348, 721);
+            Controls.Add(lblDesc_AboutUs3);
+            Controls.Add(lblDesc_AboutUs2);
+            Controls.Add(lblDesc_AboutUs1);
             Controls.Add(picTwitter);
             Controls.Add(picTiktok);
             Controls.Add(picInstagram);
-            Controls.Add(lblSosmed);
-            Controls.Add(linkLabel3);
+            Controls.Add(lblSosmed_AboutUs);
+            Controls.Add(lblLoopFit_AboutUs);
             Controls.Add(pictureBox4);
-            Controls.Add(linkLabel2);
+            Controls.Add(lblContactUs_AboutUs);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Controls.Add(txtDescription3);
-            Controls.Add(txtDescription2);
-            Controls.Add(txtDescription1);
-            Controls.Add(lblAboutUs);
+            Controls.Add(lblAboutUs_AboutUs);
             Controls.Add(panel1);
             Name = "AboutUs";
             Text = "AboutUs";
@@ -395,16 +392,17 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
-        private TextBox txtDescription3;
-        private TextBox txtDescription2;
-        private TextBox txtDescription1;
-        private Label lblAboutUs;
-        private LinkLabel linkLabel3;
+        private Label lblDesc_AboutUs3;
+        private Label lblAboutUs_AboutUs;
+        private LinkLabel lblLoopFit_AboutUs;
         private PictureBox pictureBox4;
-        private LinkLabel linkLabel2;
+        private LinkLabel lblContactUs_AboutUs;
         private PictureBox picTwitter;
         private PictureBox picTiktok;
         private PictureBox picInstagram;
-        private Label lblSosmed;
+        private Label lblSosmed_AboutUs;
+        private Label lblDesc_AboutUs1;
+        private Label lblDesc_AboutUs2;
+        private Label label1;
     }
 }

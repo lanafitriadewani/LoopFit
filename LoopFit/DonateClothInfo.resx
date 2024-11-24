@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label3.Text" xml:space="preserve">
+  <data name="label3_Donate.Text" xml:space="preserve">
     <value>Donate your used clothes to be processed into new items or useful raw materials by filling in the details about the condition of your clothes on this page. Together with LoopFit, let's create a sustainable solution for a better future.
 </value>
   </data>

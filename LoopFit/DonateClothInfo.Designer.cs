@@ -29,40 +29,40 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DonateClothInfo));
-            label2 = new Label();
-            label1 = new Label();
+            label2_Donate = new Label();
+            label1_Donate = new Label();
             pbClothImage2 = new PictureBox();
-            btnClothInfoNext = new Button();
-            rbCondNonUsable = new RadioButton();
-            rbCondUsable = new RadioButton();
-            lblCondition = new Label();
+            btnClothInfoNext_Info = new Button();
+            rbCondNonUsable_Info = new RadioButton();
+            rbCondUsable_Info = new RadioButton();
+            lblCondition_Donate = new Label();
             cbClothColour = new ComboBox();
-            rbPatternNo = new RadioButton();
-            rbPatternYes = new RadioButton();
-            lblPattern = new Label();
-            lblColour = new Label();
+            rbPatternNo_Info = new RadioButton();
+            rbPatternYes_Info = new RadioButton();
+            lblPattern_Donate = new Label();
+            lblColour_Donate = new Label();
             btnLogOut = new Button();
             panel3 = new Panel();
-            label3 = new Label();
+            label3_Donate = new Label();
             pictureBox3 = new PictureBox();
             lblLoopFit = new LinkLabel();
-            lblContactUs = new LinkLabel();
-            lblDonate1 = new Label();
+            lblContactUs_Donate = new LinkLabel();
+            lblDonate1_Donate = new Label();
             panel1 = new Panel();
             picProfile = new PictureBox();
             llProfile = new LinkLabel();
-            lblMaterial = new Label();
+            lblMaterial_Donate = new Label();
             pbClothImage = new PictureBox();
-            lblClothImage = new Label();
+            lblClothImage_Donate = new Label();
             btnActivity = new Button();
             panel2 = new Panel();
             btnHome = new Button();
-            btnUploadImage = new Button();
+            btnUploadImage_Info = new Button();
             cbMaterial = new ComboBox();
-            lblClothInfo = new Label();
-            lblClothType = new Label();
+            lblClothInfo_Donate = new Label();
+            lblClothType_Donate = new Label();
             cbClothType = new ComboBox();
-            btnUploadImage2 = new Button();
+            btnUploadImage2_Info = new Button();
             groupBoxPattern = new GroupBox();
             groupBoxCondition = new GroupBox();
             ((System.ComponentModel.ISupportInitialize)pbClothImage2).BeginInit();
@@ -76,29 +76,29 @@
             groupBoxCondition.SuspendLayout();
             SuspendLayout();
             // 
-            // label2
+            // label2_Donate
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(100, 23, 61);
-            label2.Location = new Point(1235, 545);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(73, 20);
-            label2.TabIndex = 51;
-            label2.Text = "Back Side";
+            label2_Donate.AutoSize = true;
+            label2_Donate.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2_Donate.ForeColor = Color.FromArgb(100, 23, 61);
+            label2_Donate.Location = new Point(1235, 545);
+            label2_Donate.Margin = new Padding(2, 0, 2, 0);
+            label2_Donate.Name = "label2_Donate";
+            label2_Donate.Size = new Size(73, 20);
+            label2_Donate.TabIndex = 51;
+            label2_Donate.Text = "Back Side";
             // 
-            // label1
+            // label1_Donate
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(100, 23, 61);
-            label1.Location = new Point(908, 545);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(76, 20);
-            label1.TabIndex = 50;
-            label1.Text = "Front Side";
+            label1_Donate.AutoSize = true;
+            label1_Donate.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1_Donate.ForeColor = Color.FromArgb(100, 23, 61);
+            label1_Donate.Location = new Point(908, 545);
+            label1_Donate.Margin = new Padding(2, 0, 2, 0);
+            label1_Donate.Name = "label1_Donate";
+            label1_Donate.Size = new Size(76, 20);
+            label1_Donate.TabIndex = 50;
+            label1_Donate.Text = "Front Side";
             // 
             // pbClothImage2
             // 
@@ -110,58 +110,58 @@
             pbClothImage2.TabIndex = 49;
             pbClothImage2.TabStop = false;
             // 
-            // btnClothInfoNext
+            // btnClothInfoNext_Info
             // 
-            btnClothInfoNext.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            btnClothInfoNext.ForeColor = Color.FromArgb(100, 23, 61);
-            btnClothInfoNext.Location = new Point(1215, 663);
-            btnClothInfoNext.Margin = new Padding(2);
-            btnClothInfoNext.Name = "btnClothInfoNext";
-            btnClothInfoNext.Size = new Size(101, 42);
-            btnClothInfoNext.TabIndex = 48;
-            btnClothInfoNext.Text = "Next";
-            btnClothInfoNext.UseVisualStyleBackColor = true;
-            btnClothInfoNext.Click += btnClothInfoNext_Click;
+            btnClothInfoNext_Info.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            btnClothInfoNext_Info.ForeColor = Color.FromArgb(100, 23, 61);
+            btnClothInfoNext_Info.Location = new Point(1215, 663);
+            btnClothInfoNext_Info.Margin = new Padding(2);
+            btnClothInfoNext_Info.Name = "btnClothInfoNext_Info";
+            btnClothInfoNext_Info.Size = new Size(101, 42);
+            btnClothInfoNext_Info.TabIndex = 48;
+            btnClothInfoNext_Info.Text = "Next";
+            btnClothInfoNext_Info.UseVisualStyleBackColor = true;
+            btnClothInfoNext_Info.Click += btnClothInfoNext_Click;
             // 
-            // rbCondNonUsable
+            // rbCondNonUsable_Info
             // 
-            rbCondNonUsable.AutoSize = true;
-            rbCondNonUsable.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            rbCondNonUsable.ForeColor = Color.FromArgb(100, 23, 61);
-            rbCondNonUsable.Location = new Point(147, 35);
-            rbCondNonUsable.Margin = new Padding(2);
-            rbCondNonUsable.Name = "rbCondNonUsable";
-            rbCondNonUsable.Size = new Size(120, 27);
-            rbCondNonUsable.TabIndex = 47;
-            rbCondNonUsable.TabStop = true;
-            rbCondNonUsable.Text = "Non-usable";
-            rbCondNonUsable.UseVisualStyleBackColor = true;
+            rbCondNonUsable_Info.AutoSize = true;
+            rbCondNonUsable_Info.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            rbCondNonUsable_Info.ForeColor = Color.FromArgb(100, 23, 61);
+            rbCondNonUsable_Info.Location = new Point(183, 35);
+            rbCondNonUsable_Info.Margin = new Padding(2);
+            rbCondNonUsable_Info.Name = "rbCondNonUsable_Info";
+            rbCondNonUsable_Info.Size = new Size(120, 27);
+            rbCondNonUsable_Info.TabIndex = 47;
+            rbCondNonUsable_Info.TabStop = true;
+            rbCondNonUsable_Info.Text = "Non-usable";
+            rbCondNonUsable_Info.UseVisualStyleBackColor = true;
             // 
-            // rbCondUsable
+            // rbCondUsable_Info
             // 
-            rbCondUsable.AutoSize = true;
-            rbCondUsable.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            rbCondUsable.ForeColor = Color.FromArgb(100, 23, 61);
-            rbCondUsable.Location = new Point(18, 35);
-            rbCondUsable.Margin = new Padding(2);
-            rbCondUsable.Name = "rbCondUsable";
-            rbCondUsable.Size = new Size(82, 27);
-            rbCondUsable.TabIndex = 46;
-            rbCondUsable.TabStop = true;
-            rbCondUsable.Text = "Usable";
-            rbCondUsable.UseVisualStyleBackColor = true;
+            rbCondUsable_Info.AutoSize = true;
+            rbCondUsable_Info.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            rbCondUsable_Info.ForeColor = Color.FromArgb(100, 23, 61);
+            rbCondUsable_Info.Location = new Point(18, 35);
+            rbCondUsable_Info.Margin = new Padding(2);
+            rbCondUsable_Info.Name = "rbCondUsable_Info";
+            rbCondUsable_Info.Size = new Size(82, 27);
+            rbCondUsable_Info.TabIndex = 46;
+            rbCondUsable_Info.TabStop = true;
+            rbCondUsable_Info.Text = "Usable";
+            rbCondUsable_Info.UseVisualStyleBackColor = true;
             // 
-            // lblCondition
+            // lblCondition_Donate
             // 
-            lblCondition.AutoSize = true;
-            lblCondition.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCondition.ForeColor = Color.FromArgb(100, 23, 61);
-            lblCondition.Location = new Point(11, 4);
-            lblCondition.Margin = new Padding(2, 0, 2, 0);
-            lblCondition.Name = "lblCondition";
-            lblCondition.Size = new Size(94, 23);
-            lblCondition.TabIndex = 45;
-            lblCondition.Text = "Condition :";
+            lblCondition_Donate.AutoSize = true;
+            lblCondition_Donate.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCondition_Donate.ForeColor = Color.FromArgb(100, 23, 61);
+            lblCondition_Donate.Location = new Point(11, 4);
+            lblCondition_Donate.Margin = new Padding(2, 0, 2, 0);
+            lblCondition_Donate.Name = "lblCondition_Donate";
+            lblCondition_Donate.Size = new Size(94, 23);
+            lblCondition_Donate.TabIndex = 45;
+            lblCondition_Donate.Text = "Condition :";
             // 
             // cbClothColour
             // 
@@ -172,57 +172,57 @@
             cbClothColour.Size = new Size(237, 28);
             cbClothColour.TabIndex = 44;
             // 
-            // rbPatternNo
+            // rbPatternNo_Info
             // 
-            rbPatternNo.AutoSize = true;
-            rbPatternNo.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            rbPatternNo.ForeColor = Color.FromArgb(100, 23, 61);
-            rbPatternNo.Location = new Point(153, 44);
-            rbPatternNo.Margin = new Padding(2);
-            rbPatternNo.Name = "rbPatternNo";
-            rbPatternNo.Size = new Size(54, 27);
-            rbPatternNo.TabIndex = 43;
-            rbPatternNo.TabStop = true;
-            rbPatternNo.Text = "No";
-            rbPatternNo.UseVisualStyleBackColor = true;
+            rbPatternNo_Info.AutoSize = true;
+            rbPatternNo_Info.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            rbPatternNo_Info.ForeColor = Color.FromArgb(100, 23, 61);
+            rbPatternNo_Info.Location = new Point(153, 44);
+            rbPatternNo_Info.Margin = new Padding(2);
+            rbPatternNo_Info.Name = "rbPatternNo_Info";
+            rbPatternNo_Info.Size = new Size(54, 27);
+            rbPatternNo_Info.TabIndex = 43;
+            rbPatternNo_Info.TabStop = true;
+            rbPatternNo_Info.Text = "No";
+            rbPatternNo_Info.UseVisualStyleBackColor = true;
             // 
-            // rbPatternYes
+            // rbPatternYes_Info
             // 
-            rbPatternYes.AutoSize = true;
-            rbPatternYes.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            rbPatternYes.ForeColor = Color.FromArgb(100, 23, 61);
-            rbPatternYes.Location = new Point(22, 44);
-            rbPatternYes.Margin = new Padding(2);
-            rbPatternYes.Name = "rbPatternYes";
-            rbPatternYes.Size = new Size(55, 27);
-            rbPatternYes.TabIndex = 42;
-            rbPatternYes.TabStop = true;
-            rbPatternYes.Text = "Yes";
-            rbPatternYes.UseVisualStyleBackColor = true;
+            rbPatternYes_Info.AutoSize = true;
+            rbPatternYes_Info.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            rbPatternYes_Info.ForeColor = Color.FromArgb(100, 23, 61);
+            rbPatternYes_Info.Location = new Point(22, 44);
+            rbPatternYes_Info.Margin = new Padding(2);
+            rbPatternYes_Info.Name = "rbPatternYes_Info";
+            rbPatternYes_Info.Size = new Size(55, 27);
+            rbPatternYes_Info.TabIndex = 42;
+            rbPatternYes_Info.TabStop = true;
+            rbPatternYes_Info.Text = "Yes";
+            rbPatternYes_Info.UseVisualStyleBackColor = true;
             // 
-            // lblPattern
+            // lblPattern_Donate
             // 
-            lblPattern.AutoSize = true;
-            lblPattern.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPattern.ForeColor = Color.FromArgb(100, 23, 61);
-            lblPattern.Location = new Point(8, 19);
-            lblPattern.Margin = new Padding(2, 0, 2, 0);
-            lblPattern.Name = "lblPattern";
-            lblPattern.Size = new Size(74, 23);
-            lblPattern.TabIndex = 41;
-            lblPattern.Text = "Pattern :";
+            lblPattern_Donate.AutoSize = true;
+            lblPattern_Donate.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPattern_Donate.ForeColor = Color.FromArgb(100, 23, 61);
+            lblPattern_Donate.Location = new Point(8, 19);
+            lblPattern_Donate.Margin = new Padding(2, 0, 2, 0);
+            lblPattern_Donate.Name = "lblPattern_Donate";
+            lblPattern_Donate.Size = new Size(74, 23);
+            lblPattern_Donate.TabIndex = 41;
+            lblPattern_Donate.Text = "Pattern :";
             // 
-            // lblColour
+            // lblColour_Donate
             // 
-            lblColour.AutoSize = true;
-            lblColour.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            lblColour.ForeColor = Color.FromArgb(100, 23, 61);
-            lblColour.Location = new Point(280, 520);
-            lblColour.Margin = new Padding(2, 0, 2, 0);
-            lblColour.Name = "lblColour";
-            lblColour.Size = new Size(161, 23);
-            lblColour.TabIndex = 40;
-            lblColour.Text = "Colour (Dominant) :";
+            lblColour_Donate.AutoSize = true;
+            lblColour_Donate.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            lblColour_Donate.ForeColor = Color.FromArgb(100, 23, 61);
+            lblColour_Donate.Location = new Point(280, 520);
+            lblColour_Donate.Margin = new Padding(2, 0, 2, 0);
+            lblColour_Donate.Name = "lblColour_Donate";
+            lblColour_Donate.Size = new Size(161, 23);
+            lblColour_Donate.TabIndex = 40;
+            lblColour_Donate.Text = "Colour (Dominant) :";
             // 
             // btnLogOut
             // 
@@ -245,30 +245,30 @@
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(215, 169, 205);
-            panel3.Controls.Add(label3);
+            panel3.Controls.Add(label3_Donate);
             panel3.Controls.Add(pictureBox3);
             panel3.Controls.Add(lblLoopFit);
-            panel3.Controls.Add(lblContactUs);
-            panel3.Controls.Add(lblDonate1);
+            panel3.Controls.Add(lblContactUs_Donate);
+            panel3.Controls.Add(lblDonate1_Donate);
             panel3.Location = new Point(246, -1);
             panel3.Margin = new Padding(2);
             panel3.Name = "panel3";
             panel3.Size = new Size(1102, 193);
             panel3.TabIndex = 39;
             // 
-            // label3
+            // label3_Donate
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.FromArgb(100, 23, 61);
-            label3.Location = new Point(25, 105);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.MaximumSize = new Size(1000, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(979, 46);
-            label3.TabIndex = 89;
-            label3.Text = resources.GetString("label3.Text");
+            label3_Donate.AutoSize = true;
+            label3_Donate.BackColor = Color.Transparent;
+            label3_Donate.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label3_Donate.ForeColor = Color.FromArgb(100, 23, 61);
+            label3_Donate.Location = new Point(25, 105);
+            label3_Donate.Margin = new Padding(2, 0, 2, 0);
+            label3_Donate.MaximumSize = new Size(1000, 0);
+            label3_Donate.Name = "label3_Donate";
+            label3_Donate.Size = new Size(979, 46);
+            label3_Donate.TabIndex = 89;
+            label3_Donate.Text = resources.GetString("label3_Donate.Text");
             // 
             // pictureBox3
             // 
@@ -297,33 +297,33 @@
             lblLoopFit.Text = "LoopFit";
             lblLoopFit.LinkClicked += lblLoopFit_LinkClicked;
             // 
-            // lblContactUs
+            // lblContactUs_Donate
             // 
-            lblContactUs.AutoSize = true;
-            lblContactUs.BackColor = Color.Transparent;
-            lblContactUs.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            lblContactUs.LinkColor = Color.FromArgb(80, 23, 61);
-            lblContactUs.Location = new Point(825, 22);
-            lblContactUs.Margin = new Padding(2, 0, 2, 0);
-            lblContactUs.Name = "lblContactUs";
-            lblContactUs.Size = new Size(104, 25);
-            lblContactUs.TabIndex = 40;
-            lblContactUs.TabStop = true;
-            lblContactUs.Text = "Contact Us";
-            lblContactUs.LinkClicked += lblContactUs_LinkClicked;
+            lblContactUs_Donate.AutoSize = true;
+            lblContactUs_Donate.BackColor = Color.Transparent;
+            lblContactUs_Donate.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblContactUs_Donate.LinkColor = Color.FromArgb(80, 23, 61);
+            lblContactUs_Donate.Location = new Point(825, 22);
+            lblContactUs_Donate.Margin = new Padding(2, 0, 2, 0);
+            lblContactUs_Donate.Name = "lblContactUs_Donate";
+            lblContactUs_Donate.Size = new Size(104, 25);
+            lblContactUs_Donate.TabIndex = 40;
+            lblContactUs_Donate.TabStop = true;
+            lblContactUs_Donate.Text = "Contact Us";
+            lblContactUs_Donate.LinkClicked += lblContactUs_LinkClicked;
             // 
-            // lblDonate1
+            // lblDonate1_Donate
             // 
-            lblDonate1.AutoSize = true;
-            lblDonate1.BackColor = Color.Transparent;
-            lblDonate1.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            lblDonate1.ForeColor = Color.FromArgb(100, 23, 61);
-            lblDonate1.Location = new Point(14, 38);
-            lblDonate1.Margin = new Padding(2, 0, 2, 0);
-            lblDonate1.Name = "lblDonate1";
-            lblDonate1.Size = new Size(176, 60);
-            lblDonate1.TabIndex = 0;
-            lblDonate1.Text = "Donate";
+            lblDonate1_Donate.AutoSize = true;
+            lblDonate1_Donate.BackColor = Color.Transparent;
+            lblDonate1_Donate.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            lblDonate1_Donate.ForeColor = Color.FromArgb(100, 23, 61);
+            lblDonate1_Donate.Location = new Point(14, 38);
+            lblDonate1_Donate.Margin = new Padding(2, 0, 2, 0);
+            lblDonate1_Donate.Name = "lblDonate1_Donate";
+            lblDonate1_Donate.Size = new Size(176, 60);
+            lblDonate1_Donate.TabIndex = 0;
+            lblDonate1_Donate.Text = "Donate";
             // 
             // panel1
             // 
@@ -364,17 +364,17 @@
             llProfile.Text = "Profile";
             llProfile.LinkClicked += llProfile_LinkClicked;
             // 
-            // lblMaterial
+            // lblMaterial_Donate
             // 
-            lblMaterial.AutoSize = true;
-            lblMaterial.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            lblMaterial.ForeColor = Color.FromArgb(100, 23, 61);
-            lblMaterial.Location = new Point(280, 354);
-            lblMaterial.Margin = new Padding(2, 0, 2, 0);
-            lblMaterial.Name = "lblMaterial";
-            lblMaterial.Size = new Size(81, 23);
-            lblMaterial.TabIndex = 28;
-            lblMaterial.Text = "Material :";
+            lblMaterial_Donate.AutoSize = true;
+            lblMaterial_Donate.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            lblMaterial_Donate.ForeColor = Color.FromArgb(100, 23, 61);
+            lblMaterial_Donate.Location = new Point(280, 354);
+            lblMaterial_Donate.Margin = new Padding(2, 0, 2, 0);
+            lblMaterial_Donate.Name = "lblMaterial_Donate";
+            lblMaterial_Donate.Size = new Size(81, 23);
+            lblMaterial_Donate.TabIndex = 28;
+            lblMaterial_Donate.Text = "Material :";
             // 
             // pbClothImage
             // 
@@ -386,17 +386,17 @@
             pbClothImage.TabIndex = 35;
             pbClothImage.TabStop = false;
             // 
-            // lblClothImage
+            // lblClothImage_Donate
             // 
-            lblClothImage.AutoSize = true;
-            lblClothImage.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            lblClothImage.ForeColor = Color.FromArgb(100, 23, 61);
-            lblClothImage.Location = new Point(716, 273);
-            lblClothImage.Margin = new Padding(2, 0, 2, 0);
-            lblClothImage.Name = "lblClothImage";
-            lblClothImage.Size = new Size(137, 23);
-            lblClothImage.TabIndex = 31;
-            lblClothImage.Text = "Clothing Image :";
+            lblClothImage_Donate.AutoSize = true;
+            lblClothImage_Donate.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            lblClothImage_Donate.ForeColor = Color.FromArgb(100, 23, 61);
+            lblClothImage_Donate.Location = new Point(716, 273);
+            lblClothImage_Donate.Margin = new Padding(2, 0, 2, 0);
+            lblClothImage_Donate.Name = "lblClothImage_Donate";
+            lblClothImage_Donate.Size = new Size(137, 23);
+            lblClothImage_Donate.TabIndex = 31;
+            lblClothImage_Donate.Text = "Clothing Image :";
             // 
             // btnActivity
             // 
@@ -440,18 +440,18 @@
             btnHome.UseVisualStyleBackColor = true;
             btnHome.Click += btnHome_Click;
             // 
-            // btnUploadImage
+            // btnUploadImage_Info
             // 
-            btnUploadImage.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            btnUploadImage.ForeColor = Color.FromArgb(100, 23, 61);
-            btnUploadImage.Location = new Point(716, 574);
-            btnUploadImage.Margin = new Padding(2);
-            btnUploadImage.Name = "btnUploadImage";
-            btnUploadImage.Size = new Size(89, 42);
-            btnUploadImage.TabIndex = 36;
-            btnUploadImage.Text = "Upload";
-            btnUploadImage.UseVisualStyleBackColor = true;
-            btnUploadImage.Click += btnUploadImage_Click;
+            btnUploadImage_Info.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            btnUploadImage_Info.ForeColor = Color.FromArgb(100, 23, 61);
+            btnUploadImage_Info.Location = new Point(716, 574);
+            btnUploadImage_Info.Margin = new Padding(2);
+            btnUploadImage_Info.Name = "btnUploadImage_Info";
+            btnUploadImage_Info.Size = new Size(89, 42);
+            btnUploadImage_Info.TabIndex = 36;
+            btnUploadImage_Info.Text = "Upload";
+            btnUploadImage_Info.UseVisualStyleBackColor = true;
+            btnUploadImage_Info.Click += btnUploadImage_Click;
             // 
             // cbMaterial
             // 
@@ -462,29 +462,29 @@
             cbMaterial.Size = new Size(237, 28);
             cbMaterial.TabIndex = 33;
             // 
-            // lblClothInfo
+            // lblClothInfo_Donate
             // 
-            lblClothInfo.AutoSize = true;
-            lblClothInfo.Font = new Font("Segoe UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
-            lblClothInfo.ForeColor = Color.FromArgb(100, 23, 61);
-            lblClothInfo.Location = new Point(280, 219);
-            lblClothInfo.Margin = new Padding(2, 0, 2, 0);
-            lblClothInfo.Name = "lblClothInfo";
-            lblClothInfo.Size = new Size(256, 32);
-            lblClothInfo.TabIndex = 32;
-            lblClothInfo.Text = "Clothing Information";
+            lblClothInfo_Donate.AutoSize = true;
+            lblClothInfo_Donate.Font = new Font("Segoe UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
+            lblClothInfo_Donate.ForeColor = Color.FromArgb(100, 23, 61);
+            lblClothInfo_Donate.Location = new Point(280, 219);
+            lblClothInfo_Donate.Margin = new Padding(2, 0, 2, 0);
+            lblClothInfo_Donate.Name = "lblClothInfo_Donate";
+            lblClothInfo_Donate.Size = new Size(256, 32);
+            lblClothInfo_Donate.TabIndex = 32;
+            lblClothInfo_Donate.Text = "Clothing Information";
             // 
-            // lblClothType
+            // lblClothType_Donate
             // 
-            lblClothType.AutoSize = true;
-            lblClothType.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            lblClothType.ForeColor = Color.FromArgb(100, 23, 61);
-            lblClothType.Location = new Point(280, 273);
-            lblClothType.Margin = new Padding(2, 0, 2, 0);
-            lblClothType.Name = "lblClothType";
-            lblClothType.Size = new Size(124, 23);
-            lblClothType.TabIndex = 30;
-            lblClothType.Text = "Clothing Type :";
+            lblClothType_Donate.AutoSize = true;
+            lblClothType_Donate.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            lblClothType_Donate.ForeColor = Color.FromArgb(100, 23, 61);
+            lblClothType_Donate.Location = new Point(280, 273);
+            lblClothType_Donate.Margin = new Padding(2, 0, 2, 0);
+            lblClothType_Donate.Name = "lblClothType_Donate";
+            lblClothType_Donate.Size = new Size(124, 23);
+            lblClothType_Donate.TabIndex = 30;
+            lblClothType_Donate.Text = "Clothing Type :";
             // 
             // cbClothType
             // 
@@ -495,24 +495,24 @@
             cbClothType.Size = new Size(237, 28);
             cbClothType.TabIndex = 34;
             // 
-            // btnUploadImage2
+            // btnUploadImage2_Info
             // 
-            btnUploadImage2.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            btnUploadImage2.ForeColor = Color.FromArgb(100, 23, 61);
-            btnUploadImage2.Location = new Point(1040, 574);
-            btnUploadImage2.Margin = new Padding(2);
-            btnUploadImage2.Name = "btnUploadImage2";
-            btnUploadImage2.Size = new Size(89, 42);
-            btnUploadImage2.TabIndex = 52;
-            btnUploadImage2.Text = "Upload";
-            btnUploadImage2.UseVisualStyleBackColor = true;
-            btnUploadImage2.Click += btnUploadImage2_Click;
+            btnUploadImage2_Info.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            btnUploadImage2_Info.ForeColor = Color.FromArgb(100, 23, 61);
+            btnUploadImage2_Info.Location = new Point(1040, 574);
+            btnUploadImage2_Info.Margin = new Padding(2);
+            btnUploadImage2_Info.Name = "btnUploadImage2_Info";
+            btnUploadImage2_Info.Size = new Size(89, 42);
+            btnUploadImage2_Info.TabIndex = 52;
+            btnUploadImage2_Info.Text = "Upload";
+            btnUploadImage2_Info.UseVisualStyleBackColor = true;
+            btnUploadImage2_Info.Click += btnUploadImage2_Click;
             // 
             // groupBoxPattern
             // 
-            groupBoxPattern.Controls.Add(lblPattern);
-            groupBoxPattern.Controls.Add(rbPatternYes);
-            groupBoxPattern.Controls.Add(rbPatternNo);
+            groupBoxPattern.Controls.Add(lblPattern_Donate);
+            groupBoxPattern.Controls.Add(rbPatternYes_Info);
+            groupBoxPattern.Controls.Add(rbPatternNo_Info);
             groupBoxPattern.Location = new Point(274, 432);
             groupBoxPattern.Name = "groupBoxPattern";
             groupBoxPattern.Size = new Size(257, 76);
@@ -521,13 +521,13 @@
             // 
             // groupBoxCondition
             // 
-            groupBoxCondition.Controls.Add(lblCondition);
-            groupBoxCondition.Controls.Add(rbCondUsable);
-            groupBoxCondition.Controls.Add(rbCondNonUsable);
+            groupBoxCondition.Controls.Add(lblCondition_Donate);
+            groupBoxCondition.Controls.Add(rbCondUsable_Info);
+            groupBoxCondition.Controls.Add(rbCondNonUsable_Info);
             groupBoxCondition.FlatStyle = FlatStyle.Flat;
             groupBoxCondition.Location = new Point(274, 595);
             groupBoxCondition.Name = "groupBoxCondition";
-            groupBoxCondition.Size = new Size(297, 68);
+            groupBoxCondition.Size = new Size(380, 68);
             groupBoxCondition.TabIndex = 54;
             groupBoxCondition.TabStop = false;
             // 
@@ -537,24 +537,24 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Thistle;
             ClientSize = new Size(1348, 721);
-            Controls.Add(btnUploadImage2);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(btnUploadImage2_Info);
+            Controls.Add(label2_Donate);
+            Controls.Add(label1_Donate);
             Controls.Add(pbClothImage2);
-            Controls.Add(btnClothInfoNext);
+            Controls.Add(btnClothInfoNext_Info);
             Controls.Add(cbClothColour);
-            Controls.Add(lblColour);
+            Controls.Add(lblColour_Donate);
             Controls.Add(btnLogOut);
             Controls.Add(panel3);
             Controls.Add(panel1);
-            Controls.Add(lblMaterial);
+            Controls.Add(lblMaterial_Donate);
             Controls.Add(pbClothImage);
-            Controls.Add(lblClothImage);
+            Controls.Add(lblClothImage_Donate);
             Controls.Add(panel2);
-            Controls.Add(btnUploadImage);
+            Controls.Add(btnUploadImage_Info);
             Controls.Add(cbMaterial);
-            Controls.Add(lblClothInfo);
-            Controls.Add(lblClothType);
+            Controls.Add(lblClothInfo_Donate);
+            Controls.Add(lblClothType_Donate);
             Controls.Add(cbClothType);
             Controls.Add(groupBoxPattern);
             Controls.Add(groupBoxCondition);
@@ -580,41 +580,41 @@
 
         #endregion
 
-        private Label label2;
-        private Label label1;
+        private Label label2_Donate;
+        private Label label1_Donate;
         private PictureBox pbClothImage2;
-        private Button btnClothInfoNext;
-        private RadioButton rbCondNonUsable;
-        private RadioButton rbCondUsable;
-        private Label lblCondition;
+        private Button btnClothInfoNext_Info;
+        private RadioButton rbCondNonUsable_Info;
+        private RadioButton rbCondUsable_Info;
+        private Label lblCondition_Donate;
         private ComboBox cbClothColour;
-        private RadioButton rbPatternNo;
-        private RadioButton rbPatternYes;
-        private Label lblPattern;
-        private Label lblColour;
+        private RadioButton rbPatternNo_Info;
+        private RadioButton rbPatternYes_Info;
+        private Label lblPattern_Donate;
+        private Label lblColour_Donate;
         private Button btnLogOut;
         private Panel panel3;
         private PictureBox pictureBox3;
         private LinkLabel lblLoopFit;
-        private LinkLabel lblContactUs;
-        private Label lblDonate1;
+        private LinkLabel lblContactUs_Donate;
+        private Label lblDonate1_Donate;
         private Panel panel1;
         private PictureBox picProfile;
         private LinkLabel llProfile;
-        private Label lblMaterial;
+        private Label lblMaterial_Donate;
         private PictureBox pbClothImage;
-        private Label lblClothImage;
+        private Label lblClothImage_Donate;
         private Button btnActivity;
         private Panel panel2;
         private Button btnHome;
-        private Button btnUploadImage;
+        private Button btnUploadImage_Info;
         private ComboBox cbMaterial;
-        private Label lblClothInfo;
-        private Label lblClothType;
+        private Label lblClothInfo_Donate;
+        private Label lblClothType_Donate;
         private ComboBox cbClothType;
-        private Button btnUploadImage2;
+        private Button btnUploadImage2_Info;
         private GroupBox groupBoxPattern;
         private GroupBox groupBoxCondition;
-        private Label label3;
+        private Label label3_Donate;
     }
 }

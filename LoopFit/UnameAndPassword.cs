@@ -16,6 +16,7 @@ namespace LoopFit
         public UnameAndPassword()
         {
             InitializeComponent();
+            LanguageHelper.UpdateUI(this);
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -27,54 +28,27 @@ namespace LoopFit
             User.Password = tbPassword.Text;
 
             // Cek apakah username sudah digunakan
-            if (IsUsernameRegistered(User.Username, connectionString))
+            if (User.IsUsernameRegistered(User.Username, connectionString))
             {
-                MessageBox.Show("Username sudah digunakan. Gunakan username lain.",
-                                "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Username is already in use. Please use another username.",
+                                "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return; // Hentikan proses jika username sudah ada
             }
 
             // Simpan ke database jika username belum digunakan
             if (User.SaveUserToDatabase(connectionString))
             {
-                MessageBox.Show("Data pengguna berhasil disimpan", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("User data successfully saved", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Login login = new Login();
                 login.Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Gagal menyimpan data pengguna.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Failed to save user data.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private bool IsUsernameRegistered(string username, string connectionString)
-        {
-            string query = "SELECT COUNT(*) FROM \"User\" WHERE username = @Username";
-
-            try
-            {
-                using (var connection = new NpgsqlConnection(connectionString))
-                {
-                    connection.Open();
-
-                    using (var command = new NpgsqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@Username", username);
-
-                        int count = Convert.ToInt32(command.ExecuteScalar());
-                        return count > 0; // Mengembalikan true jika username ditemukan
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error saat memeriksa username di database: " + ex.Message,
-                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
-        }
-
+                
         private void lblBack_Click(object sender, EventArgs e)
         {
             SignUp signup = new SignUp();

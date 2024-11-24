@@ -61,6 +61,33 @@ namespace LoopFit {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Black.
+        /// </summary>
+        internal static string Black {
+            get {
+                return ResourceManager.GetString("Black", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Blue.
+        /// </summary>
+        internal static string Blue {
+            get {
+                return ResourceManager.GetString("Blue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Brown.
+        /// </summary>
+        internal static string Brown {
+            get {
+                return ResourceManager.GetString("Brown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Activity.
         /// </summary>
         internal static string btnActivity_Profile_Text {
@@ -75,6 +102,51 @@ namespace LoopFit {
         internal static string btnActivity_Text {
             get {
                 return ResourceManager.GetString("btnActivity.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        internal static string btnBack_Confirm_Text {
+            get {
+                return ResourceManager.GetString("btnBack_Confirm.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back to Home.
+        /// </summary>
+        internal static string btnBack_Thanks_Text {
+            get {
+                return ResourceManager.GetString("btnBack_Thanks.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change Image.
+        /// </summary>
+        internal static string btnChangeImage_EditProfile_Text {
+            get {
+                return ResourceManager.GetString("btnChangeImage_EditProfile.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Next.
+        /// </summary>
+        internal static string btnClothInfoNext_Info_Text {
+            get {
+                return ResourceManager.GetString("btnClothInfoNext_Info.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm.
+        /// </summary>
+        internal static string btnConfirmDonate_Confirm_Text {
+            get {
+                return ResourceManager.GetString("btnConfirmDonate_Confirm.Text", resourceCulture);
             }
         }
         
@@ -115,6 +187,33 @@ namespace LoopFit {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        internal static string btnLogin_Login_Text {
+            get {
+                return ResourceManager.GetString("btnLogin_Login.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        internal static string btnLogin_Welcome_Text {
+            get {
+                return ResourceManager.GetString("btnLogin_Welcome.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login with Google.
+        /// </summary>
+        internal static string btnLoginGoogle_Text {
+            get {
+                return ResourceManager.GetString("btnLoginGoogle.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Log Out.
         /// </summary>
         internal static string btnLogOut_Profile_Text {
@@ -133,11 +232,335 @@ namespace LoopFit {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Send Code.
+        /// </summary>
+        internal static string btnSendVerifCode_EditProfile_Text {
+            get {
+                return ResourceManager.GetString("btnSendVerifCode_EditProfile.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sign Up.
+        /// </summary>
+        internal static string btnSignUp_Welcome_Text {
+            get {
+                return ResourceManager.GetString("btnSignUp_Welcome.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Submit.
+        /// </summary>
+        internal static string btnSubmit_Uname_Text {
+            get {
+                return ResourceManager.GetString("btnSubmit_Uname.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Submit.
+        /// </summary>
+        internal static string btnSubmitEdit_EditProfile_Text {
+            get {
+                return ResourceManager.GetString("btnSubmitEdit_EditProfile.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Submit.
         /// </summary>
         internal static string btnSubmitLanguage_Profile_Text {
             get {
                 return ResourceManager.GetString("btnSubmitLanguage_Profile.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Upload.
+        /// </summary>
+        internal static string btnUploadImage_Info_Text {
+            get {
+                return ResourceManager.GetString("btnUploadImage_Info.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Upload.
+        /// </summary>
+        internal static string btnUploadImage2_Info_Text {
+            get {
+                return ResourceManager.GetString("btnUploadImage2_Info.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Verify.
+        /// </summary>
+        internal static string btnVerify_EditProfile_Text {
+            get {
+                return ResourceManager.GetString("btnVerify_EditProfile.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Verify.
+        /// </summary>
+        internal static string btnVerify_VerifEmail_Text {
+            get {
+                return ResourceManager.GetString("btnVerify_VerifEmail.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Click to see this video.
+        /// </summary>
+        internal static string btnVid1_Content_Text {
+            get {
+                return ResourceManager.GetString("btnVid1_Content.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Click to see this video.
+        /// </summary>
+        internal static string btnVid2_Content_Text {
+            get {
+                return ResourceManager.GetString("btnVid2_Content.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Click to see this video.
+        /// </summary>
+        internal static string btnVid3_Content_Text {
+            get {
+                return ResourceManager.GetString("btnVid3_Content.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cotton.
+        /// </summary>
+        internal static string Cotton {
+            get {
+                return ResourceManager.GetString("Cotton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Denim.
+        /// </summary>
+        internal static string Denim {
+            get {
+                return ResourceManager.GetString("Denim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We emailed you a four-digit code to {0}. Enter the code below to confirm your email address..
+        /// </summary>
+        internal static string EmailVerificationDescription {
+            get {
+                return ResourceManager.GetString("EmailVerificationDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please fill in all data completely..
+        /// </summary>
+        internal static string FillAllFieldsMessage {
+            get {
+                return ResourceManager.GetString("FillAllFieldsMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Green.
+        /// </summary>
+        internal static string Green {
+            get {
+                return ResourceManager.GetString("Green", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grey.
+        /// </summary>
+        internal static string Grey {
+            get {
+                return ResourceManager.GetString("Grey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hijab.
+        /// </summary>
+        internal static string Hijab {
+            get {
+                return ResourceManager.GetString("Hijab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Indigo.
+        /// </summary>
+        internal static string Indigo {
+            get {
+                return ResourceManager.GetString("Indigo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inner Top.
+        /// </summary>
+        internal static string InnerTop {
+            get {
+                return ResourceManager.GetString("InnerTop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jersey.
+        /// </summary>
+        internal static string Jersey {
+            get {
+                return ResourceManager.GetString("Jersey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Visit our Tiktok account for more content:.
+        /// </summary>
+        internal static string label1_Content_Text {
+            get {
+                return ResourceManager.GetString("label1_Content.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create your new password and don&apos;t forget it!.
+        /// </summary>
+        internal static string label1_Create_Text {
+            get {
+                return ResourceManager.GetString("label1_Create.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Front Side.
+        /// </summary>
+        internal static string label1_Donate_Text {
+            get {
+                return ResourceManager.GetString("label1_Donate.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Name :.
+        /// </summary>
+        internal static string label1_Edit_Text {
+            get {
+                return ResourceManager.GetString("label1_Edit.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter your registered email address below. A verification code will be sent to your email! Please check your inbox (and the spam folder) for the code. Once you have the code, enter it to proceed resetting your password..
+        /// </summary>
+        internal static string label1_Forget_Text {
+            get {
+                return ResourceManager.GetString("label1_Forget.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Together, We Create a Greener Future!.
+        /// </summary>
+        internal static string label1_Thanks_Text {
+            get {
+                return ResourceManager.GetString("label1_Thanks.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An desktop app that facilitates clothing donations to tackle the growing issue of fast fashion, promoting sustainability, and supporting a circular economy by repurposing textiles for reuse or recycling..
+        /// </summary>
+        internal static string label1_Welcome_Text {
+            get {
+                return ResourceManager.GetString("label1_Welcome.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back Side.
+        /// </summary>
+        internal static string label2_Donate_Text {
+            get {
+                return ResourceManager.GetString("label2_Donate.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Discover a selection of upcycled and sustainable fashion products made with love and creativity. Support eco-friendly initiatives by checking out our featured items below!.
+        /// </summary>
+        internal static string label3_Catalog_Text {
+            get {
+                return ResourceManager.GetString("label3_Catalog.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Donate your used clothes to be processed into new items or useful raw materials by filling in the details about the condition of your clothes on this page. Together with LoopFit, let&apos;s create a sustainable solution for a better future..
+        /// </summary>
+        internal static string label3_Donate_Text {
+            get {
+                return ResourceManager.GetString("label3_Donate.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to *Click it if you change your email and you will get your code soon.
+        /// </summary>
+        internal static string label3_Edit_Text {
+            get {
+                return ResourceManager.GetString("label3_Edit.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Here are some of our products. Come check it out!.
+        /// </summary>
+        internal static string label4_Catalog_Text {
+            get {
+                return ResourceManager.GetString("label4_Catalog.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to *Click it to verify your code before submitting changes.
+        /// </summary>
+        internal static string label4_Edit_Text {
+            get {
+                return ResourceManager.GetString("label4_Edit.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This page allows you to review the estimated value of your donated clothing items and choose a drop-off point for delivery. The estimated price is calculated based on the condition and type of clothing you provided earlier. Once you’ve reviewed the details, you can confirm your donation or make adjustments. Let’s make a positive impact together!.
+        /// </summary>
+        internal static string label6_Confirm_Text {
+            get {
+                return ResourceManager.GetString("label6_Confirm.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About Us.
+        /// </summary>
+        internal static string lblAboutUs_AboutUs_Text {
+            get {
+                return ResourceManager.GetString("lblAboutUs_AboutUs.Text", resourceCulture);
             }
         }
         
@@ -151,11 +574,209 @@ namespace LoopFit {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Address :.
+        /// </summary>
+        internal static string lblAddress_Contact_Text {
+            get {
+                return ResourceManager.GetString("lblAddress_Contact.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Don&apos;t have an account?.
+        /// </summary>
+        internal static string lblAlready_Login_Text {
+            get {
+                return ResourceManager.GetString("lblAlready_Login.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Already have an account?.
+        /// </summary>
+        internal static string lblAlready_SignUp_Text {
+            get {
+                return ResourceManager.GetString("lblAlready_SignUp.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Didn&apos;t receive a code?.
+        /// </summary>
+        internal static string lblAlready_VerifEmail_Text {
+            get {
+                return ResourceManager.GetString("lblAlready_VerifEmail.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        internal static string lblBack_Create_Text {
+            get {
+                return ResourceManager.GetString("lblBack_Create.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        internal static string lblBack_Forget_Text {
+            get {
+                return ResourceManager.GetString("lblBack_Forget.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        internal static string lblBack_Uname_Text {
+            get {
+                return ResourceManager.GetString("lblBack_Uname.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        internal static string lblBack_VerifEmail_Text {
+            get {
+                return ResourceManager.GetString("lblBack_VerifEmail.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Catalog.
+        /// </summary>
+        internal static string lblCatalog_Catalog_Text {
+            get {
+                return ResourceManager.GetString("lblCatalog_Catalog.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Change Language :.
         /// </summary>
         internal static string lblChangeLanguage_Profile_Text {
             get {
                 return ResourceManager.GetString("lblChangeLanguage_Profile.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If yes, choose a drop point location :.
+        /// </summary>
+        internal static string lblChooseLoc_Confirm_Text {
+            get {
+                return ResourceManager.GetString("lblChooseLoc_Confirm.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clothing Image :.
+        /// </summary>
+        internal static string lblClothImage_Donate_Text {
+            get {
+                return ResourceManager.GetString("lblClothImage_Donate.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clothing Information.
+        /// </summary>
+        internal static string lblClothInfo_Donate_Text {
+            get {
+                return ResourceManager.GetString("lblClothInfo_Donate.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clothing Type :.
+        /// </summary>
+        internal static string lblClothType_Donate_Text {
+            get {
+                return ResourceManager.GetString("lblClothType_Donate.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Colour (Dominant) :.
+        /// </summary>
+        internal static string lblColour_Donate_Text {
+            get {
+                return ResourceManager.GetString("lblColour_Donate.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Condition :.
+        /// </summary>
+        internal static string lblCondition_Donate_Text {
+            get {
+                return ResourceManager.GetString("lblCondition_Donate.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Accept price and continue donate?.
+        /// </summary>
+        internal static string lblConfirmDonate_Confirm_Text {
+            get {
+                return ResourceManager.GetString("lblConfirmDonate_Confirm.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm New Password :.
+        /// </summary>
+        internal static string lblConfirmPass_Create_Text {
+            get {
+                return ResourceManager.GetString("lblConfirmPass_Create.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm Password :.
+        /// </summary>
+        internal static string lblConfirmPw_Edit_Text {
+            get {
+                return ResourceManager.GetString("lblConfirmPw_Edit.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Us.
+        /// </summary>
+        internal static string lblContactUs_AboutUs_Text {
+            get {
+                return ResourceManager.GetString("lblContactUs_AboutUs.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Us.
+        /// </summary>
+        internal static string lblContactUs_Catalog_Text {
+            get {
+                return ResourceManager.GetString("lblContactUs_Catalog.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Us.
+        /// </summary>
+        internal static string lblContactUs_Content_Text {
+            get {
+                return ResourceManager.GetString("lblContactUs_Content.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Us.
+        /// </summary>
+        internal static string lblContactUs_Donate_Text {
+            get {
+                return ResourceManager.GetString("lblContactUs_Donate.Text", resourceCulture);
             }
         }
         
@@ -169,11 +790,93 @@ namespace LoopFit {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Contact Us.
+        /// </summary>
+        internal static string lblContactUs2_Confirm_Text {
+            get {
+                return ResourceManager.GetString("lblContactUs2_Confirm.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Content.
+        /// </summary>
+        internal static string lblContent_Content_Text {
+            get {
+                return ResourceManager.GetString("lblContent_Content.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Content.
         /// </summary>
         internal static string lblContent_Home_Text {
             get {
                 return ResourceManager.GetString("lblContent_Home.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm Password.
+        /// </summary>
+        internal static string lblCPassword_Uname_Text {
+            get {
+                return ResourceManager.GetString("lblCPassword_Uname.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login to your account.
+        /// </summary>
+        internal static string lblCreateUP_Login_Text {
+            get {
+                return ResourceManager.GetString("lblCreateUP_Login.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create an username
+        ///and password.
+        /// </summary>
+        internal static string lblCreateUP_Uname_Text {
+            get {
+                return ResourceManager.GetString("lblCreateUP_Uname.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LoopFit is an innovative application dedicated to creating sustainable solutions in the fashion industry. With Loopfit, you can donate your used clothing to be transformed into new garments or repurposed into raw materials for creating new apparel..
+        /// </summary>
+        internal static string lblDesc_AboutUs1_Text {
+            get {
+                return ResourceManager.GetString("lblDesc_AboutUs1.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Our mission is to reduce textile waste and support a circular economy and sustainable lifestyle through creative recycling and redesign. Join us on a journey toward a greener future, where fashion and the environment go hand in hand..
+        /// </summary>
+        internal static string lblDesc_AboutUs2_Text {
+            get {
+                return ResourceManager.GetString("lblDesc_AboutUs2.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Together, we close the loop for a better planet..
+        /// </summary>
+        internal static string lblDesc_AboutUs3_Text {
+            get {
+                return ResourceManager.GetString("lblDesc_AboutUs3.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Discover inspiring content and informative videos about sustainable fashion and clothing recycling to boost up your knowledge while spending your time!.
+        /// </summary>
+        internal static string lblDesc_Content_Text {
+            get {
+                return ResourceManager.GetString("lblDesc_Content.Text", resourceCulture);
             }
         }
         
@@ -205,11 +908,92 @@ namespace LoopFit {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Let’s take action for a sustainable future! With LoopFit, you can donate your clothes, track the recycling process by our content, and explore unique products made from upcycled fabrics. Together, we can reduce textile waste and embrace a circular economy!.
+        /// </summary>
+        internal static string lblDescription_Home_Text {
+            get {
+                return ResourceManager.GetString("lblDescription_Home.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Donate.
         /// </summary>
         internal static string lblDonate_Home_Text {
             get {
                 return ResourceManager.GetString("lblDonate_Home.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Donate.
+        /// </summary>
+        internal static string lblDonate1_Donate_Text {
+            get {
+                return ResourceManager.GetString("lblDonate1_Donate.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Profile.
+        /// </summary>
+        internal static string lblDonate1_Edit_Text {
+            get {
+                return ResourceManager.GetString("lblDonate1_Edit.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Donate.
+        /// </summary>
+        internal static string lblDonate2_Confirm_Text {
+            get {
+                return ResourceManager.GetString("lblDonate2_Confirm.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Estimated Price.
+        /// </summary>
+        internal static string lblEstimatedPrice_Confirm_Text {
+            get {
+                return ResourceManager.GetString("lblEstimatedPrice_Confirm.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First Name.
+        /// </summary>
+        internal static string lblFirstName_SignUp_Text {
+            get {
+                return ResourceManager.GetString("lblFirstName_SignUp.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset your Password.
+        /// </summary>
+        internal static string lblForgetPass_Create_Text {
+            get {
+                return ResourceManager.GetString("lblForgetPass_Create.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset your Password.
+        /// </summary>
+        internal static string lblForgetPass_Forget_Text {
+            get {
+                return ResourceManager.GetString("lblForgetPass_Forget.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First Name :.
+        /// </summary>
+        internal static string lblFullName_Edit_Text {
+            get {
+                return ResourceManager.GetString("lblFullName_Edit.Text", resourceCulture);
             }
         }
         
@@ -223,11 +1007,128 @@ namespace LoopFit {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Last Name.
+        /// </summary>
+        internal static string lblLastName_SignUp_Text {
+            get {
+                return ResourceManager.GetString("lblLastName_SignUp.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Material :.
+        /// </summary>
+        internal static string lblMaterial_Donate_Text {
+            get {
+                return ResourceManager.GetString("lblMaterial_Donate.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Password :.
+        /// </summary>
+        internal static string lblNewPass_Create_Text {
+            get {
+                return ResourceManager.GetString("lblNewPass_Create.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Password :.
+        /// </summary>
+        internal static string lblNewPw_Edit_Text {
+            get {
+                return ResourceManager.GetString("lblNewPw_Edit.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ________________________________ or ________________________________.
+        /// </summary>
+        internal static string lblOr_Login_Text {
+            get {
+                return ResourceManager.GetString("lblOr_Login.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ________________________________ or ________________________________.
+        /// </summary>
+        internal static string lblOr_SignUp_Text {
+            get {
+                return ResourceManager.GetString("lblOr_SignUp.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Our Contact.
+        /// </summary>
+        internal static string lblOurContact_Contact_Text {
+            get {
+                return ResourceManager.GetString("lblOurContact_Contact.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        internal static string lblPassword_Login_Text {
+            get {
+                return ResourceManager.GetString("lblPassword_Login.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        internal static string lblPassword_Uname_Text {
+            get {
+                return ResourceManager.GetString("lblPassword_Uname.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password :.
         /// </summary>
         internal static string lblPasword_Profile_Text {
             get {
                 return ResourceManager.GetString("lblPasword_Profile.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pattern :.
+        /// </summary>
+        internal static string lblPattern_Donate_Text {
+            get {
+                return ResourceManager.GetString("lblPattern_Donate.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone Number :.
+        /// </summary>
+        internal static string lblPhoneNum_Contact_Text {
+            get {
+                return ResourceManager.GetString("lblPhoneNum_Contact.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone Number.
+        /// </summary>
+        internal static string lblPhoneNum_SignUp_Text {
+            get {
+                return ResourceManager.GetString("lblPhoneNum_SignUp.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone Number :.
+        /// </summary>
+        internal static string lblPhoneNumber_Edit_Text {
+            get {
+                return ResourceManager.GetString("lblPhoneNumber_Edit.Text", resourceCulture);
             }
         }
         
@@ -259,11 +1160,111 @@ namespace LoopFit {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create an account.
+        /// </summary>
+        internal static string lblSignUp_SignUp_Text {
+            get {
+                return ResourceManager.GetString("lblSignUp_SignUp.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Verify your email address.
+        /// </summary>
+        internal static string lblSignUp_VerifEmail_Text {
+            get {
+                return ResourceManager.GetString("lblSignUp_VerifEmail.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome to
+        ///LoopFit!.
+        /// </summary>
+        internal static string lblSignUp_Welcome_Text {
+            get {
+                return ResourceManager.GetString("lblSignUp_Welcome.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Follow Our Social Media.
+        /// </summary>
+        internal static string lblSosmed_AboutUs_Text {
+            get {
+                return ResourceManager.GetString("lblSosmed_AboutUs.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Follow Our Social Media.
+        /// </summary>
+        internal static string lblSosmed_Catalog_Text {
+            get {
+                return ResourceManager.GetString("lblSosmed_Catalog.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Follow Our Social Media.
+        /// </summary>
+        internal static string lblSosmed_Contact_Text {
+            get {
+                return ResourceManager.GetString("lblSosmed_Contact.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Follow Our Social Media.
         /// </summary>
         internal static string lblSosmed_Home_Text {
             get {
                 return ResourceManager.GetString("lblSosmed_Home.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Follow Our Social Media.
+        /// </summary>
+        internal static string lblSosmed_Thanks_Text {
+            get {
+                return ResourceManager.GetString("lblSosmed_Thanks.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thank you for contributing to a sustainable future!.
+        /// </summary>
+        internal static string lblThanks_Thanks_Text {
+            get {
+                return ResourceManager.GetString("lblThanks_Thanks.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username or Email.
+        /// </summary>
+        internal static string lblUname_Login_Text {
+            get {
+                return ResourceManager.GetString("lblUname_Login.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username.
+        /// </summary>
+        internal static string lblUname_Uname_Text {
+            get {
+                return ResourceManager.GetString("lblUname_Uname.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username :.
+        /// </summary>
+        internal static string lblUsername_Edit_Text {
+            get {
+                return ResourceManager.GetString("lblUsername_Edit.Text", resourceCulture);
             }
         }
         
@@ -277,6 +1278,24 @@ namespace LoopFit {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Verification Code :.
+        /// </summary>
+        internal static string lblVerif_Forget_Text {
+            get {
+                return ResourceManager.GetString("lblVerif_Forget.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Verification Code :.
+        /// </summary>
+        internal static string lblVerificationCode_Edit_Text {
+            get {
+                return ResourceManager.GetString("lblVerificationCode_Edit.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hello.
         /// </summary>
         internal static string lblWelcome_Home_Text {
@@ -286,11 +1305,74 @@ namespace LoopFit {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Leather.
+        /// </summary>
+        internal static string Leather {
+            get {
+                return ResourceManager.GetString("Leather", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Linen.
+        /// </summary>
+        internal static string Linen {
+            get {
+                return ResourceManager.GetString("Linen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Us.
+        /// </summary>
+        internal static string linkLabel2_Contact_Text {
+            get {
+                return ResourceManager.GetString("linkLabel2_Contact.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contact Us.
         /// </summary>
         internal static string linkLabel2_Home_Text {
             get {
                 return ResourceManager.GetString("linkLabel2_Home.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Forget password?.
+        /// </summary>
+        internal static string linkLabel2_Login_Text {
+            get {
+                return ResourceManager.GetString("linkLabel2_Login.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Us.
+        /// </summary>
+        internal static string linkLabel2_Thanks_Text {
+            get {
+                return ResourceManager.GetString("linkLabel2_Thanks.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        internal static string llLogin_SignUp_Text {
+            get {
+                return ResourceManager.GetString("llLogin_SignUp.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resend.
+        /// </summary>
+        internal static string llLogin_VerifEmail_Text {
+            get {
+                return ResourceManager.GetString("llLogin_VerifEmail.Text", resourceCulture);
             }
         }
         
@@ -313,6 +1395,213 @@ namespace LoopFit {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Click Here to Order.
+        /// </summary>
+        internal static string llShopee1_Catalog_Text {
+            get {
+                return ResourceManager.GetString("llShopee1_Catalog.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Click Here to Order.
+        /// </summary>
+        internal static string llShopee2_Catalog_Text {
+            get {
+                return ResourceManager.GetString("llShopee2_Catalog.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Click Here to Order.
+        /// </summary>
+        internal static string llShopee3_Catalog_Text {
+            get {
+                return ResourceManager.GetString("llShopee3_Catalog.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Click Here to Order.
+        /// </summary>
+        internal static string llShopee4_Catalog_Text {
+            get {
+                return ResourceManager.GetString("llShopee4_Catalog.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sign Up.
+        /// </summary>
+        internal static string llSignUp_Login_Text {
+            get {
+                return ResourceManager.GetString("llSignUp_Login.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nylon.
+        /// </summary>
+        internal static string Nylon {
+            get {
+                return ResourceManager.GetString("Nylon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Orange.
+        /// </summary>
+        internal static string Orange {
+            get {
+                return ResourceManager.GetString("Orange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Other.
+        /// </summary>
+        internal static string Other {
+            get {
+                return ResourceManager.GetString("Other", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Outer Top.
+        /// </summary>
+        internal static string OuterTop {
+            get {
+                return ResourceManager.GetString("OuterTop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Overall.
+        /// </summary>
+        internal static string Overall {
+            get {
+                return ResourceManager.GetString("Overall", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pants.
+        /// </summary>
+        internal static string Pants {
+            get {
+                return ResourceManager.GetString("Pants", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Polyester.
+        /// </summary>
+        internal static string Polyester {
+            get {
+                return ResourceManager.GetString("Polyester", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Non-usable.
+        /// </summary>
+        internal static string rbCondNonUsable_Info_Text {
+            get {
+                return ResourceManager.GetString("rbCondNonUsable_Info.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Usable.
+        /// </summary>
+        internal static string rbCondUsable_Info_Text {
+            get {
+                return ResourceManager.GetString("rbCondUsable_Info.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        internal static string rbNoDonate_Confirm_Text {
+            get {
+                return ResourceManager.GetString("rbNoDonate_Confirm.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        internal static string rbPatternNo_Info_Text {
+            get {
+                return ResourceManager.GetString("rbPatternNo_Info.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        internal static string rbPatternYes_Info_Text {
+            get {
+                return ResourceManager.GetString("rbPatternYes_Info.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        internal static string rbYesDonate_Confirm_Text {
+            get {
+                return ResourceManager.GetString("rbYesDonate_Confirm.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Red.
+        /// </summary>
+        internal static string Red {
+            get {
+                return ResourceManager.GetString("Red", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Satin.
+        /// </summary>
+        internal static string Satin {
+            get {
+                return ResourceManager.GetString("Satin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Silk.
+        /// </summary>
+        internal static string Silk {
+            get {
+                return ResourceManager.GetString("Silk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Skirt.
+        /// </summary>
+        internal static string Skirt {
+            get {
+                return ResourceManager.GetString("Skirt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your thoughts and concerns matter to us as we work together toward a sustainable future. Don’t hesitate to get in touch!.
+        /// </summary>
+        internal static string tbDesc2_Contact_Text {
+            get {
+                return ResourceManager.GetString("tbDesc2_Contact.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This page showcases a summary of your recent and past donations, giving you a detailed record of the clothing items you’ve contributed. Each donation has played an important role in supporting our mission in fashion sustainability. Thank you for your generosity and contributions that truly make a difference and help us create a more sustainable future!.
         /// </summary>
         internal static string txtDescription_Activity_Text {
@@ -322,11 +1611,56 @@ namespace LoopFit {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Let’s take action for a sustainable future! With LoopFit, you can donate your clothes, track the recycling process by our content, and explore unique products made from upcycled fabrics. Together, we can reduce textile waste and embrace a circular economy!.
+        ///   Looks up a localized string similar to We’re here to connect and assist you! If you have any questions, feedback, or need further information about LoopFit, feel free to reach out. Our team is ready to help with inquiries about donations, recycled products, or collaboration opportunities..
         /// </summary>
-        internal static string txtDescription_Home_Text {
+        internal static string txtDescription_Contact_Text {
             get {
-                return ResourceManager.GetString("txtDescription_Home.Text", resourceCulture);
+                return ResourceManager.GetString("txtDescription_Contact.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We greatly appreciate your contribution to supporting sustainability through clothing donations. Every item you donate will help reduce textile waste and benefit those in need..
+        /// </summary>
+        internal static string txtDescription_Thanks_Text {
+            get {
+                return ResourceManager.GetString("txtDescription_Thanks.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Violet.
+        /// </summary>
+        internal static string Violet {
+            get {
+                return ResourceManager.GetString("Violet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to White.
+        /// </summary>
+        internal static string White {
+            get {
+                return ResourceManager.GetString("White", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wool.
+        /// </summary>
+        internal static string Wool {
+            get {
+                return ResourceManager.GetString("Wool", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yellow.
+        /// </summary>
+        internal static string Yellow {
+            get {
+                return ResourceManager.GetString("Yellow", resourceCulture);
             }
         }
     }

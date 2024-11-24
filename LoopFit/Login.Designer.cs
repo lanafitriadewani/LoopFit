@@ -34,20 +34,18 @@
             label4 = new Label();
             label3 = new Label();
             pictureBox2 = new PictureBox();
-            lblCreateUP = new Label();
-            lblPassword = new Label();
-            lblUname = new Label();
+            lblCreateUP_Login = new Label();
+            lblPassword_Login = new Label();
+            lblUname_Login = new Label();
             tbPassword = new TextBox();
             tbUname = new TextBox();
-            label2 = new Label();
-            label1 = new Label();
-            lblOr = new Label();
+            lblOr_Login = new Label();
             btnLoginGoogle = new Button();
-            llSignUp = new LinkLabel();
-            lblAlready = new Label();
-            btnLogin = new Button();
+            llSignUp_Login = new LinkLabel();
+            lblAlready_Login = new Label();
+            btnLogin_Login = new Button();
             pictureBox1 = new PictureBox();
-            linkLabel2 = new LinkLabel();
+            linkLabel2_Login = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -115,41 +113,41 @@
             pictureBox2.TabIndex = 23;
             pictureBox2.TabStop = false;
             // 
-            // lblCreateUP
+            // lblCreateUP_Login
             // 
-            lblCreateUP.AutoSize = true;
-            lblCreateUP.BackColor = Color.Transparent;
-            lblCreateUP.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCreateUP.ForeColor = Color.FromArgb(100, 23, 61);
-            lblCreateUP.Location = new Point(494, 81);
-            lblCreateUP.Name = "lblCreateUP";
-            lblCreateUP.Size = new Size(371, 46);
-            lblCreateUP.TabIndex = 37;
-            lblCreateUP.Text = "Login to your account";
+            lblCreateUP_Login.AutoSize = true;
+            lblCreateUP_Login.BackColor = Color.Transparent;
+            lblCreateUP_Login.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCreateUP_Login.ForeColor = Color.FromArgb(100, 23, 61);
+            lblCreateUP_Login.Location = new Point(494, 81);
+            lblCreateUP_Login.Name = "lblCreateUP_Login";
+            lblCreateUP_Login.Size = new Size(371, 46);
+            lblCreateUP_Login.TabIndex = 37;
+            lblCreateUP_Login.Text = "Login to your account";
             // 
-            // lblPassword
+            // lblPassword_Login
             // 
-            lblPassword.AutoSize = true;
-            lblPassword.BackColor = Color.Transparent;
-            lblPassword.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPassword.ForeColor = Color.FromArgb(100, 23, 61);
-            lblPassword.Location = new Point(494, 228);
-            lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(91, 25);
-            lblPassword.TabIndex = 36;
-            lblPassword.Text = "Password";
+            lblPassword_Login.AutoSize = true;
+            lblPassword_Login.BackColor = Color.Transparent;
+            lblPassword_Login.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPassword_Login.ForeColor = Color.FromArgb(100, 23, 61);
+            lblPassword_Login.Location = new Point(494, 228);
+            lblPassword_Login.Name = "lblPassword_Login";
+            lblPassword_Login.Size = new Size(91, 25);
+            lblPassword_Login.TabIndex = 36;
+            lblPassword_Login.Text = "Password";
             // 
-            // lblUname
+            // lblUname_Login
             // 
-            lblUname.AutoSize = true;
-            lblUname.BackColor = Color.Transparent;
-            lblUname.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            lblUname.ForeColor = Color.FromArgb(100, 23, 61);
-            lblUname.Location = new Point(494, 158);
-            lblUname.Name = "lblUname";
-            lblUname.Size = new Size(171, 25);
-            lblUname.TabIndex = 35;
-            lblUname.Text = "Username or Email";
+            lblUname_Login.AutoSize = true;
+            lblUname_Login.BackColor = Color.Transparent;
+            lblUname_Login.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            lblUname_Login.ForeColor = Color.FromArgb(100, 23, 61);
+            lblUname_Login.Location = new Point(494, 158);
+            lblUname_Login.Name = "lblUname_Login";
+            lblUname_Login.Size = new Size(171, 25);
+            lblUname_Login.TabIndex = 35;
+            lblUname_Login.Text = "Username or Email";
             // 
             // tbPassword
             // 
@@ -170,38 +168,16 @@
             tbUname.Size = new Size(450, 32);
             tbUname.TabIndex = 33;
             // 
-            // label2
+            // lblOr_Login
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.ForeColor = Color.FromArgb(100, 23, 61);
-            label2.Location = new Point(508, 431);
-            label2.Name = "label2";
-            label2.Size = new Size(201, 20);
-            label2.TabIndex = 44;
-            label2.Text = "________________________________";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.ForeColor = Color.FromArgb(100, 23, 61);
-            label1.Location = new Point(743, 431);
-            label1.Name = "label1";
-            label1.Size = new Size(201, 20);
-            label1.TabIndex = 43;
-            label1.Text = "________________________________";
-            // 
-            // lblOr
-            // 
-            lblOr.AutoSize = true;
-            lblOr.BackColor = Color.Transparent;
-            lblOr.ForeColor = Color.FromArgb(100, 23, 61);
-            lblOr.Location = new Point(714, 418);
-            lblOr.Name = "lblOr";
-            lblOr.Size = new Size(23, 40);
-            lblOr.TabIndex = 42;
-            lblOr.Text = "\r\nor";
+            lblOr_Login.AutoSize = true;
+            lblOr_Login.BackColor = Color.Transparent;
+            lblOr_Login.ForeColor = Color.FromArgb(100, 23, 61);
+            lblOr_Login.Location = new Point(511, 434);
+            lblOr_Login.Name = "lblOr_Login";
+            lblOr_Login.Size = new Size(415, 20);
+            lblOr_Login.TabIndex = 44;
+            lblOr_Login.Text = "________________________________ or ________________________________";
             // 
             // btnLoginGoogle
             // 
@@ -216,41 +192,41 @@
             btnLoginGoogle.UseVisualStyleBackColor = true;
             btnLoginGoogle.Click += btnLoginGoogle_Click;
             // 
-            // llSignUp
+            // llSignUp_Login
             // 
-            llSignUp.AutoSize = true;
-            llSignUp.BackColor = Color.Transparent;
-            llSignUp.Location = new Point(779, 402);
-            llSignUp.Name = "llSignUp";
-            llSignUp.Size = new Size(61, 20);
-            llSignUp.TabIndex = 40;
-            llSignUp.TabStop = true;
-            llSignUp.Text = "Sign Up";
-            llSignUp.LinkClicked += llSignUp_LinkClicked;
+            llSignUp_Login.AutoSize = true;
+            llSignUp_Login.BackColor = Color.Transparent;
+            llSignUp_Login.Location = new Point(779, 402);
+            llSignUp_Login.Name = "llSignUp_Login";
+            llSignUp_Login.Size = new Size(61, 20);
+            llSignUp_Login.TabIndex = 40;
+            llSignUp_Login.TabStop = true;
+            llSignUp_Login.Text = "Sign Up";
+            llSignUp_Login.LinkClicked += llSignUp_LinkClicked;
             // 
-            // lblAlready
+            // lblAlready_Login
             // 
-            lblAlready.AutoSize = true;
-            lblAlready.BackColor = Color.Transparent;
-            lblAlready.ForeColor = Color.FromArgb(100, 23, 61);
-            lblAlready.Location = new Point(616, 402);
-            lblAlready.Name = "lblAlready";
-            lblAlready.Size = new Size(163, 20);
-            lblAlready.TabIndex = 39;
-            lblAlready.Text = "Don't have an account?";
+            lblAlready_Login.AutoSize = true;
+            lblAlready_Login.BackColor = Color.Transparent;
+            lblAlready_Login.ForeColor = Color.FromArgb(100, 23, 61);
+            lblAlready_Login.Location = new Point(616, 402);
+            lblAlready_Login.Name = "lblAlready_Login";
+            lblAlready_Login.Size = new Size(163, 20);
+            lblAlready_Login.TabIndex = 39;
+            lblAlready_Login.Text = "Don't have an account?";
             // 
-            // btnLogin
+            // btnLogin_Login
             // 
-            btnLogin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnLogin.ForeColor = Color.FromArgb(100, 23, 61);
-            btnLogin.Location = new Point(654, 340);
-            btnLogin.Margin = new Padding(3, 4, 3, 4);
-            btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(135, 49);
-            btnLogin.TabIndex = 38;
-            btnLogin.Text = "Login";
-            btnLogin.UseVisualStyleBackColor = true;
-            btnLogin.Click += btnLogin_Click;
+            btnLogin_Login.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLogin_Login.ForeColor = Color.FromArgb(100, 23, 61);
+            btnLogin_Login.Location = new Point(654, 340);
+            btnLogin_Login.Margin = new Padding(3, 4, 3, 4);
+            btnLogin_Login.Name = "btnLogin_Login";
+            btnLogin_Login.Size = new Size(135, 49);
+            btnLogin_Login.TabIndex = 38;
+            btnLogin_Login.Text = "Login";
+            btnLogin_Login.UseVisualStyleBackColor = true;
+            btnLogin_Login.Click += btnLogin_Click;
             // 
             // pictureBox1
             // 
@@ -264,18 +240,18 @@
             pictureBox1.TabIndex = 45;
             pictureBox1.TabStop = false;
             // 
-            // linkLabel2
+            // linkLabel2_Login
             // 
-            linkLabel2.AutoSize = true;
-            linkLabel2.BackColor = Color.Transparent;
-            linkLabel2.LinkColor = Color.Red;
-            linkLabel2.Location = new Point(822, 294);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(126, 20);
-            linkLabel2.TabIndex = 46;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "Forget password?";
-            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            linkLabel2_Login.AutoSize = true;
+            linkLabel2_Login.BackColor = Color.Transparent;
+            linkLabel2_Login.LinkColor = Color.Red;
+            linkLabel2_Login.Location = new Point(822, 294);
+            linkLabel2_Login.Name = "linkLabel2_Login";
+            linkLabel2_Login.Size = new Size(126, 20);
+            linkLabel2_Login.TabIndex = 46;
+            linkLabel2_Login.TabStop = true;
+            linkLabel2_Login.Text = "Forget password?";
+            linkLabel2_Login.LinkClicked += linkLabel2_LinkClicked;
             // 
             // Login
             // 
@@ -283,18 +259,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Untitled_design__6_;
             ClientSize = new Size(1006, 597);
-            Controls.Add(linkLabel2);
+            Controls.Add(linkLabel2_Login);
             Controls.Add(pictureBox1);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(lblOr);
+            Controls.Add(lblOr_Login);
             Controls.Add(btnLoginGoogle);
-            Controls.Add(llSignUp);
-            Controls.Add(lblAlready);
-            Controls.Add(btnLogin);
-            Controls.Add(lblCreateUP);
-            Controls.Add(lblPassword);
-            Controls.Add(lblUname);
+            Controls.Add(llSignUp_Login);
+            Controls.Add(lblAlready_Login);
+            Controls.Add(btnLogin_Login);
+            Controls.Add(lblCreateUP_Login);
+            Controls.Add(lblPassword_Login);
+            Controls.Add(lblUname_Login);
             Controls.Add(tbPassword);
             Controls.Add(tbUname);
             Controls.Add(linkLabel1);
@@ -318,19 +292,17 @@
         private Label label4;
         private Label label3;
         private PictureBox pictureBox2;
-        private Label lblCreateUP;
-        private Label lblPassword;
-        private Label lblUname;
+        private Label lblCreateUP_Login;
+        private Label lblPassword_Login;
+        private Label lblUname_Login;
         private TextBox tbPassword;
         private TextBox tbUname;
-        private Label label2;
-        private Label label1;
-        private Label lblOr;
+        private Label lblOr_Login;
         private Button btnLoginGoogle;
-        private LinkLabel llSignUp;
-        private Label lblAlready;
-        private Button btnLogin;
+        private LinkLabel llSignUp_Login;
+        private Label lblAlready_Login;
+        private Button btnLogin_Login;
         private PictureBox pictureBox1;
-        private LinkLabel linkLabel2;
+        private LinkLabel linkLabel2_Login;
     }
 }

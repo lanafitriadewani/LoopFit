@@ -33,6 +33,7 @@ namespace LoopFit
         public Login()
         {
             InitializeComponent();
+            LanguageHelper.UpdateUI(this);
         }
 
         private void llSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -50,7 +51,7 @@ namespace LoopFit
             // Cek jika input Username atau Password kosong
             if (string.IsNullOrEmpty(input) || string.IsNullOrEmpty(User.Password))
             {
-                MessageBox.Show("Username atau Password tidak boleh kosong.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Username or Password cannot be empty.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return; // Menghentikan proses login jika ada input kosong
             }
 
@@ -76,7 +77,7 @@ namespace LoopFit
             }
             else
             {
-                MessageBox.Show("Username atau password salah.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Incorrect username or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -84,62 +85,21 @@ namespace LoopFit
         {
             try
             {
-                // Tentukan scope Google API (email, profil)
-                string[] scopes = {
-                    "https://www.googleapis.com/auth/userinfo.email",
-                    "https://www.googleapis.com/auth/userinfo.profile"
-                };
+                var profile = await User.AuthenticateWithGoogleAsync(CLIENT_SECRET_JSON, "loopfit");
 
-                string tokenPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                    "LoopFit_" + DateTime.Now.ToString("yyyyMMddHHmmss"), "token.json");
-
-                if (File.Exists(tokenPath))
-                {
-                    File.Delete(tokenPath); // Menghapus token lama
-                }
-
-                // Parse kredensial dari string JSON
-                UserCredential credential;
-                using (var stream = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(CLIENT_SECRET_JSON)))
-                {
-                    var clientSecrets = GoogleClientSecrets.FromStream(stream);
-                    credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
-                        clientSecrets.Secrets,
-                        scopes,
-                        "user",
-                        CancellationToken.None,
-                        new FileDataStore(tokenPath, true)); // Menyimpan token baru
-                }
-
-                // Inisialisasi layanan People API
-                var service = new PeopleServiceService(new BaseClientService.Initializer
-                {
-                    HttpClientInitializer = credential,
-                    ApplicationName = "Your Windows App"
-                });
-
-                // Dapatkan informasi pengguna menggunakan People API
-                var request = service.People.Get("people/me");
-                request.PersonFields = "names,emailAddresses";
-                Person profile = await request.ExecuteAsync();
-
-                // Simpan informasi pengguna ke dalam atribut User
-                User.FirstName = profile.Names?[0]?.GivenName ?? "Not Available";
-                User.LastName = profile.Names?[0]?.FamilyName ?? "Not Available";
                 User.Email = profile.EmailAddresses?[0]?.Value ?? "Not Available";
-                User.PhoneNumber = "Unfilled";  // Mengisi Phone Number otomatis dengan "Unfilled"
+                User.Username = User.GetUsernameByEmail("Host=localhost;Port=5432;Username=postgres;Password=admin;Database=loopfit", User.Email);
 
-                string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=admin;Database=loopfit";
-
-                User.Username = User.GetUsernameByEmail(connectionString, User.Email);
-
-                if (User.ValidateUserGoogle(connectionString, User.Username))
+                if (User.ValidateUserGoogle("Host=localhost;Port=5432;Username=postgres;Password=admin;Database=loopfit", User.Username))
                 {
                     HomeDashboard homedashboard = new HomeDashboard(User.Username);
                     homedashboard.Show();
                     this.Hide();
                 }
-
+                else
+                {
+                    MessageBox.Show("Invalid user or email.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (Exception ex)
             {

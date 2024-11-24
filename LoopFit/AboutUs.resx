@@ -3222,12 +3222,6 @@
         kwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="txtDescription2.Text" xml:space="preserve">
-    <value>Our mission is to reduce textile waste and support a circular economy and sustainable lifestyle through creative recycling and redesign. Join us on a journey toward a greener future, where fashion and the environment go hand in hand.</value>
-  </data>
-  <data name="txtDescription1.Text" xml:space="preserve">
-    <value>Loopfit is an innovative application dedicated to creating sustainable solutions in the fashion industry. With Loopfit, you can donate your used clothing to be transformed into new garments or repurposed into raw materials for creating new apparel.</value>
-  </data>
   <data name="picTwitter.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAG
@@ -5958,5 +5952,11 @@
         93Z5Ge7uMgv/9XOYR7D8H8HSn4r/nAJ3XToJ7rx0LNyJpXxn50H4n9fgv+6Nhd/FTue/hdsv/R3c1vU/
         wu2X/Tu4vcc/hUnn/yV7eZoxwzkdOvx/CsAd1NbdBjIAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="lblDesc_AboutUs1.Text" xml:space="preserve">
+    <value>LoopFit is an innovative application dedicated to creating sustainable solutions in the fashion industry. With Loopfit, you can donate your used clothing to be transformed into new garments or repurposed into raw materials for creating new apparel.</value>
+  </data>
+  <data name="lblDesc_AboutUs2.Text" xml:space="preserve">
+    <value>Our mission is to reduce textile waste and support a circular economy and sustainable lifestyle through creative recycling and redesign. Join us on a journey toward a greener future, where fashion and the environment go hand in hand.</value>
   </data>
 </root>

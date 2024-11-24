@@ -69,12 +69,12 @@ namespace LoopFit
                 cmd.ExecuteNonQuery();
                 conn.Close();
 
-                MessageBox.Show("Data berhasil diperbarui", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Data successfully inserted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Gagal memperbarui data", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error: " + ex.Message, "Failed to update data", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -95,12 +95,12 @@ namespace LoopFit
                 cmd.ExecuteNonQuery();
                 conn.Close();
 
-                MessageBox.Show("Data berhasil diperbarui", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Data successfully updated", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Gagal memperbarui data", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error: " + ex.Message, "Failed to update data", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -117,12 +117,12 @@ namespace LoopFit
                 cmd.ExecuteNonQuery();
                 conn.Close();
 
-                MessageBox.Show("Data berhasil dihapus", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Data successfully deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Gagal menghapus data", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error: " + ex.Message, "Failed to update data", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

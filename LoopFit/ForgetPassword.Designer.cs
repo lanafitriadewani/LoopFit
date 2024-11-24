@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForgetPassword));
-            label1 = new Label();
-            lblVerif = new Label();
+            label1_Forget = new Label();
+            lblVerif_Forget = new Label();
             tbVerif = new TextBox();
             tbEmail = new TextBox();
-            lblForgetPass = new Label();
+            lblForgetPass_Forget = new Label();
             linkLabel1 = new LinkLabel();
             pictureBox3 = new PictureBox();
             label4 = new Label();
@@ -42,38 +42,38 @@
             btnVerify = new Button();
             btnSendVerifCode = new Button();
             lblEmail = new Label();
-            lblBack = new Label();
+            lblBack_Forget = new Label();
             picBack = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picBack).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // label1_Forget
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(100, 23, 61);
-            label1.Location = new Point(467, 153);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.MaximumSize = new Size(500, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(488, 92);
-            label1.TabIndex = 88;
-            label1.Text = resources.GetString("label1.Text");
+            label1_Forget.AutoSize = true;
+            label1_Forget.BackColor = Color.Transparent;
+            label1_Forget.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label1_Forget.ForeColor = Color.FromArgb(100, 23, 61);
+            label1_Forget.Location = new Point(467, 153);
+            label1_Forget.Margin = new Padding(2, 0, 2, 0);
+            label1_Forget.MaximumSize = new Size(500, 0);
+            label1_Forget.Name = "label1_Forget";
+            label1_Forget.Size = new Size(488, 92);
+            label1_Forget.TabIndex = 88;
+            label1_Forget.Text = resources.GetString("label1_Forget.Text");
             // 
-            // lblVerif
+            // lblVerif_Forget
             // 
-            lblVerif.AutoSize = true;
-            lblVerif.BackColor = Color.Transparent;
-            lblVerif.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            lblVerif.ForeColor = Color.FromArgb(100, 23, 61);
-            lblVerif.Location = new Point(478, 369);
-            lblVerif.Name = "lblVerif";
-            lblVerif.Size = new Size(166, 25);
-            lblVerif.TabIndex = 87;
-            lblVerif.Text = "Verification Code :";
+            lblVerif_Forget.AutoSize = true;
+            lblVerif_Forget.BackColor = Color.Transparent;
+            lblVerif_Forget.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            lblVerif_Forget.ForeColor = Color.FromArgb(100, 23, 61);
+            lblVerif_Forget.Location = new Point(478, 369);
+            lblVerif_Forget.Name = "lblVerif_Forget";
+            lblVerif_Forget.Size = new Size(166, 25);
+            lblVerif_Forget.TabIndex = 87;
+            lblVerif_Forget.Text = "Verification Code :";
             // 
             // tbVerif
             // 
@@ -93,17 +93,17 @@
             tbEmail.Size = new Size(268, 32);
             tbEmail.TabIndex = 85;
             // 
-            // lblForgetPass
+            // lblForgetPass_Forget
             // 
-            lblForgetPass.AutoSize = true;
-            lblForgetPass.BackColor = Color.Transparent;
-            lblForgetPass.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            lblForgetPass.ForeColor = Color.FromArgb(100, 23, 61);
-            lblForgetPass.Location = new Point(460, 92);
-            lblForgetPass.Name = "lblForgetPass";
-            lblForgetPass.Size = new Size(348, 46);
-            lblForgetPass.TabIndex = 84;
-            lblForgetPass.Text = "Reset your Password";
+            lblForgetPass_Forget.AutoSize = true;
+            lblForgetPass_Forget.BackColor = Color.Transparent;
+            lblForgetPass_Forget.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            lblForgetPass_Forget.ForeColor = Color.FromArgb(100, 23, 61);
+            lblForgetPass_Forget.Location = new Point(460, 92);
+            lblForgetPass_Forget.Name = "lblForgetPass_Forget";
+            lblForgetPass_Forget.Size = new Size(348, 46);
+            lblForgetPass_Forget.TabIndex = 84;
+            lblForgetPass_Forget.Text = "Reset your Password";
             // 
             // linkLabel1
             // 
@@ -210,18 +210,18 @@
             lblEmail.TabIndex = 76;
             lblEmail.Text = "Email :";
             // 
-            // lblBack
+            // lblBack_Forget
             // 
-            lblBack.AutoSize = true;
-            lblBack.BackColor = Color.Transparent;
-            lblBack.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            lblBack.ForeColor = Color.FromArgb(100, 23, 61);
-            lblBack.Location = new Point(478, 35);
-            lblBack.Name = "lblBack";
-            lblBack.Size = new Size(53, 25);
-            lblBack.TabIndex = 90;
-            lblBack.Text = "Back";
-            lblBack.Click += lblBack_Click;
+            lblBack_Forget.AutoSize = true;
+            lblBack_Forget.BackColor = Color.Transparent;
+            lblBack_Forget.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            lblBack_Forget.ForeColor = Color.FromArgb(100, 23, 61);
+            lblBack_Forget.Location = new Point(478, 35);
+            lblBack_Forget.Name = "lblBack_Forget";
+            lblBack_Forget.Size = new Size(53, 25);
+            lblBack_Forget.TabIndex = 90;
+            lblBack_Forget.Text = "Back";
+            lblBack_Forget.Click += lblBack_Click;
             // 
             // picBack
             // 
@@ -242,13 +242,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Untitled_design__6_;
             ClientSize = new Size(1006, 597);
-            Controls.Add(lblBack);
+            Controls.Add(lblBack_Forget);
             Controls.Add(picBack);
-            Controls.Add(label1);
-            Controls.Add(lblVerif);
+            Controls.Add(label1_Forget);
+            Controls.Add(lblVerif_Forget);
             Controls.Add(tbVerif);
             Controls.Add(tbEmail);
-            Controls.Add(lblForgetPass);
+            Controls.Add(lblForgetPass_Forget);
             Controls.Add(linkLabel1);
             Controls.Add(pictureBox3);
             Controls.Add(label4);
@@ -267,11 +267,11 @@
         }
 
         #endregion
-        private Label label1;
-        private Label lblVerif;
+        private Label label1_Forget;
+        private Label lblVerif_Forget;
         private TextBox tbVerif;
         private TextBox tbEmail;
-        private Label lblForgetPass;
+        private Label lblForgetPass_Forget;
         private LinkLabel linkLabel1;
         private PictureBox pictureBox3;
         private Label label4;
@@ -280,7 +280,7 @@
         private Button btnVerify;
         private Button btnSendVerifCode;
         private Label lblEmail;
-        private Label lblBack;
+        private Label lblBack_Forget;
         private PictureBox picBack;
     }
 }

@@ -97,7 +97,7 @@ namespace LoopFit
                                 lblPrice1.Text = $"Rp {price}";
                                 if (!string.IsNullOrEmpty(linkProduct))
                                 {
-                                    llShopee1.Tag = linkProduct;
+                                    llShopee1_Catalog.Tag = linkProduct;
                                 }
                             }
                             else if (catalogId == 2)
@@ -107,7 +107,7 @@ namespace LoopFit
                                 lblPrice2.Text = $"Rp {price}";
                                 if (!string.IsNullOrEmpty(linkProduct))
                                 {
-                                    llShopee2.Tag = linkProduct;
+                                    llShopee2_Catalog.Tag = linkProduct;
                                 }
                             }
                             else if (catalogId == 3)
@@ -117,7 +117,7 @@ namespace LoopFit
                                 lblPrice3.Text = $"Rp {price}";
                                 if (!string.IsNullOrEmpty(linkProduct))
                                 {
-                                    llShopee3.Tag = linkProduct;
+                                    llShopee3_Catalog.Tag = linkProduct;
                                 }
                             }
                             else if (catalogId == 4)
@@ -127,7 +127,7 @@ namespace LoopFit
                                 lblPrice4.Text = $"Rp {price}";
                                 if (!string.IsNullOrEmpty(linkProduct))
                                 {
-                                    llShopee4.Tag = linkProduct;
+                                    llShopee4_Catalog.Tag = linkProduct;
                                 }
                             }
                         }
@@ -138,129 +138,37 @@ namespace LoopFit
 
         private void llShopee1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (llShopee1.Tag != null)
-            {
-                string url = llShopee1.Tag.ToString();
-                try
-                {
-                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
-                    {
-                        FileName = url,
-                        UseShellExecute = true // Make sure it opens in the browser
-                    });
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("An error occurred: " + ex.Message);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Link product not available.");
-            }
+            Helper.OpenProductLink(llShopee1_Catalog);
         }
 
         private void llShopee2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (llShopee2.Tag != null)
-            {
-                string url = llShopee2.Tag.ToString();
-                try
-                {
-                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
-                    {
-                        FileName = url,
-                        UseShellExecute = true
-                    });
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("An error occurred: " + ex.Message);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Link product not available.");
-            }
+            Helper.OpenProductLink(llShopee2_Catalog);
         }
 
         private void llShopee3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (llShopee3.Tag != null)
-            {
-                string url = llShopee3.Tag.ToString();
-                try
-                {
-                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
-                    {
-                        FileName = url,
-                        UseShellExecute = true
-                    });
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("An error occurred: " + ex.Message);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Link product not available.");
-            }
+            Helper.OpenProductLink(llShopee3_Catalog);
         }
 
         private void llShopee4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (llShopee4.Tag != null)
-            {
-                string url = llShopee4.Tag.ToString();
-                try
-                {
-                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
-                    {
-                        FileName = url,
-                        UseShellExecute = true
-                    });
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("An error occurred: " + ex.Message);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Link product not available.");
-            }
-        }
-
-        private void OpenUrl(string url)
-        {
-            try
-            {
-                Process.Start(new ProcessStartInfo
-                {
-                    FileName = url,
-                    UseShellExecute = true // Agar URL dibuka dengan browser default
-                });
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Tidak dapat membuka URL: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            Helper.OpenProductLink(llShopee4_Catalog);
         }
 
         private void picInstagram_Click(object sender, EventArgs e)
         {
-            OpenUrl("https://www.instagram.com/dtetiugm/");
+            Helper.OpenUrl("https://www.instagram.com/dtetiugm/");
         }
 
         private void picTiktok_Click(object sender, EventArgs e)
         {
-            OpenUrl("https://www.tiktok.com/@kmteti");
+            Helper.OpenUrl("https://www.tiktok.com/@kmteti");
         }
 
         private void picTwitter_Click(object sender, EventArgs e)
         {
-            OpenUrl("https://x.com/KMTETI");
+            Helper.OpenUrl("https://x.com/KMTETI");
         }
 
         private void lblLoopFit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

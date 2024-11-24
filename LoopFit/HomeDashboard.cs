@@ -39,22 +39,6 @@ namespace LoopFit
             }
         }
 
-        private void OpenUrl(string url)
-        {
-            try
-            {
-                Process.Start(new ProcessStartInfo
-                {
-                    FileName = url,
-                    UseShellExecute = true // Agar URL dibuka dengan browser default
-                });
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Tidak dapat membuka URL: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private void picDonate_Click(object sender, EventArgs e)
         {
             DonateClothInfo donateclothinfo = new DonateClothInfo();
@@ -177,17 +161,17 @@ namespace LoopFit
 
         private void picInstagram_Click(object sender, EventArgs e)
         {
-            OpenUrl("https://www.instagram.com/dtetiugm/");
+            Helper.OpenUrl("https://www.instagram.com/dtetiugm/");
         }
 
         private void picTiktok_Click(object sender, EventArgs e)
         {
-            OpenUrl("https://www.tiktok.com/@kmteti");
+            Helper.OpenUrl("https://www.tiktok.com/@kmteti");
         }
 
         private void picTwitter_Click(object sender, EventArgs e)
         {
-            OpenUrl("https://x.com/KMTETI");
+            Helper.OpenUrl("https://x.com/KMTETI");
         }
 
         private void HomeDashboard_Load(object sender, EventArgs e)

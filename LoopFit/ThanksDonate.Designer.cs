@@ -30,17 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThanksDonate));
             linkLabel3 = new LinkLabel();
-            label1 = new Label();
-            btnBack = new Button();
-            txtDescription = new TextBox();
+            label1_Thanks = new Label();
+            btnBack_Thanks = new Button();
             picTwitter = new PictureBox();
             picTiktok = new PictureBox();
             picInstagram = new PictureBox();
-            lblSosmed = new Label();
-            linkLabel2 = new LinkLabel();
+            lblSosmed_Thanks = new Label();
+            linkLabel2_Thanks = new LinkLabel();
             pnlWelcome = new Panel();
             pictureBox3 = new PictureBox();
-            lblThanks = new Label();
+            lblThanks_Thanks = new Label();
             btnLogOut = new Button();
             pnlSide = new Panel();
             btnActivity = new Button();
@@ -48,6 +47,7 @@
             pnlProfile = new Panel();
             picProfile = new PictureBox();
             llProfile = new LinkLabel();
+            txtDescription_Thanks = new Label();
             ((System.ComponentModel.ISupportInitialize)picTwitter).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picTiktok).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picInstagram).BeginInit();
@@ -72,44 +72,29 @@
             linkLabel3.Text = "LoopFit";
             linkLabel3.LinkClicked += linkLabel3_LinkClicked;
             // 
-            // label1
+            // label1_Thanks
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(100, 23, 61);
-            label1.Location = new Point(296, 258);
-            label1.Name = "label1";
-            label1.Size = new Size(519, 38);
-            label1.TabIndex = 54;
-            label1.Text = "Together, We Create a Greener Future!\r\n";
+            label1_Thanks.AutoSize = true;
+            label1_Thanks.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label1_Thanks.ForeColor = Color.FromArgb(100, 23, 61);
+            label1_Thanks.Location = new Point(296, 258);
+            label1_Thanks.Name = "label1_Thanks";
+            label1_Thanks.Size = new Size(519, 38);
+            label1_Thanks.TabIndex = 54;
+            label1_Thanks.Text = "Together, We Create a Greener Future!\r\n";
             // 
-            // btnBack
+            // btnBack_Thanks
             // 
-            btnBack.BackColor = Color.White;
-            btnBack.FlatAppearance.BorderSize = 0;
-            btnBack.FlatStyle = FlatStyle.Flat;
-            btnBack.Location = new Point(1155, 536);
-            btnBack.Name = "btnBack";
-            btnBack.Size = new Size(121, 36);
-            btnBack.TabIndex = 56;
-            btnBack.Text = "Back to Home";
-            btnBack.UseVisualStyleBackColor = false;
-            btnBack.Click += btnBack_Click;
-            // 
-            // txtDescription
-            // 
-            txtDescription.BackColor = Color.Thistle;
-            txtDescription.BorderStyle = BorderStyle.None;
-            txtDescription.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            txtDescription.ForeColor = Color.FromArgb(100, 23, 61);
-            txtDescription.Location = new Point(296, 325);
-            txtDescription.Margin = new Padding(2);
-            txtDescription.Multiline = true;
-            txtDescription.Name = "txtDescription";
-            txtDescription.ReadOnly = true;
-            txtDescription.Size = new Size(912, 77);
-            txtDescription.TabIndex = 55;
-            txtDescription.Text = "We greatly appreciate your contribution to supporting sustainability through clothing donations. Every item you donate will help reduce textile waste and benefit those in need.\r\n";
+            btnBack_Thanks.BackColor = Color.White;
+            btnBack_Thanks.FlatAppearance.BorderSize = 0;
+            btnBack_Thanks.FlatStyle = FlatStyle.Flat;
+            btnBack_Thanks.Location = new Point(1107, 536);
+            btnBack_Thanks.Name = "btnBack_Thanks";
+            btnBack_Thanks.Size = new Size(169, 36);
+            btnBack_Thanks.TabIndex = 56;
+            btnBack_Thanks.Text = "Back to Home";
+            btnBack_Thanks.UseVisualStyleBackColor = false;
+            btnBack_Thanks.Click += btnBack_Click;
             // 
             // picTwitter
             // 
@@ -147,40 +132,40 @@
             picInstagram.TabStop = false;
             picInstagram.Click += picInstagram_Click;
             // 
-            // lblSosmed
+            // lblSosmed_Thanks
             // 
-            lblSosmed.AutoSize = true;
-            lblSosmed.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSosmed.ForeColor = Color.FromArgb(100, 23, 61);
-            lblSosmed.Location = new Point(720, 632);
-            lblSosmed.Margin = new Padding(2, 0, 2, 0);
-            lblSosmed.Name = "lblSosmed";
-            lblSosmed.Size = new Size(175, 20);
-            lblSosmed.TabIndex = 50;
-            lblSosmed.Text = "Follow Our Social Media";
-            lblSosmed.TextAlign = ContentAlignment.MiddleCenter;
+            lblSosmed_Thanks.AutoSize = true;
+            lblSosmed_Thanks.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSosmed_Thanks.ForeColor = Color.FromArgb(100, 23, 61);
+            lblSosmed_Thanks.Location = new Point(720, 632);
+            lblSosmed_Thanks.Margin = new Padding(2, 0, 2, 0);
+            lblSosmed_Thanks.Name = "lblSosmed_Thanks";
+            lblSosmed_Thanks.Size = new Size(175, 20);
+            lblSosmed_Thanks.TabIndex = 50;
+            lblSosmed_Thanks.Text = "Follow Our Social Media";
+            lblSosmed_Thanks.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // linkLabel2
+            // linkLabel2_Thanks
             // 
-            linkLabel2.AutoSize = true;
-            linkLabel2.BackColor = Color.Transparent;
-            linkLabel2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            linkLabel2.LinkColor = Color.FromArgb(80, 23, 61);
-            linkLabel2.Location = new Point(825, 22);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(104, 25);
-            linkLabel2.TabIndex = 41;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "Contact Us";
-            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            linkLabel2_Thanks.AutoSize = true;
+            linkLabel2_Thanks.BackColor = Color.Transparent;
+            linkLabel2_Thanks.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            linkLabel2_Thanks.LinkColor = Color.FromArgb(80, 23, 61);
+            linkLabel2_Thanks.Location = new Point(825, 22);
+            linkLabel2_Thanks.Name = "linkLabel2_Thanks";
+            linkLabel2_Thanks.Size = new Size(104, 25);
+            linkLabel2_Thanks.TabIndex = 41;
+            linkLabel2_Thanks.TabStop = true;
+            linkLabel2_Thanks.Text = "Contact Us";
+            linkLabel2_Thanks.LinkClicked += linkLabel2_LinkClicked;
             // 
             // pnlWelcome
             // 
             pnlWelcome.BackColor = Color.FromArgb(215, 169, 205);
             pnlWelcome.Controls.Add(pictureBox3);
             pnlWelcome.Controls.Add(linkLabel3);
-            pnlWelcome.Controls.Add(linkLabel2);
-            pnlWelcome.Controls.Add(lblThanks);
+            pnlWelcome.Controls.Add(linkLabel2_Thanks);
+            pnlWelcome.Controls.Add(lblThanks_Thanks);
             pnlWelcome.Dock = DockStyle.Top;
             pnlWelcome.Location = new Point(250, 0);
             pnlWelcome.Name = "pnlWelcome";
@@ -199,16 +184,16 @@
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
             // 
-            // lblThanks
+            // lblThanks_Thanks
             // 
-            lblThanks.AutoSize = true;
-            lblThanks.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            lblThanks.ForeColor = Color.FromArgb(100, 23, 61);
-            lblThanks.Location = new Point(46, 90);
-            lblThanks.Name = "lblThanks";
-            lblThanks.Size = new Size(980, 54);
-            lblThanks.TabIndex = 45;
-            lblThanks.Text = "Thank you for contributing to a sustainable future!";
+            lblThanks_Thanks.AutoSize = true;
+            lblThanks_Thanks.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            lblThanks_Thanks.ForeColor = Color.FromArgb(100, 23, 61);
+            lblThanks_Thanks.Location = new Point(46, 90);
+            lblThanks_Thanks.Name = "lblThanks_Thanks";
+            lblThanks_Thanks.Size = new Size(980, 54);
+            lblThanks_Thanks.TabIndex = 45;
+            lblThanks_Thanks.Text = "Thank you for contributing to a sustainable future!";
             // 
             // btnLogOut
             // 
@@ -311,19 +296,31 @@
             llProfile.Text = "Profile";
             llProfile.LinkClicked += llProfile_LinkClicked;
             // 
+            // txtDescription_Thanks
+            // 
+            txtDescription_Thanks.AutoSize = true;
+            txtDescription_Thanks.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            txtDescription_Thanks.ForeColor = Color.FromArgb(100, 23, 61);
+            txtDescription_Thanks.Location = new Point(296, 327);
+            txtDescription_Thanks.MaximumSize = new Size(975, 0);
+            txtDescription_Thanks.Name = "txtDescription_Thanks";
+            txtDescription_Thanks.Size = new Size(963, 50);
+            txtDescription_Thanks.TabIndex = 57;
+            txtDescription_Thanks.Text = "We greatly appreciate your contribution to supporting sustainability through clothing donations. Every item you donate will help reduce textile waste and benefit those in need.";
+            // 
             // ThanksDonate
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Thistle;
             ClientSize = new Size(1348, 721);
-            Controls.Add(label1);
-            Controls.Add(btnBack);
-            Controls.Add(txtDescription);
+            Controls.Add(txtDescription_Thanks);
+            Controls.Add(label1_Thanks);
+            Controls.Add(btnBack_Thanks);
             Controls.Add(picTwitter);
             Controls.Add(picTiktok);
             Controls.Add(picInstagram);
-            Controls.Add(lblSosmed);
+            Controls.Add(lblSosmed_Thanks);
             Controls.Add(pnlWelcome);
             Controls.Add(pnlSide);
             Name = "ThanksDonate";
@@ -345,17 +342,16 @@
         #endregion
 
         private LinkLabel linkLabel3;
-        private Label label1;
-        private Button btnBack;
-        private TextBox txtDescription;
+        private Label label1_Thanks;
+        private Button btnBack_Thanks;
         private PictureBox picTwitter;
         private PictureBox picTiktok;
         private PictureBox picInstagram;
-        private Label lblSosmed;
-        private LinkLabel linkLabel2;
+        private Label lblSosmed_Thanks;
+        private LinkLabel linkLabel2_Thanks;
         private Panel pnlWelcome;
         private PictureBox pictureBox3;
-        private Label lblThanks;
+        private Label lblThanks_Thanks;
         private Button btnLogOut;
         private Panel pnlSide;
         private Button btnActivity;
@@ -363,5 +359,6 @@
         private Panel pnlProfile;
         private PictureBox picProfile;
         private LinkLabel llProfile;
+        private Label txtDescription_Thanks;
     }
 }

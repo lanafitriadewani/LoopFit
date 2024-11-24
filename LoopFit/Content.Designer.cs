@@ -36,20 +36,20 @@
             btnHome = new Button();
             panel2 = new Panel();
             btnLogOut = new Button();
-            label1 = new Label();
+            label1_Content = new Label();
             picTiktok = new PictureBox();
-            lblContent = new Label();
-            lblLoopFit = new LinkLabel();
-            lblContactUs = new LinkLabel();
+            lblContent_Content = new Label();
+            lblLoopFit_Content = new LinkLabel();
+            lblContactUs_Content = new LinkLabel();
             pnlWelcome = new Panel();
             pictureBox3 = new PictureBox();
-            label3 = new Label();
+            lblDesc_Content = new Label();
             lblContent3 = new Label();
             lblContent2 = new Label();
             lblContent1 = new Label();
-            btnVid3 = new Button();
-            btnVid2 = new Button();
-            btnVid1 = new Button();
+            btnVid3_Content = new Button();
+            btnVid2_Content = new Button();
+            btnVid1_Content = new Button();
             webView1 = new Microsoft.Web.WebView2.WinForms.WebView2();
             webView2 = new Microsoft.Web.WebView2.WinForms.WebView2();
             webView3 = new Microsoft.Web.WebView2.WinForms.WebView2();
@@ -164,17 +164,17 @@
             btnLogOut.UseVisualStyleBackColor = true;
             btnLogOut.Click += btnLogOut_Click;
             // 
-            // label1
+            // label1_Content
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(100, 23, 61);
-            label1.Location = new Point(644, 677);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(298, 20);
-            label1.TabIndex = 50;
-            label1.Text = "Visit our Tiktok account for more content: ";
+            label1_Content.AutoSize = true;
+            label1_Content.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label1_Content.ForeColor = Color.FromArgb(100, 23, 61);
+            label1_Content.Location = new Point(644, 677);
+            label1_Content.Margin = new Padding(2, 0, 2, 0);
+            label1_Content.Name = "label1_Content";
+            label1_Content.Size = new Size(298, 20);
+            label1_Content.TabIndex = 50;
+            label1_Content.Text = "Visit our Tiktok account for more content: ";
             // 
             // picTiktok
             // 
@@ -188,57 +188,57 @@
             picTiktok.TabStop = false;
             picTiktok.Click += picTiktok_Click;
             // 
-            // lblContent
+            // lblContent_Content
             // 
-            lblContent.AutoSize = true;
-            lblContent.BackColor = Color.Transparent;
-            lblContent.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            lblContent.ForeColor = Color.FromArgb(100, 23, 61);
-            lblContent.Location = new Point(14, 33);
-            lblContent.Margin = new Padding(2, 0, 2, 0);
-            lblContent.Name = "lblContent";
-            lblContent.Size = new Size(191, 60);
-            lblContent.TabIndex = 0;
-            lblContent.Text = "Content";
+            lblContent_Content.AutoSize = true;
+            lblContent_Content.BackColor = Color.Transparent;
+            lblContent_Content.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            lblContent_Content.ForeColor = Color.FromArgb(100, 23, 61);
+            lblContent_Content.Location = new Point(14, 33);
+            lblContent_Content.Margin = new Padding(2, 0, 2, 0);
+            lblContent_Content.Name = "lblContent_Content";
+            lblContent_Content.Size = new Size(191, 60);
+            lblContent_Content.TabIndex = 0;
+            lblContent_Content.Text = "Content";
             // 
-            // lblLoopFit
+            // lblLoopFit_Content
             // 
-            lblLoopFit.AutoSize = true;
-            lblLoopFit.BackColor = Color.Transparent;
-            lblLoopFit.DisabledLinkColor = Color.FromArgb(64, 34, 64);
-            lblLoopFit.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            lblLoopFit.LinkColor = Color.FromArgb(80, 23, 61);
-            lblLoopFit.Location = new Point(987, 22);
-            lblLoopFit.Name = "lblLoopFit";
-            lblLoopFit.Size = new Size(75, 25);
-            lblLoopFit.TabIndex = 42;
-            lblLoopFit.TabStop = true;
-            lblLoopFit.Text = "LoopFit";
-            lblLoopFit.LinkClicked += lblLoopFit_LinkClicked;
+            lblLoopFit_Content.AutoSize = true;
+            lblLoopFit_Content.BackColor = Color.Transparent;
+            lblLoopFit_Content.DisabledLinkColor = Color.FromArgb(64, 34, 64);
+            lblLoopFit_Content.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblLoopFit_Content.LinkColor = Color.FromArgb(80, 23, 61);
+            lblLoopFit_Content.Location = new Point(987, 22);
+            lblLoopFit_Content.Name = "lblLoopFit_Content";
+            lblLoopFit_Content.Size = new Size(75, 25);
+            lblLoopFit_Content.TabIndex = 42;
+            lblLoopFit_Content.TabStop = true;
+            lblLoopFit_Content.Text = "LoopFit";
+            lblLoopFit_Content.LinkClicked += lblLoopFit_LinkClicked;
             // 
-            // lblContactUs
+            // lblContactUs_Content
             // 
-            lblContactUs.AutoSize = true;
-            lblContactUs.BackColor = Color.Transparent;
-            lblContactUs.DisabledLinkColor = Color.FromArgb(64, 34, 64);
-            lblContactUs.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            lblContactUs.LinkColor = Color.FromArgb(80, 23, 61);
-            lblContactUs.Location = new Point(825, 22);
-            lblContactUs.Name = "lblContactUs";
-            lblContactUs.Size = new Size(104, 25);
-            lblContactUs.TabIndex = 40;
-            lblContactUs.TabStop = true;
-            lblContactUs.Text = "Contact Us";
-            lblContactUs.LinkClicked += lblContactUs_LinkClicked;
+            lblContactUs_Content.AutoSize = true;
+            lblContactUs_Content.BackColor = Color.Transparent;
+            lblContactUs_Content.DisabledLinkColor = Color.FromArgb(64, 34, 64);
+            lblContactUs_Content.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblContactUs_Content.LinkColor = Color.FromArgb(80, 23, 61);
+            lblContactUs_Content.Location = new Point(825, 22);
+            lblContactUs_Content.Name = "lblContactUs_Content";
+            lblContactUs_Content.Size = new Size(104, 25);
+            lblContactUs_Content.TabIndex = 40;
+            lblContactUs_Content.TabStop = true;
+            lblContactUs_Content.Text = "Contact Us";
+            lblContactUs_Content.LinkClicked += lblContactUs_LinkClicked;
             // 
             // pnlWelcome
             // 
             pnlWelcome.BackColor = Color.FromArgb(215, 169, 205);
             pnlWelcome.Controls.Add(pictureBox3);
-            pnlWelcome.Controls.Add(label3);
-            pnlWelcome.Controls.Add(lblContent);
-            pnlWelcome.Controls.Add(lblLoopFit);
-            pnlWelcome.Controls.Add(lblContactUs);
+            pnlWelcome.Controls.Add(lblDesc_Content);
+            pnlWelcome.Controls.Add(lblContent_Content);
+            pnlWelcome.Controls.Add(lblLoopFit_Content);
+            pnlWelcome.Controls.Add(lblContactUs_Content);
             pnlWelcome.Dock = DockStyle.Top;
             pnlWelcome.Location = new Point(246, 0);
             pnlWelcome.Margin = new Padding(2);
@@ -258,19 +258,20 @@
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
             // 
-            // label3
+            // lblDesc_Content
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.FromArgb(100, 23, 61);
-            label3.Location = new Point(25, 100);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.MaximumSize = new Size(1000, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(984, 46);
-            label3.TabIndex = 90;
-            label3.Text = "Discover inspiring content and informative videos about sustainable fashion and clothing recycling to boost up your knowledge while spending your time!\n";
+            lblDesc_Content.AutoSize = true;
+            lblDesc_Content.BackColor = Color.Transparent;
+            lblDesc_Content.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lblDesc_Content.ForeColor = Color.FromArgb(100, 23, 61);
+            lblDesc_Content.Location = new Point(25, 100);
+            lblDesc_Content.Margin = new Padding(2, 0, 2, 0);
+            lblDesc_Content.MaximumSize = new Size(1000, 0);
+            lblDesc_Content.Name = "lblDesc_Content";
+            lblDesc_Content.Size = new Size(984, 46);
+            lblDesc_Content.TabIndex = 90;
+            lblDesc_Content.Text = "Discover inspiring content and informative videos about sustainable fashion and clothing recycling to boost up your knowledge while spending your time!\n";
+            lblDesc_Content.Click += label3_Click;
             // 
             // lblContent3
             // 
@@ -308,50 +309,50 @@
             lblContent1.TabIndex = 71;
             lblContent1.Text = "Content1";
             // 
-            // btnVid3
+            // btnVid3_Content
             // 
-            btnVid3.BackColor = Color.FromArgb(178, 113, 178);
-            btnVid3.FlatStyle = FlatStyle.Popup;
-            btnVid3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnVid3.ForeColor = Color.FromArgb(100, 23, 61);
-            btnVid3.Location = new Point(1124, 203);
-            btnVid3.Margin = new Padding(2);
-            btnVid3.Name = "btnVid3";
-            btnVid3.Size = new Size(166, 29);
-            btnVid3.TabIndex = 67;
-            btnVid3.Text = "Click to see this video";
-            btnVid3.UseVisualStyleBackColor = false;
-            btnVid3.Click += btnVid3_Click;
+            btnVid3_Content.BackColor = Color.FromArgb(178, 113, 178);
+            btnVid3_Content.FlatStyle = FlatStyle.Popup;
+            btnVid3_Content.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVid3_Content.ForeColor = Color.FromArgb(100, 23, 61);
+            btnVid3_Content.Location = new Point(1124, 203);
+            btnVid3_Content.Margin = new Padding(2);
+            btnVid3_Content.Name = "btnVid3_Content";
+            btnVid3_Content.Size = new Size(166, 29);
+            btnVid3_Content.TabIndex = 67;
+            btnVid3_Content.Text = "Click to see this video";
+            btnVid3_Content.UseVisualStyleBackColor = false;
+            btnVid3_Content.Click += btnVid3_Click;
             // 
-            // btnVid2
+            // btnVid2_Content
             // 
-            btnVid2.BackColor = Color.FromArgb(178, 113, 178);
-            btnVid2.FlatStyle = FlatStyle.Popup;
-            btnVid2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnVid2.ForeColor = Color.FromArgb(100, 23, 61);
-            btnVid2.Location = new Point(753, 203);
-            btnVid2.Margin = new Padding(2);
-            btnVid2.Name = "btnVid2";
-            btnVid2.Size = new Size(167, 29);
-            btnVid2.TabIndex = 66;
-            btnVid2.Text = "Click to see this video";
-            btnVid2.UseVisualStyleBackColor = false;
-            btnVid2.Click += btnVid2_Click;
+            btnVid2_Content.BackColor = Color.FromArgb(178, 113, 178);
+            btnVid2_Content.FlatStyle = FlatStyle.Popup;
+            btnVid2_Content.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVid2_Content.ForeColor = Color.FromArgb(100, 23, 61);
+            btnVid2_Content.Location = new Point(753, 203);
+            btnVid2_Content.Margin = new Padding(2);
+            btnVid2_Content.Name = "btnVid2_Content";
+            btnVid2_Content.Size = new Size(167, 29);
+            btnVid2_Content.TabIndex = 66;
+            btnVid2_Content.Text = "Click to see this video";
+            btnVid2_Content.UseVisualStyleBackColor = false;
+            btnVid2_Content.Click += btnVid2_Click;
             // 
-            // btnVid1
+            // btnVid1_Content
             // 
-            btnVid1.BackColor = Color.FromArgb(178, 113, 178);
-            btnVid1.FlatStyle = FlatStyle.Popup;
-            btnVid1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnVid1.ForeColor = Color.FromArgb(100, 23, 61);
-            btnVid1.Location = new Point(373, 203);
-            btnVid1.Margin = new Padding(2);
-            btnVid1.Name = "btnVid1";
-            btnVid1.Size = new Size(177, 31);
-            btnVid1.TabIndex = 65;
-            btnVid1.Text = "Click to see this video";
-            btnVid1.UseVisualStyleBackColor = false;
-            btnVid1.Click += btnVid1_Click;
+            btnVid1_Content.BackColor = Color.FromArgb(178, 113, 178);
+            btnVid1_Content.FlatStyle = FlatStyle.Popup;
+            btnVid1_Content.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVid1_Content.ForeColor = Color.FromArgb(100, 23, 61);
+            btnVid1_Content.Location = new Point(373, 203);
+            btnVid1_Content.Margin = new Padding(2);
+            btnVid1_Content.Name = "btnVid1_Content";
+            btnVid1_Content.Size = new Size(177, 31);
+            btnVid1_Content.TabIndex = 65;
+            btnVid1_Content.Text = "Click to see this video";
+            btnVid1_Content.UseVisualStyleBackColor = false;
+            btnVid1_Content.Click += btnVid1_Click;
             // 
             // webView1
             // 
@@ -395,15 +396,15 @@
             Controls.Add(lblContent3);
             Controls.Add(lblContent2);
             Controls.Add(lblContent1);
-            Controls.Add(btnVid3);
-            Controls.Add(btnVid2);
-            Controls.Add(btnVid1);
+            Controls.Add(btnVid3_Content);
+            Controls.Add(btnVid2_Content);
+            Controls.Add(btnVid1_Content);
             Controls.Add(webView1);
             Controls.Add(webView2);
             Controls.Add(webView3);
             Controls.Add(pnlWelcome);
             Controls.Add(picTiktok);
-            Controls.Add(label1);
+            Controls.Add(label1_Content);
             Controls.Add(panel2);
             Name = "Content";
             Text = "Content";
@@ -431,20 +432,20 @@
         private Button btnHome;
         private Panel panel2;
         private Button btnLogOut;
-        private Label label1;
+        private Label label1_Content;
         private PictureBox picTiktok;
-        private Label lblContent;
-        private LinkLabel lblLoopFit;
-        private LinkLabel lblContactUs;
+        private Label lblContent_Content;
+        private LinkLabel lblLoopFit_Content;
+        private LinkLabel lblContactUs_Content;
         private Panel pnlWelcome;
-        private Label label3;
+        private Label lblDesc_Content;
         private PictureBox pictureBox3;
         private Label lblContent3;
         private Label lblContent2;
         private Label lblContent1;
-        private Button btnVid3;
-        private Button btnVid2;
-        private Button btnVid1;
+        private Button btnVid3_Content;
+        private Button btnVid2_Content;
+        private Button btnVid1_Content;
         private Microsoft.Web.WebView2.WinForms.WebView2 webView1;
         private Microsoft.Web.WebView2.WinForms.WebView2 webView2;
         private Microsoft.Web.WebView2.WinForms.WebView2 webView3;

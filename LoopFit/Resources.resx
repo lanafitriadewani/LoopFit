@@ -117,11 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Black" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="Blue" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="Brown" xml:space="preserve">
+    <value>Brown</value>
+  </data>
   <data name="btnActivity.Text" xml:space="preserve">
     <value>Activity</value>
   </data>
   <data name="btnActivity_Profile.Text" xml:space="preserve">
     <value>Activity</value>
+  </data>
+  <data name="btnBack_Confirm.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="btnBack_Thanks.Text" xml:space="preserve">
+    <value>Back to Home</value>
+  </data>
+  <data name="btnChangeImage_EditProfile.Text" xml:space="preserve">
+    <value>Change Image</value>
+  </data>
+  <data name="btnClothInfoNext_Info.Text" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="btnConfirmDonate_Confirm.Text" xml:space="preserve">
+    <value>Confirm</value>
   </data>
   <data name="btnEditProfile_Profile.Text" xml:space="preserve">
     <value>Edit Profile</value>
@@ -135,26 +159,225 @@
   <data name="btnLoadActivityUser_Activity.Text" xml:space="preserve">
     <value>Load</value>
   </data>
+  <data name="btnLoginGoogle.Text" xml:space="preserve">
+    <value>Login with Google</value>
+  </data>
+  <data name="btnLogin_Login.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="btnLogin_Welcome.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
   <data name="btnLogOut.Text" xml:space="preserve">
     <value>Log Out</value>
   </data>
   <data name="btnLogOut_Profile.Text" xml:space="preserve">
     <value>Log Out</value>
   </data>
+  <data name="btnSendVerifCode_EditProfile.Text" xml:space="preserve">
+    <value>Send Code</value>
+  </data>
+  <data name="btnSignUp_Welcome.Text" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="btnSubmitEdit_EditProfile.Text" xml:space="preserve">
+    <value>Submit</value>
+  </data>
   <data name="btnSubmitLanguage_Profile.Text" xml:space="preserve">
     <value>Submit</value>
+  </data>
+  <data name="btnSubmit_Uname.Text" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="btnUploadImage2_Info.Text" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="btnUploadImage_Info.Text" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="btnVerify_EditProfile.Text" xml:space="preserve">
+    <value>Verify</value>
+  </data>
+  <data name="btnVerify_VerifEmail.Text" xml:space="preserve">
+    <value>Verify</value>
+  </data>
+  <data name="btnVid1_Content.Text" xml:space="preserve">
+    <value>Click to see this video</value>
+  </data>
+  <data name="btnVid2_Content.Text" xml:space="preserve">
+    <value>Click to see this video</value>
+  </data>
+  <data name="btnVid3_Content.Text" xml:space="preserve">
+    <value>Click to see this video</value>
+  </data>
+  <data name="Cotton" xml:space="preserve">
+    <value>Cotton</value>
+  </data>
+  <data name="Denim" xml:space="preserve">
+    <value>Denim</value>
+  </data>
+  <data name="EmailVerificationDescription" xml:space="preserve">
+    <value>We emailed you a four-digit code to {0}. Enter the code below to confirm your email address.</value>
+  </data>
+  <data name="FillAllFieldsMessage" xml:space="preserve">
+    <value>Please fill in all data completely.</value>
+  </data>
+  <data name="Green" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="Grey" xml:space="preserve">
+    <value>Grey</value>
+  </data>
+  <data name="Hijab" xml:space="preserve">
+    <value>Hijab</value>
+  </data>
+  <data name="Indigo" xml:space="preserve">
+    <value>Indigo</value>
+  </data>
+  <data name="InnerTop" xml:space="preserve">
+    <value>Inner Top</value>
+  </data>
+  <data name="Jersey" xml:space="preserve">
+    <value>Jersey</value>
+  </data>
+  <data name="label1_Content.Text" xml:space="preserve">
+    <value>Visit our Tiktok account for more content:</value>
+  </data>
+  <data name="label1_Create.Text" xml:space="preserve">
+    <value>Create your new password and don't forget it!</value>
+  </data>
+  <data name="label1_Donate.Text" xml:space="preserve">
+    <value>Front Side</value>
+  </data>
+  <data name="label1_Edit.Text" xml:space="preserve">
+    <value>Last Name :</value>
+  </data>
+  <data name="label1_Forget.Text" xml:space="preserve">
+    <value>Enter your registered email address below. A verification code will be sent to your email! Please check your inbox (and the spam folder) for the code. Once you have the code, enter it to proceed resetting your password.</value>
+  </data>
+  <data name="label1_Thanks.Text" xml:space="preserve">
+    <value>Together, We Create a Greener Future!</value>
+  </data>
+  <data name="label1_Welcome.Text" xml:space="preserve">
+    <value>An desktop app that facilitates clothing donations to tackle the growing issue of fast fashion, promoting sustainability, and supporting a circular economy by repurposing textiles for reuse or recycling.</value>
+  </data>
+  <data name="label2_Donate.Text" xml:space="preserve">
+    <value>Back Side</value>
+  </data>
+  <data name="label3_Catalog.Text" xml:space="preserve">
+    <value>Discover a selection of upcycled and sustainable fashion products made with love and creativity. Support eco-friendly initiatives by checking out our featured items below!</value>
+  </data>
+  <data name="label3_Donate.Text" xml:space="preserve">
+    <value>Donate your used clothes to be processed into new items or useful raw materials by filling in the details about the condition of your clothes on this page. Together with LoopFit, let's create a sustainable solution for a better future.</value>
+  </data>
+  <data name="label3_Edit.Text" xml:space="preserve">
+    <value>*Click it if you change your email and you will get your code soon</value>
+  </data>
+  <data name="label4_Catalog.Text" xml:space="preserve">
+    <value>Here are some of our products. Come check it out!</value>
+  </data>
+  <data name="label4_Edit.Text" xml:space="preserve">
+    <value>*Click it to verify your code before submitting changes</value>
+  </data>
+  <data name="label6_Confirm.Text" xml:space="preserve">
+    <value>This page allows you to review the estimated value of your donated clothing items and choose a drop-off point for delivery. The estimated price is calculated based on the condition and type of clothing you provided earlier. Once you’ve reviewed the details, you can confirm your donation or make adjustments. Let’s make a positive impact together!</value>
+  </data>
+  <data name="lblAboutUs_AboutUs.Text" xml:space="preserve">
+    <value>About Us</value>
   </data>
   <data name="lblActivity_Activity.Text" xml:space="preserve">
     <value>Activity</value>
   </data>
+  <data name="lblAddress_Contact.Text" xml:space="preserve">
+    <value>Address :</value>
+  </data>
+  <data name="lblAlready_Login.Text" xml:space="preserve">
+    <value>Don't have an account?</value>
+  </data>
+  <data name="lblAlready_SignUp.Text" xml:space="preserve">
+    <value>Already have an account?</value>
+  </data>
+  <data name="lblAlready_VerifEmail.Text" xml:space="preserve">
+    <value>Didn't receive a code?</value>
+  </data>
+  <data name="lblBack_Create.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="lblBack_Forget.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="lblBack_Uname.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="lblBack_VerifEmail.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="lblCatalog_Catalog.Text" xml:space="preserve">
+    <value>Catalog</value>
+  </data>
   <data name="lblChangeLanguage_Profile.Text" xml:space="preserve">
     <value>Change Language :</value>
+  </data>
+  <data name="lblChooseLoc_Confirm.Text" xml:space="preserve">
+    <value>If yes, choose a drop point location :</value>
+  </data>
+  <data name="lblClothImage_Donate.Text" xml:space="preserve">
+    <value>Clothing Image :</value>
+  </data>
+  <data name="lblClothInfo_Donate.Text" xml:space="preserve">
+    <value>Clothing Information</value>
+  </data>
+  <data name="lblClothType_Donate.Text" xml:space="preserve">
+    <value>Clothing Type :</value>
+  </data>
+  <data name="lblColour_Donate.Text" xml:space="preserve">
+    <value>Colour (Dominant) :</value>
+  </data>
+  <data name="lblCondition_Donate.Text" xml:space="preserve">
+    <value>Condition :</value>
+  </data>
+  <data name="lblConfirmDonate_Confirm.Text" xml:space="preserve">
+    <value>Accept price and continue donate?</value>
+  </data>
+  <data name="lblConfirmPass_Create.Text" xml:space="preserve">
+    <value>Confirm New Password :</value>
+  </data>
+  <data name="lblConfirmPw_Edit.Text" xml:space="preserve">
+    <value>Confirm Password :</value>
   </data>
   <data name="lblContactUs.Text" xml:space="preserve">
     <value>Contact Us</value>
   </data>
+  <data name="lblContactUs2_Confirm.Text" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="lblContactUs_AboutUs.Text" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="lblContactUs_Catalog.Text" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="lblContactUs_Content.Text" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="lblContactUs_Donate.Text" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="lblContent_Content.Text" xml:space="preserve">
+    <value>Content</value>
+  </data>
   <data name="lblContent_Home.Text" xml:space="preserve">
     <value>Content</value>
+  </data>
+  <data name="lblCPassword_Uname.Text" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="lblCreateUP_Login.Text" xml:space="preserve">
+    <value>Login to your account</value>
+  </data>
+  <data name="lblCreateUP_Uname.Text" xml:space="preserve">
+    <value>Create an username
+and password</value>
   </data>
   <data name="lblDescContent_Home.Text" xml:space="preserve">
     <value>See how LoopFit processes your clothes.</value>
@@ -165,16 +388,94 @@
   <data name="lblDescProduct_Home.Text" xml:space="preserve">
     <value>Find our recycled clothing products.</value>
   </data>
+  <data name="lblDescription_Home.Text" xml:space="preserve">
+    <value>Let’s take action for a sustainable future! With LoopFit, you can donate your clothes, track the recycling process by our content, and explore unique products made from upcycled fabrics. Together, we can reduce textile waste and embrace a circular economy!</value>
+  </data>
+  <data name="lblDesc_AboutUs1.Text" xml:space="preserve">
+    <value>LoopFit is an innovative application dedicated to creating sustainable solutions in the fashion industry. With Loopfit, you can donate your used clothing to be transformed into new garments or repurposed into raw materials for creating new apparel.</value>
+  </data>
+  <data name="lblDesc_AboutUs2.Text" xml:space="preserve">
+    <value>Our mission is to reduce textile waste and support a circular economy and sustainable lifestyle through creative recycling and redesign. Join us on a journey toward a greener future, where fashion and the environment go hand in hand.</value>
+  </data>
+  <data name="lblDesc_AboutUs3.Text" xml:space="preserve">
+    <value>Together, we close the loop for a better planet.</value>
+  </data>
+  <data name="lblDesc_Content.Text" xml:space="preserve">
+    <value>Discover inspiring content and informative videos about sustainable fashion and clothing recycling to boost up your knowledge while spending your time!</value>
+  </data>
+  <data name="lblDonate1_Donate.Text" xml:space="preserve">
+    <value>Donate</value>
+  </data>
+  <data name="lblDonate1_Edit.Text" xml:space="preserve">
+    <value>Edit Profile</value>
+  </data>
+  <data name="lblDonate2_Confirm.Text" xml:space="preserve">
+    <value>Donate</value>
+  </data>
   <data name="lblDonate_Home.Text" xml:space="preserve">
     <value>Donate</value>
+  </data>
+  <data name="lblEstimatedPrice_Confirm.Text" xml:space="preserve">
+    <value>Estimated Price</value>
+  </data>
+  <data name="lblFirstName_SignUp.Text" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="lblForgetPass_Create.Text" xml:space="preserve">
+    <value>Reset your Password</value>
+  </data>
+  <data name="lblForgetPass_Forget.Text" xml:space="preserve">
+    <value>Reset your Password</value>
+  </data>
+  <data name="lblFullName_Edit.Text" xml:space="preserve">
+    <value>First Name :</value>
   </data>
   <data name="lblFullName_Profile.Text" xml:space="preserve">
     <value>Full Name :</value>
   </data>
+  <data name="lblLastName_SignUp.Text" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="lblMaterial_Donate.Text" xml:space="preserve">
+    <value>Material :</value>
+  </data>
+  <data name="lblNewPass_Create.Text" xml:space="preserve">
+    <value>New Password :</value>
+  </data>
+  <data name="lblNewPw_Edit.Text" xml:space="preserve">
+    <value>New Password :</value>
+  </data>
+  <data name="lblOr_Login.Text" xml:space="preserve">
+    <value>________________________________ or ________________________________</value>
+  </data>
+  <data name="lblOr_SignUp.Text" xml:space="preserve">
+    <value>________________________________ or ________________________________</value>
+  </data>
+  <data name="lblOurContact_Contact.Text" xml:space="preserve">
+    <value>Our Contact</value>
+  </data>
+  <data name="lblPassword_Login.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="lblPassword_Uname.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
   <data name="lblPasword_Profile.Text" xml:space="preserve">
     <value>Password :</value>
   </data>
+  <data name="lblPattern_Donate.Text" xml:space="preserve">
+    <value>Pattern :</value>
+  </data>
+  <data name="lblPhoneNumber_Edit.Text" xml:space="preserve">
+    <value>Phone Number :</value>
+  </data>
   <data name="lblPhoneNumber_Profile.Text" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="lblPhoneNum_Contact.Text" xml:space="preserve">
+    <value>Phone Number :</value>
+  </data>
+  <data name="lblPhoneNum_SignUp.Text" xml:space="preserve">
     <value>Phone Number</value>
   </data>
   <data name="lblProduct_Home.Text" xml:space="preserve">
@@ -183,17 +484,78 @@
   <data name="lblProfile_Profile.Text" xml:space="preserve">
     <value>Profile</value>
   </data>
+  <data name="lblSignUp_SignUp.Text" xml:space="preserve">
+    <value>Create an account</value>
+  </data>
+  <data name="lblSignUp_VerifEmail.Text" xml:space="preserve">
+    <value>Verify your email address</value>
+  </data>
+  <data name="lblSignUp_Welcome.Text" xml:space="preserve">
+    <value>Welcome to
+LoopFit!</value>
+  </data>
+  <data name="lblSosmed_AboutUs.Text" xml:space="preserve">
+    <value>Follow Our Social Media</value>
+  </data>
+  <data name="lblSosmed_Catalog.Text" xml:space="preserve">
+    <value>Follow Our Social Media</value>
+  </data>
+  <data name="lblSosmed_Contact.Text" xml:space="preserve">
+    <value>Follow Our Social Media</value>
+  </data>
   <data name="lblSosmed_Home.Text" xml:space="preserve">
     <value>Follow Our Social Media</value>
+  </data>
+  <data name="lblSosmed_Thanks.Text" xml:space="preserve">
+    <value>Follow Our Social Media</value>
+  </data>
+  <data name="lblThanks_Thanks.Text" xml:space="preserve">
+    <value>Thank you for contributing to a sustainable future!</value>
+  </data>
+  <data name="lblUname_Login.Text" xml:space="preserve">
+    <value>Username or Email</value>
+  </data>
+  <data name="lblUname_Uname.Text" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="lblUsername_Edit.Text" xml:space="preserve">
+    <value>Username :</value>
   </data>
   <data name="lblUsername_Profile.Text" xml:space="preserve">
     <value>Username :</value>
   </data>
+  <data name="lblVerificationCode_Edit.Text" xml:space="preserve">
+    <value>Verification Code :</value>
+  </data>
+  <data name="lblVerif_Forget.Text" xml:space="preserve">
+    <value>Verification Code :</value>
+  </data>
   <data name="lblWelcome_Home.Text" xml:space="preserve">
     <value>Hello</value>
   </data>
+  <data name="Leather" xml:space="preserve">
+    <value>Leather</value>
+  </data>
+  <data name="Linen" xml:space="preserve">
+    <value>Linen</value>
+  </data>
+  <data name="linkLabel2_Contact.Text" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
   <data name="linkLabel2_Home.Text" xml:space="preserve">
     <value>Contact Us</value>
+  </data>
+  <data name="linkLabel2_Login.Text" xml:space="preserve">
+    <value>Forget password?</value>
+  </data>
+  <data name="linkLabel2_Thanks.Text" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="llLogin_SignUp.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="llLogin_VerifEmail.Text" xml:space="preserve">
+    <value>Resend</value>
   </data>
   <data name="llProfile.Text" xml:space="preserve">
     <value>Profile</value>
@@ -201,10 +563,94 @@
   <data name="llProfile_Profile.Text" xml:space="preserve">
     <value>Profile</value>
   </data>
+  <data name="llShopee1_Catalog.Text" xml:space="preserve">
+    <value>Click Here to Order</value>
+  </data>
+  <data name="llShopee2_Catalog.Text" xml:space="preserve">
+    <value>Click Here to Order</value>
+  </data>
+  <data name="llShopee3_Catalog.Text" xml:space="preserve">
+    <value>Click Here to Order</value>
+  </data>
+  <data name="llShopee4_Catalog.Text" xml:space="preserve">
+    <value>Click Here to Order</value>
+  </data>
+  <data name="llSignUp_Login.Text" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="Nylon" xml:space="preserve">
+    <value>Nylon</value>
+  </data>
+  <data name="Orange" xml:space="preserve">
+    <value>Orange</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="OuterTop" xml:space="preserve">
+    <value>Outer Top</value>
+  </data>
+  <data name="Overall" xml:space="preserve">
+    <value>Overall</value>
+  </data>
+  <data name="Pants" xml:space="preserve">
+    <value>Pants</value>
+  </data>
+  <data name="Polyester" xml:space="preserve">
+    <value>Polyester</value>
+  </data>
+  <data name="rbCondNonUsable_Info.Text" xml:space="preserve">
+    <value>Non-usable</value>
+  </data>
+  <data name="rbCondUsable_Info.Text" xml:space="preserve">
+    <value>Usable</value>
+  </data>
+  <data name="rbNoDonate_Confirm.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="rbPatternNo_Info.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="rbPatternYes_Info.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="rbYesDonate_Confirm.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Red" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="Satin" xml:space="preserve">
+    <value>Satin</value>
+  </data>
+  <data name="Silk" xml:space="preserve">
+    <value>Silk</value>
+  </data>
+  <data name="Skirt" xml:space="preserve">
+    <value>Skirt</value>
+  </data>
+  <data name="tbDesc2_Contact.Text" xml:space="preserve">
+    <value>Your thoughts and concerns matter to us as we work together toward a sustainable future. Don’t hesitate to get in touch!</value>
+  </data>
   <data name="txtDescription_Activity.Text" xml:space="preserve">
     <value>This page showcases a summary of your recent and past donations, giving you a detailed record of the clothing items you’ve contributed. Each donation has played an important role in supporting our mission in fashion sustainability. Thank you for your generosity and contributions that truly make a difference and help us create a more sustainable future!</value>
   </data>
-  <data name="txtDescription_Home.Text" xml:space="preserve">
-    <value>Let’s take action for a sustainable future! With LoopFit, you can donate your clothes, track the recycling process by our content, and explore unique products made from upcycled fabrics. Together, we can reduce textile waste and embrace a circular economy!</value>
+  <data name="txtDescription_Contact.Text" xml:space="preserve">
+    <value>We’re here to connect and assist you! If you have any questions, feedback, or need further information about LoopFit, feel free to reach out. Our team is ready to help with inquiries about donations, recycled products, or collaboration opportunities.</value>
+  </data>
+  <data name="txtDescription_Thanks.Text" xml:space="preserve">
+    <value>We greatly appreciate your contribution to supporting sustainability through clothing donations. Every item you donate will help reduce textile waste and benefit those in need.</value>
+  </data>
+  <data name="Violet" xml:space="preserve">
+    <value>Violet</value>
+  </data>
+  <data name="White" xml:space="preserve">
+    <value>White</value>
+  </data>
+  <data name="Wool" xml:space="preserve">
+    <value>Wool</value>
+  </data>
+  <data name="Yellow" xml:space="preserve">
+    <value>Yellow</value>
   </data>
 </root>

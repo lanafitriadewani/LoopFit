@@ -15,6 +15,7 @@ namespace LoopFit
         public WelcomePage()
         {
             InitializeComponent();
+            LanguageHelper.UpdateUI(this);
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)

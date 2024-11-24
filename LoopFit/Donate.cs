@@ -34,13 +34,16 @@ namespace LoopFit
             string estimatedPrice = "";
 
             // Cek apakah warna Mono atau Color
-            bool isMono = (Colour == "Black" || Colour == "White" || Colour == "Brown");
+            bool isMono = (Colour == "Black" || Colour == "White" || Colour == "Brown" 
+                        || Colour == "Hitam" || Colour == "Putih" || Colour == "Coklat");
 
             // Cek tipe pakaian
-            if (ClothingType == "Skirt" || ClothingType == "Inner Top" || ClothingType == "Hijab" || ClothingType == "Other")
+            if (ClothingType == "Skirt" || ClothingType == "Inner Top" || ClothingType == "Hijab" || ClothingType == "Other"
+                || ClothingType == "Rok" || ClothingType == "Atasan Dalam" || ClothingType == "Lainnya")
             {
                 // Kondisi material untuk Skirt, Inner Top, Hijab, Other
-                if (Material == "Silk" || Material == "Leather" || Material == "Wool")
+                if (Material == "Silk" || Material == "Leather" || Material == "Wool"
+                    || Material == "Sutra" || Material == "Kulit" || Material == "Wol")
                 {
                     if (Pattern) // Pola: Ya
                     {
@@ -51,7 +54,7 @@ namespace LoopFit
                         estimatedPrice = IsUsable ? (isMono ? "Rp27.000,00 - Rp49.000,00" : "Rp21.000,00 - Rp37.000,00") : (isMono ? "Rp12.000,00 - Rp27.000,00" : "Rp8.000,00 - Rp22.000,00");
                     }
                 }
-                else if (Material == "Satin" || Material == "Linen" || Material == "Denim")
+                else if (Material == "Satin" || Material == "Linen" || Material == "Denim" || Material == "Remi")
                 {
                     if (Pattern) // Pola: Ya
                     {
@@ -62,7 +65,7 @@ namespace LoopFit
                         estimatedPrice = IsUsable ? (isMono ? "Rp22.000,00 - Rp42.000,00" : "Rp18.000,00 - Rp32.000,00") : (isMono ? "Rp8.000, 00 - Rp22.000,00" : "Rp2.000,00 - Rp18.000,00");
                     }
                 }
-                else if (Material == "Cotton" || Material == "Jersey" || Material == "Polyester")
+                else if (Material == "Cotton" || Material == "Jersey" || Material == "Polyester" || Material == "Katun" || Material == "Poliester")
                 {
                     if (Pattern) // Pola: Ya
                     {
@@ -73,7 +76,7 @@ namespace LoopFit
                         estimatedPrice = IsUsable ? (isMono ? "18k-38k" : "12k-28k") : (isMono ? "5k-18k" : "2k-15k");
                     }
                 }
-                else if (Material == "Nylon" || Material == "Other")
+                else if (Material == "Nylon" || Material == "Other" || Material == "Nilon" || Material == "Lainnya")
                 {
                     if (Pattern) // Pola: Ya
                     {
@@ -85,10 +88,11 @@ namespace LoopFit
                     }
                 }
             }
-            else if (ClothingType == "Pants" || ClothingType == "Outer Top" || ClothingType == "Overall")
+            else if (ClothingType == "Pants" || ClothingType == "Outer Top" || ClothingType == "Overall"|| ClothingType == "Celana" || ClothingType == "Atasan Luar")
             {
                 // Kondisi material untuk Pants, Outer Top, Overall
-                if (Material == "Silk" || Material == "Leather" || Material == "Wool")
+                if (Material == "Silk" || Material == "Leather" || Material == "Wool"
+                    || Material == "Sutra" || Material == "Kulit" || Material == "Wol")
                 {
                     if (Pattern) // Pola: Ya
                     {
@@ -99,7 +103,7 @@ namespace LoopFit
                         estimatedPrice = IsUsable ? (isMono ? "30k-50k" : "25k-40k") : (isMono ? "15k-30k" : "10k-25k");
                     }
                 }
-                else if (Material == "Satin" || Material == "Linen" || Material == "Denim")
+                else if (Material == "Satin" || Material == "Linen" || Material == "Denim" || Material == "Remi")
                 {
                     if (Pattern) // Pola: Ya
                     {
@@ -110,7 +114,7 @@ namespace LoopFit
                         estimatedPrice = IsUsable ? (isMono ? "25k-45k" : "20k-35k") : (isMono ? "10k-25k" : "5k-20k");
                     }
                 }
-                else if (Material == "Cotton" || Material == "Jersey" || Material == "Polyester")
+                else if (Material == "Cotton" || Material == "Jersey" || Material == "Polyester" || Material == "Katun" || Material == "Poliester")
                 {
                     if (Pattern) // Pola: Ya
                     {
@@ -121,7 +125,7 @@ namespace LoopFit
                         estimatedPrice = IsUsable ? (isMono ? "20k-40k" : "15k-30k") : (isMono ? "5k-20k" : "2k-15k");
                     }
                 }
-                else if (Material == "Nylon" || Material == "Other")
+                else if (Material == "Nylon" || Material == "Other" || Material == "Nilon" || Material == "Lainnya")
                 {
                     if (Pattern) // Pola: Ya
                     {

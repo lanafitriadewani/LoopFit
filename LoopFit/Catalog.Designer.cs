@@ -30,29 +30,29 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Catalog));
             pictureBox3 = new PictureBox();
-            lblContactUs = new LinkLabel();
+            lblContactUs_Catalog = new LinkLabel();
             panel3 = new Panel();
-            label3 = new Label();
+            label3_Catalog = new Label();
             lblLoopFit = new LinkLabel();
-            lblDonate1 = new Label();
+            lblCatalog_Catalog = new Label();
             picProfile = new PictureBox();
             llProfile = new LinkLabel();
             btnLogOut = new Button();
             panel1 = new Panel();
-            label4 = new Label();
-            llShopee1 = new LinkLabel();
+            label4_Catalog = new Label();
+            llShopee1_Catalog = new LinkLabel();
             lblPrice1 = new Label();
             lblProduct1 = new Label();
             picProduct1 = new PictureBox();
-            llShopee2 = new LinkLabel();
+            llShopee2_Catalog = new LinkLabel();
             lblPrice2 = new Label();
             lblProduct2 = new Label();
             picProduct2 = new PictureBox();
-            llShopee3 = new LinkLabel();
+            llShopee3_Catalog = new LinkLabel();
             lblPrice3 = new Label();
             lblProduct3 = new Label();
             picProduct3 = new PictureBox();
-            llShopee4 = new LinkLabel();
+            llShopee4_Catalog = new LinkLabel();
             lblPrice4 = new Label();
             lblProduct4 = new Label();
             picProduct4 = new PictureBox();
@@ -63,7 +63,7 @@
             picTwitter = new PictureBox();
             picTiktok = new PictureBox();
             picInstagram = new PictureBox();
-            lblSosmed = new Label();
+            lblSosmed_Catalog = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picProfile).BeginInit();
@@ -90,48 +90,48 @@
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
             // 
-            // lblContactUs
+            // lblContactUs_Catalog
             // 
-            lblContactUs.AutoSize = true;
-            lblContactUs.BackColor = Color.Transparent;
-            lblContactUs.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            lblContactUs.LinkColor = Color.FromArgb(80, 23, 61);
-            lblContactUs.Location = new Point(825, 22);
-            lblContactUs.Margin = new Padding(2, 0, 2, 0);
-            lblContactUs.Name = "lblContactUs";
-            lblContactUs.Size = new Size(104, 25);
-            lblContactUs.TabIndex = 40;
-            lblContactUs.TabStop = true;
-            lblContactUs.Text = "Contact Us";
-            lblContactUs.LinkClicked += lblContactUs_LinkClicked;
+            lblContactUs_Catalog.AutoSize = true;
+            lblContactUs_Catalog.BackColor = Color.Transparent;
+            lblContactUs_Catalog.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblContactUs_Catalog.LinkColor = Color.FromArgb(80, 23, 61);
+            lblContactUs_Catalog.Location = new Point(825, 22);
+            lblContactUs_Catalog.Margin = new Padding(2, 0, 2, 0);
+            lblContactUs_Catalog.Name = "lblContactUs_Catalog";
+            lblContactUs_Catalog.Size = new Size(104, 25);
+            lblContactUs_Catalog.TabIndex = 40;
+            lblContactUs_Catalog.TabStop = true;
+            lblContactUs_Catalog.Text = "Contact Us";
+            lblContactUs_Catalog.LinkClicked += lblContactUs_LinkClicked;
             // 
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(215, 169, 205);
-            panel3.Controls.Add(label3);
+            panel3.Controls.Add(label3_Catalog);
             panel3.Controls.Add(pictureBox3);
             panel3.Controls.Add(lblLoopFit);
-            panel3.Controls.Add(lblContactUs);
-            panel3.Controls.Add(lblDonate1);
+            panel3.Controls.Add(lblContactUs_Catalog);
+            panel3.Controls.Add(lblCatalog_Catalog);
             panel3.Location = new Point(246, -1);
             panel3.Margin = new Padding(2);
             panel3.Name = "panel3";
             panel3.Size = new Size(1102, 178);
             panel3.TabIndex = 43;
             // 
-            // label3
+            // label3_Catalog
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.FromArgb(100, 23, 61);
-            label3.Location = new Point(25, 105);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.MaximumSize = new Size(1000, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(1000, 46);
-            label3.TabIndex = 91;
-            label3.Text = "Discover a selection of upcycled and sustainable fashion products made with love and creativity. Support eco-friendly initiatives by checking out our featured items below!\n";
+            label3_Catalog.AutoSize = true;
+            label3_Catalog.BackColor = Color.Transparent;
+            label3_Catalog.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label3_Catalog.ForeColor = Color.FromArgb(100, 23, 61);
+            label3_Catalog.Location = new Point(25, 105);
+            label3_Catalog.Margin = new Padding(2, 0, 2, 0);
+            label3_Catalog.MaximumSize = new Size(1000, 0);
+            label3_Catalog.Name = "label3_Catalog";
+            label3_Catalog.Size = new Size(1000, 46);
+            label3_Catalog.TabIndex = 91;
+            label3_Catalog.Text = "Discover a selection of upcycled and sustainable fashion products made with love and creativity. Support eco-friendly initiatives by checking out our featured items below!\n";
             // 
             // lblLoopFit
             // 
@@ -148,18 +148,18 @@
             lblLoopFit.Text = "LoopFit";
             lblLoopFit.LinkClicked += lblLoopFit_LinkClicked;
             // 
-            // lblDonate1
+            // lblCatalog_Catalog
             // 
-            lblDonate1.AutoSize = true;
-            lblDonate1.BackColor = Color.Transparent;
-            lblDonate1.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            lblDonate1.ForeColor = Color.FromArgb(100, 23, 61);
-            lblDonate1.Location = new Point(14, 38);
-            lblDonate1.Margin = new Padding(2, 0, 2, 0);
-            lblDonate1.Name = "lblDonate1";
-            lblDonate1.Size = new Size(184, 60);
-            lblDonate1.TabIndex = 0;
-            lblDonate1.Text = "Catalog";
+            lblCatalog_Catalog.AutoSize = true;
+            lblCatalog_Catalog.BackColor = Color.Transparent;
+            lblCatalog_Catalog.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCatalog_Catalog.ForeColor = Color.FromArgb(100, 23, 61);
+            lblCatalog_Catalog.Location = new Point(14, 38);
+            lblCatalog_Catalog.Margin = new Padding(2, 0, 2, 0);
+            lblCatalog_Catalog.Name = "lblCatalog_Catalog";
+            lblCatalog_Catalog.Size = new Size(184, 60);
+            lblCatalog_Catalog.TabIndex = 0;
+            lblCatalog_Catalog.Text = "Catalog";
             // 
             // picProfile
             // 
@@ -217,30 +217,30 @@
             panel1.Size = new Size(246, 104);
             panel1.TabIndex = 42;
             // 
-            // label4
+            // label4_Catalog
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(100, 23, 61);
-            label4.Location = new Point(299, 206);
-            label4.Name = "label4";
-            label4.Size = new Size(477, 28);
-            label4.TabIndex = 63;
-            label4.Text = "Here are some of our products. Come check it out!";
+            label4_Catalog.AutoSize = true;
+            label4_Catalog.BackColor = Color.Transparent;
+            label4_Catalog.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label4_Catalog.ForeColor = Color.FromArgb(100, 23, 61);
+            label4_Catalog.Location = new Point(299, 206);
+            label4_Catalog.Name = "label4_Catalog";
+            label4_Catalog.Size = new Size(477, 28);
+            label4_Catalog.TabIndex = 63;
+            label4_Catalog.Text = "Here are some of our products. Come check it out!";
             // 
-            // llShopee1
+            // llShopee1_Catalog
             // 
-            llShopee1.AutoSize = true;
-            llShopee1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            llShopee1.LinkColor = Color.FromArgb(100, 23, 61);
-            llShopee1.Location = new Point(317, 560);
-            llShopee1.Name = "llShopee1";
-            llShopee1.Size = new Size(141, 20);
-            llShopee1.TabIndex = 62;
-            llShopee1.TabStop = true;
-            llShopee1.Text = "Click Here to Order";
-            llShopee1.LinkClicked += llShopee1_LinkClicked;
+            llShopee1_Catalog.AutoSize = true;
+            llShopee1_Catalog.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            llShopee1_Catalog.LinkColor = Color.FromArgb(100, 23, 61);
+            llShopee1_Catalog.Location = new Point(317, 560);
+            llShopee1_Catalog.Name = "llShopee1_Catalog";
+            llShopee1_Catalog.Size = new Size(141, 20);
+            llShopee1_Catalog.TabIndex = 62;
+            llShopee1_Catalog.TabStop = true;
+            llShopee1_Catalog.Text = "Click Here to Order";
+            llShopee1_Catalog.LinkClicked += llShopee1_LinkClicked;
             // 
             // lblPrice1
             // 
@@ -273,18 +273,18 @@
             picProduct1.TabIndex = 59;
             picProduct1.TabStop = false;
             // 
-            // llShopee2
+            // llShopee2_Catalog
             // 
-            llShopee2.AutoSize = true;
-            llShopee2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            llShopee2.LinkColor = Color.FromArgb(100, 23, 61);
-            llShopee2.Location = new Point(565, 560);
-            llShopee2.Name = "llShopee2";
-            llShopee2.Size = new Size(141, 20);
-            llShopee2.TabIndex = 67;
-            llShopee2.TabStop = true;
-            llShopee2.Text = "Click Here to Order";
-            llShopee2.LinkClicked += llShopee2_LinkClicked;
+            llShopee2_Catalog.AutoSize = true;
+            llShopee2_Catalog.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            llShopee2_Catalog.LinkColor = Color.FromArgb(100, 23, 61);
+            llShopee2_Catalog.Location = new Point(565, 560);
+            llShopee2_Catalog.Name = "llShopee2_Catalog";
+            llShopee2_Catalog.Size = new Size(141, 20);
+            llShopee2_Catalog.TabIndex = 67;
+            llShopee2_Catalog.TabStop = true;
+            llShopee2_Catalog.Text = "Click Here to Order";
+            llShopee2_Catalog.LinkClicked += llShopee2_LinkClicked;
             // 
             // lblPrice2
             // 
@@ -317,18 +317,18 @@
             picProduct2.TabIndex = 64;
             picProduct2.TabStop = false;
             // 
-            // llShopee3
+            // llShopee3_Catalog
             // 
-            llShopee3.AutoSize = true;
-            llShopee3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            llShopee3.LinkColor = Color.FromArgb(100, 23, 61);
-            llShopee3.Location = new Point(815, 560);
-            llShopee3.Name = "llShopee3";
-            llShopee3.Size = new Size(141, 20);
-            llShopee3.TabIndex = 71;
-            llShopee3.TabStop = true;
-            llShopee3.Text = "Click Here to Order";
-            llShopee3.LinkClicked += llShopee3_LinkClicked;
+            llShopee3_Catalog.AutoSize = true;
+            llShopee3_Catalog.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            llShopee3_Catalog.LinkColor = Color.FromArgb(100, 23, 61);
+            llShopee3_Catalog.Location = new Point(815, 560);
+            llShopee3_Catalog.Name = "llShopee3_Catalog";
+            llShopee3_Catalog.Size = new Size(141, 20);
+            llShopee3_Catalog.TabIndex = 71;
+            llShopee3_Catalog.TabStop = true;
+            llShopee3_Catalog.Text = "Click Here to Order";
+            llShopee3_Catalog.LinkClicked += llShopee3_LinkClicked;
             // 
             // lblPrice3
             // 
@@ -361,18 +361,18 @@
             picProduct3.TabIndex = 68;
             picProduct3.TabStop = false;
             // 
-            // llShopee4
+            // llShopee4_Catalog
             // 
-            llShopee4.AutoSize = true;
-            llShopee4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            llShopee4.LinkColor = Color.FromArgb(100, 23, 61);
-            llShopee4.Location = new Point(1067, 560);
-            llShopee4.Name = "llShopee4";
-            llShopee4.Size = new Size(141, 20);
-            llShopee4.TabIndex = 75;
-            llShopee4.TabStop = true;
-            llShopee4.Text = "Click Here to Order";
-            llShopee4.LinkClicked += llShopee4_LinkClicked;
+            llShopee4_Catalog.AutoSize = true;
+            llShopee4_Catalog.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            llShopee4_Catalog.LinkColor = Color.FromArgb(100, 23, 61);
+            llShopee4_Catalog.Location = new Point(1067, 560);
+            llShopee4_Catalog.Name = "llShopee4_Catalog";
+            llShopee4_Catalog.Size = new Size(141, 20);
+            llShopee4_Catalog.TabIndex = 75;
+            llShopee4_Catalog.TabStop = true;
+            llShopee4_Catalog.Text = "Click Here to Order";
+            llShopee4_Catalog.LinkClicked += llShopee4_LinkClicked;
             // 
             // lblPrice4
             // 
@@ -500,18 +500,18 @@
             picInstagram.TabStop = false;
             picInstagram.Click += picInstagram_Click;
             // 
-            // lblSosmed
+            // lblSosmed_Catalog
             // 
-            lblSosmed.AutoSize = true;
-            lblSosmed.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSosmed.ForeColor = Color.FromArgb(100, 23, 61);
-            lblSosmed.Location = new Point(726, 630);
-            lblSosmed.Margin = new Padding(2, 0, 2, 0);
-            lblSosmed.Name = "lblSosmed";
-            lblSosmed.Size = new Size(175, 20);
-            lblSosmed.TabIndex = 76;
-            lblSosmed.Text = "Follow Our Social Media";
-            lblSosmed.TextAlign = ContentAlignment.MiddleCenter;
+            lblSosmed_Catalog.AutoSize = true;
+            lblSosmed_Catalog.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSosmed_Catalog.ForeColor = Color.FromArgb(100, 23, 61);
+            lblSosmed_Catalog.Location = new Point(726, 630);
+            lblSosmed_Catalog.Margin = new Padding(2, 0, 2, 0);
+            lblSosmed_Catalog.Name = "lblSosmed_Catalog";
+            lblSosmed_Catalog.Size = new Size(175, 20);
+            lblSosmed_Catalog.TabIndex = 76;
+            lblSosmed_Catalog.Text = "Follow Our Social Media";
+            lblSosmed_Catalog.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Catalog
             // 
@@ -522,21 +522,21 @@
             Controls.Add(picTwitter);
             Controls.Add(picTiktok);
             Controls.Add(picInstagram);
-            Controls.Add(lblSosmed);
-            Controls.Add(llShopee4);
+            Controls.Add(lblSosmed_Catalog);
+            Controls.Add(llShopee4_Catalog);
             Controls.Add(lblPrice4);
             Controls.Add(lblProduct4);
             Controls.Add(picProduct4);
-            Controls.Add(llShopee3);
+            Controls.Add(llShopee3_Catalog);
             Controls.Add(lblPrice3);
             Controls.Add(lblProduct3);
             Controls.Add(picProduct3);
-            Controls.Add(llShopee2);
+            Controls.Add(llShopee2_Catalog);
             Controls.Add(lblPrice2);
             Controls.Add(lblProduct2);
             Controls.Add(picProduct2);
-            Controls.Add(label4);
-            Controls.Add(llShopee1);
+            Controls.Add(label4_Catalog);
+            Controls.Add(llShopee1_Catalog);
             Controls.Add(lblPrice1);
             Controls.Add(lblProduct1);
             Controls.Add(picProduct1);
@@ -566,28 +566,28 @@
 
         #endregion
         private PictureBox pictureBox3;
-        private LinkLabel lblContactUs;
+        private LinkLabel lblContactUs_Catalog;
         private Panel panel3;
         private LinkLabel lblLoopFit;
-        private Label lblDonate1;
+        private Label lblCatalog_Catalog;
         private PictureBox picProfile;
         private LinkLabel llProfile;
         private Button btnLogOut;
         private Panel panel1;
-        private Label label4;
-        private LinkLabel llShopee1;
+        private Label label4_Catalog;
+        private LinkLabel llShopee1_Catalog;
         private Label lblPrice1;
         private Label lblProduct1;
         private PictureBox picProduct1;
-        private LinkLabel llShopee2;
+        private LinkLabel llShopee2_Catalog;
         private Label lblPrice2;
         private Label lblProduct2;
         private PictureBox picProduct2;
-        private LinkLabel llShopee3;
+        private LinkLabel llShopee3_Catalog;
         private Label lblPrice3;
         private Label lblProduct3;
         private PictureBox picProduct3;
-        private LinkLabel llShopee4;
+        private LinkLabel llShopee4_Catalog;
         private Label lblPrice4;
         private Label lblProduct4;
         private PictureBox picProduct4;
@@ -598,7 +598,7 @@
         private PictureBox picTwitter;
         private PictureBox picTiktok;
         private PictureBox picInstagram;
-        private Label lblSosmed;
-        private Label label3;
+        private Label lblSosmed_Catalog;
+        private Label label3_Catalog;
     }
 }

@@ -47,64 +47,10 @@ namespace LoopFit
                 }
             }
 
-            if (videoData.Rows.Count > 0)
-            {
-                lblContent1.Text = videoData.Rows.Count > 0 ? videoData.Rows[0]["contenttitle"].ToString() : "No Title";
-                lblContent2.Text = videoData.Rows.Count > 1 ? videoData.Rows[1]["contenttitle"].ToString() : "No Title";
-                lblContent3.Text = videoData.Rows.Count > 2 ? videoData.Rows[2]["contenttitle"].ToString() : "No Title";
-            }
-            else
-            {
-                lblContent1.Text = "No Title";
-                lblContent2.Text = "No Title";
-                lblContent3.Text = "No Title";
-            }
+            Helper.LoadContentLabels(videoData, lblContent1, lblContent2, lblContent3);
+
         }
-
-        private void PlayVideo(int contentid, WebView2 webView)
-        {
-            DataRow[] rows = videoData.Select($"contentid = {contentid}");
-            if (rows.Length > 0)
-            {
-                string videoUrl = rows[0]["contenturl"].ToString();
-                string embedUrl = "";
-
-                // Menangani URL YouTube Shorts
-                if (videoUrl.Contains("youtube.com/shorts"))
-                {
-                    string videoId = videoUrl.Split('/')[4].Split('?')[0]; // Ambil video ID dari URL Shorts
-                    embedUrl = $"https://www.youtube.com/embed/{videoId}";
-                }
-                // Menangani URL YouTube biasa (youtu.be atau youtube.com)
-                else if (videoUrl.Contains("youtu.be"))
-                {
-                    string videoId = videoUrl.Split('/').Last().Split('?')[0]; // Menangkap video ID
-                    embedUrl = $"https://www.youtube.com/embed/{videoId}";
-                }
-                else if (videoUrl.Contains("youtube.com"))
-                {
-                    string videoId = videoUrl.Split('=')[1]; // Menangkap video ID dari URL youtube.com
-                    embedUrl = $"https://www.youtube.com/embed/{videoId}";
-                }
-                else
-                {
-                    embedUrl = videoUrl; // Untuk jenis video selain YouTube
-                }
-
-                string html = "<html><head>";
-                html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
-                html += "<style>body, html {margin: 0; padding: 0; overflow: hidden;} iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}</style>";
-                html += $"<iframe id='video' src='{embedUrl}' frameborder='0' allowfullscreen></iframe>";
-                html += "</head></html>";
-
-                webView.NavigateToString(html);
-            }
-            else
-            {
-                MessageBox.Show("Video tidak ditemukan untuk WebView ini.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
+                
         private void picProfile_Click(object sender, EventArgs e)
         {
             Profile profile = new Profile();
@@ -141,42 +87,25 @@ namespace LoopFit
             this.Hide();
         }
 
-
-
-        private void OpenUrl(string url)
-        {
-            try
-            {
-                Process.Start(new ProcessStartInfo
-                {
-                    FileName = url,
-                    UseShellExecute = true // Agar URL dibuka dengan browser default
-                });
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Tidak dapat membuka URL: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private void picTiktok_Click(object sender, EventArgs e)
         {
-            OpenUrl("https://www.tiktok.com/@kmteti");
+            Helper.OpenUrl("https://www.tiktok.com/@kmteti");
         }
 
         private void btnVid1_Click(object sender, EventArgs e)
         {
-            PlayVideo(1, webView1);
+            Helper.PlayVideo(1, webView1, videoData);
+
         }
 
         private void btnVid2_Click(object sender, EventArgs e)
         {
-            PlayVideo(2, webView2);
+            Helper.PlayVideo(2, webView2, videoData);
         }
 
         private void btnVid3_Click(object sender, EventArgs e)
         {
-            PlayVideo(3, webView3);
+            Helper.PlayVideo(3, webView3, videoData);
         }
 
         private void lblLoopFit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -198,6 +127,11 @@ namespace LoopFit
             ContactUs contact = new ContactUs();
             contact.Show();
             this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

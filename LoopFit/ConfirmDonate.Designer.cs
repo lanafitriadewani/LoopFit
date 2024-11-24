@@ -34,34 +34,34 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            btnConfirmDonate = new Button();
+            btnConfirmDonate_Confirm = new Button();
             rbBantul = new RadioButton();
             rbGunungKidul = new RadioButton();
             rbKulonProgo = new RadioButton();
             rbSleman = new RadioButton();
             rbYogya = new RadioButton();
-            lblChooseLoc = new Label();
-            rbNoDonate = new RadioButton();
-            rbYesDonate = new RadioButton();
-            lblConfirmDonate = new Label();
+            lblChooseLoc_Confirm = new Label();
+            rbNoDonate_Confirm = new RadioButton();
+            rbYesDonate_Confirm = new RadioButton();
+            lblConfirmDonate_Confirm = new Label();
             lblNumPrice = new Label();
-            lblEstimatedPrice = new Label();
+            lblEstimatedPrice_Confirm = new Label();
             btnLogOut = new Button();
             btnActivity = new Button();
             btnHome = new Button();
             panel3 = new Panel();
-            label6 = new Label();
+            label6_Confirm = new Label();
             pictureBox3 = new PictureBox();
             lblLoopFit2 = new LinkLabel();
-            lblContactUs2 = new LinkLabel();
-            lblDonate2 = new Label();
+            lblContactUs2_Confirm = new LinkLabel();
+            lblDonate2_Confirm = new Label();
             panel1 = new Panel();
             picProfile = new PictureBox();
             panel2 = new Panel();
             groupBoxContinue = new GroupBox();
             groupBoxDroppoint = new GroupBox();
             llProfile = new LinkLabel();
-            btnBack = new Button();
+            btnBack_Confirm = new Button();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picProfile).BeginInit();
@@ -135,18 +135,18 @@
             label1.TabIndex = 70;
             label1.Text = "Stadion Kridosono, Jl. Yos Sudarso No.9, Kotabaru\r\n";
             // 
-            // btnConfirmDonate
+            // btnConfirmDonate_Confirm
             // 
-            btnConfirmDonate.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            btnConfirmDonate.ForeColor = Color.FromArgb(100, 23, 61);
-            btnConfirmDonate.Location = new Point(1215, 663);
-            btnConfirmDonate.Margin = new Padding(2);
-            btnConfirmDonate.Name = "btnConfirmDonate";
-            btnConfirmDonate.Size = new Size(101, 42);
-            btnConfirmDonate.TabIndex = 69;
-            btnConfirmDonate.Text = "Confirm";
-            btnConfirmDonate.UseVisualStyleBackColor = true;
-            btnConfirmDonate.Click += btnConfirmDonate_Click;
+            btnConfirmDonate_Confirm.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            btnConfirmDonate_Confirm.ForeColor = Color.FromArgb(100, 23, 61);
+            btnConfirmDonate_Confirm.Location = new Point(1215, 663);
+            btnConfirmDonate_Confirm.Margin = new Padding(2);
+            btnConfirmDonate_Confirm.Name = "btnConfirmDonate_Confirm";
+            btnConfirmDonate_Confirm.Size = new Size(101, 42);
+            btnConfirmDonate_Confirm.TabIndex = 69;
+            btnConfirmDonate_Confirm.Text = "Confirm";
+            btnConfirmDonate_Confirm.UseVisualStyleBackColor = true;
+            btnConfirmDonate_Confirm.Click += btnConfirmDonate_Click;
             // 
             // rbBantul
             // 
@@ -218,57 +218,57 @@
             rbYogya.Text = "Kota Yogyakarta";
             rbYogya.UseVisualStyleBackColor = true;
             // 
-            // lblChooseLoc
+            // lblChooseLoc_Confirm
             // 
-            lblChooseLoc.AutoSize = true;
-            lblChooseLoc.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            lblChooseLoc.ForeColor = Color.FromArgb(100, 23, 61);
-            lblChooseLoc.Location = new Point(279, 360);
-            lblChooseLoc.Margin = new Padding(2, 0, 2, 0);
-            lblChooseLoc.Name = "lblChooseLoc";
-            lblChooseLoc.Size = new Size(287, 23);
-            lblChooseLoc.TabIndex = 58;
-            lblChooseLoc.Text = "If yes, choose a drop point location :";
+            lblChooseLoc_Confirm.AutoSize = true;
+            lblChooseLoc_Confirm.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            lblChooseLoc_Confirm.ForeColor = Color.FromArgb(100, 23, 61);
+            lblChooseLoc_Confirm.Location = new Point(279, 360);
+            lblChooseLoc_Confirm.Margin = new Padding(2, 0, 2, 0);
+            lblChooseLoc_Confirm.Name = "lblChooseLoc_Confirm";
+            lblChooseLoc_Confirm.Size = new Size(287, 23);
+            lblChooseLoc_Confirm.TabIndex = 58;
+            lblChooseLoc_Confirm.Text = "If yes, choose a drop point location :";
             // 
-            // rbNoDonate
+            // rbNoDonate_Confirm
             // 
-            rbNoDonate.AutoSize = true;
-            rbNoDonate.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            rbNoDonate.ForeColor = Color.FromArgb(100, 23, 61);
-            rbNoDonate.Location = new Point(90, 5);
-            rbNoDonate.Margin = new Padding(2);
-            rbNoDonate.Name = "rbNoDonate";
-            rbNoDonate.Size = new Size(54, 27);
-            rbNoDonate.TabIndex = 57;
-            rbNoDonate.TabStop = true;
-            rbNoDonate.Text = "No";
-            rbNoDonate.UseVisualStyleBackColor = true;
+            rbNoDonate_Confirm.AutoSize = true;
+            rbNoDonate_Confirm.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            rbNoDonate_Confirm.ForeColor = Color.FromArgb(100, 23, 61);
+            rbNoDonate_Confirm.Location = new Point(90, 5);
+            rbNoDonate_Confirm.Margin = new Padding(2);
+            rbNoDonate_Confirm.Name = "rbNoDonate_Confirm";
+            rbNoDonate_Confirm.Size = new Size(54, 27);
+            rbNoDonate_Confirm.TabIndex = 57;
+            rbNoDonate_Confirm.TabStop = true;
+            rbNoDonate_Confirm.Text = "No";
+            rbNoDonate_Confirm.UseVisualStyleBackColor = true;
             // 
-            // rbYesDonate
+            // rbYesDonate_Confirm
             // 
-            rbYesDonate.AutoSize = true;
-            rbYesDonate.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            rbYesDonate.ForeColor = Color.FromArgb(100, 23, 61);
-            rbYesDonate.Location = new Point(14, 5);
-            rbYesDonate.Margin = new Padding(2);
-            rbYesDonate.Name = "rbYesDonate";
-            rbYesDonate.Size = new Size(55, 27);
-            rbYesDonate.TabIndex = 56;
-            rbYesDonate.TabStop = true;
-            rbYesDonate.Text = "Yes";
-            rbYesDonate.UseVisualStyleBackColor = true;
+            rbYesDonate_Confirm.AutoSize = true;
+            rbYesDonate_Confirm.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            rbYesDonate_Confirm.ForeColor = Color.FromArgb(100, 23, 61);
+            rbYesDonate_Confirm.Location = new Point(14, 5);
+            rbYesDonate_Confirm.Margin = new Padding(2);
+            rbYesDonate_Confirm.Name = "rbYesDonate_Confirm";
+            rbYesDonate_Confirm.Size = new Size(55, 27);
+            rbYesDonate_Confirm.TabIndex = 56;
+            rbYesDonate_Confirm.TabStop = true;
+            rbYesDonate_Confirm.Text = "Yes";
+            rbYesDonate_Confirm.UseVisualStyleBackColor = true;
             // 
-            // lblConfirmDonate
+            // lblConfirmDonate_Confirm
             // 
-            lblConfirmDonate.AutoSize = true;
-            lblConfirmDonate.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            lblConfirmDonate.ForeColor = Color.FromArgb(100, 23, 61);
-            lblConfirmDonate.Location = new Point(279, 322);
-            lblConfirmDonate.Margin = new Padding(2, 0, 2, 0);
-            lblConfirmDonate.Name = "lblConfirmDonate";
-            lblConfirmDonate.Size = new Size(277, 23);
-            lblConfirmDonate.TabIndex = 55;
-            lblConfirmDonate.Text = "Accept price and continue donate?";
+            lblConfirmDonate_Confirm.AutoSize = true;
+            lblConfirmDonate_Confirm.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            lblConfirmDonate_Confirm.ForeColor = Color.FromArgb(100, 23, 61);
+            lblConfirmDonate_Confirm.Location = new Point(279, 322);
+            lblConfirmDonate_Confirm.Margin = new Padding(2, 0, 2, 0);
+            lblConfirmDonate_Confirm.Name = "lblConfirmDonate_Confirm";
+            lblConfirmDonate_Confirm.Size = new Size(277, 23);
+            lblConfirmDonate_Confirm.TabIndex = 55;
+            lblConfirmDonate_Confirm.Text = "Accept price and continue donate?";
             // 
             // lblNumPrice
             // 
@@ -282,17 +282,17 @@
             lblNumPrice.TabIndex = 54;
             lblNumPrice.Text = "label2";
             // 
-            // lblEstimatedPrice
+            // lblEstimatedPrice_Confirm
             // 
-            lblEstimatedPrice.AutoSize = true;
-            lblEstimatedPrice.Font = new Font("Segoe UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
-            lblEstimatedPrice.ForeColor = Color.FromArgb(100, 23, 61);
-            lblEstimatedPrice.Location = new Point(279, 230);
-            lblEstimatedPrice.Margin = new Padding(2, 0, 2, 0);
-            lblEstimatedPrice.Name = "lblEstimatedPrice";
-            lblEstimatedPrice.Size = new Size(190, 32);
-            lblEstimatedPrice.TabIndex = 53;
-            lblEstimatedPrice.Text = "Estimated Price";
+            lblEstimatedPrice_Confirm.AutoSize = true;
+            lblEstimatedPrice_Confirm.Font = new Font("Segoe UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
+            lblEstimatedPrice_Confirm.ForeColor = Color.FromArgb(100, 23, 61);
+            lblEstimatedPrice_Confirm.Location = new Point(279, 230);
+            lblEstimatedPrice_Confirm.Margin = new Padding(2, 0, 2, 0);
+            lblEstimatedPrice_Confirm.Name = "lblEstimatedPrice_Confirm";
+            lblEstimatedPrice_Confirm.Size = new Size(190, 32);
+            lblEstimatedPrice_Confirm.TabIndex = 53;
+            lblEstimatedPrice_Confirm.Text = "Estimated Price";
             // 
             // btnLogOut
             // 
@@ -346,11 +346,11 @@
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(215, 169, 205);
-            panel3.Controls.Add(label6);
+            panel3.Controls.Add(label6_Confirm);
             panel3.Controls.Add(pictureBox3);
             panel3.Controls.Add(lblLoopFit2);
-            panel3.Controls.Add(lblContactUs2);
-            panel3.Controls.Add(lblDonate2);
+            panel3.Controls.Add(lblContactUs2_Confirm);
+            panel3.Controls.Add(lblDonate2_Confirm);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(246, 0);
             panel3.Margin = new Padding(2);
@@ -358,19 +358,19 @@
             panel3.Size = new Size(1102, 199);
             panel3.TabIndex = 52;
             // 
-            // label6
+            // label6_Confirm
             // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = Color.FromArgb(100, 23, 61);
-            label6.Location = new Point(28, 105);
-            label6.Margin = new Padding(2, 0, 2, 0);
-            label6.MaximumSize = new Size(1000, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(991, 69);
-            label6.TabIndex = 90;
-            label6.Text = resources.GetString("label6.Text");
+            label6_Confirm.AutoSize = true;
+            label6_Confirm.BackColor = Color.Transparent;
+            label6_Confirm.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label6_Confirm.ForeColor = Color.FromArgb(100, 23, 61);
+            label6_Confirm.Location = new Point(28, 105);
+            label6_Confirm.Margin = new Padding(2, 0, 2, 0);
+            label6_Confirm.MaximumSize = new Size(1000, 0);
+            label6_Confirm.Name = "label6_Confirm";
+            label6_Confirm.Size = new Size(991, 69);
+            label6_Confirm.TabIndex = 90;
+            label6_Confirm.Text = resources.GetString("label6_Confirm.Text");
             // 
             // pictureBox3
             // 
@@ -398,32 +398,32 @@
             lblLoopFit2.Text = "LoopFit";
             lblLoopFit2.LinkClicked += lblLoopFit2_LinkClicked;
             // 
-            // lblContactUs2
+            // lblContactUs2_Confirm
             // 
-            lblContactUs2.AutoSize = true;
-            lblContactUs2.BackColor = Color.Transparent;
-            lblContactUs2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            lblContactUs2.LinkColor = Color.FromArgb(80, 23, 61);
-            lblContactUs2.Location = new Point(825, 22);
-            lblContactUs2.Name = "lblContactUs2";
-            lblContactUs2.Size = new Size(104, 25);
-            lblContactUs2.TabIndex = 40;
-            lblContactUs2.TabStop = true;
-            lblContactUs2.Text = "Contact Us";
-            lblContactUs2.LinkClicked += lblContactUs2_LinkClicked;
+            lblContactUs2_Confirm.AutoSize = true;
+            lblContactUs2_Confirm.BackColor = Color.Transparent;
+            lblContactUs2_Confirm.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblContactUs2_Confirm.LinkColor = Color.FromArgb(80, 23, 61);
+            lblContactUs2_Confirm.Location = new Point(825, 22);
+            lblContactUs2_Confirm.Name = "lblContactUs2_Confirm";
+            lblContactUs2_Confirm.Size = new Size(104, 25);
+            lblContactUs2_Confirm.TabIndex = 40;
+            lblContactUs2_Confirm.TabStop = true;
+            lblContactUs2_Confirm.Text = "Contact Us";
+            lblContactUs2_Confirm.LinkClicked += lblContactUs2_LinkClicked;
             // 
-            // lblDonate2
+            // lblDonate2_Confirm
             // 
-            lblDonate2.AutoSize = true;
-            lblDonate2.BackColor = Color.Transparent;
-            lblDonate2.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            lblDonate2.ForeColor = Color.FromArgb(100, 23, 61);
-            lblDonate2.Location = new Point(14, 38);
-            lblDonate2.Margin = new Padding(2, 0, 2, 0);
-            lblDonate2.Name = "lblDonate2";
-            lblDonate2.Size = new Size(176, 60);
-            lblDonate2.TabIndex = 0;
-            lblDonate2.Text = "Donate";
+            lblDonate2_Confirm.AutoSize = true;
+            lblDonate2_Confirm.BackColor = Color.Transparent;
+            lblDonate2_Confirm.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            lblDonate2_Confirm.ForeColor = Color.FromArgb(100, 23, 61);
+            lblDonate2_Confirm.Location = new Point(14, 38);
+            lblDonate2_Confirm.Margin = new Padding(2, 0, 2, 0);
+            lblDonate2_Confirm.Name = "lblDonate2_Confirm";
+            lblDonate2_Confirm.Size = new Size(176, 60);
+            lblDonate2_Confirm.TabIndex = 0;
+            lblDonate2_Confirm.Text = "Donate";
             // 
             // panel1
             // 
@@ -460,8 +460,8 @@
             // 
             // groupBoxContinue
             // 
-            groupBoxContinue.Controls.Add(rbNoDonate);
-            groupBoxContinue.Controls.Add(rbYesDonate);
+            groupBoxContinue.Controls.Add(rbNoDonate_Confirm);
+            groupBoxContinue.Controls.Add(rbYesDonate_Confirm);
             groupBoxContinue.Location = new Point(559, 317);
             groupBoxContinue.Name = "groupBoxContinue";
             groupBoxContinue.Size = new Size(166, 39);
@@ -498,18 +498,18 @@
             llProfile.Text = "Profile";
             llProfile.LinkClicked += llProfile_LinkClicked;
             // 
-            // btnBack
+            // btnBack_Confirm
             // 
-            btnBack.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
-            btnBack.ForeColor = Color.FromArgb(100, 23, 61);
-            btnBack.Location = new Point(279, 663);
-            btnBack.Margin = new Padding(2);
-            btnBack.Name = "btnBack";
-            btnBack.Size = new Size(101, 42);
-            btnBack.TabIndex = 77;
-            btnBack.Text = "Back";
-            btnBack.UseVisualStyleBackColor = true;
-            btnBack.Click += btnBack_Click;
+            btnBack_Confirm.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBack_Confirm.ForeColor = Color.FromArgb(100, 23, 61);
+            btnBack_Confirm.Location = new Point(279, 663);
+            btnBack_Confirm.Margin = new Padding(2);
+            btnBack_Confirm.Name = "btnBack_Confirm";
+            btnBack_Confirm.Size = new Size(101, 42);
+            btnBack_Confirm.TabIndex = 77;
+            btnBack_Confirm.Text = "Back";
+            btnBack_Confirm.UseVisualStyleBackColor = true;
+            btnBack_Confirm.Click += btnBack_Click;
             // 
             // ConfirmDonate
             // 
@@ -517,7 +517,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Thistle;
             ClientSize = new Size(1348, 721);
-            Controls.Add(btnBack);
+            Controls.Add(btnBack_Confirm);
             Controls.Add(groupBoxDroppoint);
             Controls.Add(groupBoxContinue);
             Controls.Add(label5);
@@ -525,11 +525,11 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(btnConfirmDonate);
-            Controls.Add(lblChooseLoc);
-            Controls.Add(lblConfirmDonate);
+            Controls.Add(btnConfirmDonate_Confirm);
+            Controls.Add(lblChooseLoc_Confirm);
+            Controls.Add(lblConfirmDonate_Confirm);
             Controls.Add(lblNumPrice);
-            Controls.Add(lblEstimatedPrice);
+            Controls.Add(lblEstimatedPrice_Confirm);
             Controls.Add(btnLogOut);
             Controls.Add(btnActivity);
             Controls.Add(btnHome);
@@ -559,33 +559,33 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private Button btnConfirmDonate;
+        private Button btnConfirmDonate_Confirm;
         private RadioButton rbBantul;
         private RadioButton rbGunungKidul;
         private RadioButton rbKulonProgo;
         private RadioButton rbSleman;
         private RadioButton rbYogya;
-        private Label lblChooseLoc;
-        private RadioButton rbNoDonate;
-        private RadioButton rbYesDonate;
-        private Label lblConfirmDonate;
+        private Label lblChooseLoc_Confirm;
+        private RadioButton rbNoDonate_Confirm;
+        private RadioButton rbYesDonate_Confirm;
+        private Label lblConfirmDonate_Confirm;
         private Label lblNumPrice;
-        private Label lblEstimatedPrice;
+        private Label lblEstimatedPrice_Confirm;
         private Button btnLogOut;
         private Button btnActivity;
         private Button btnHome;
         private Panel panel3;
         private PictureBox pictureBox3;
         private LinkLabel lblLoopFit2;
-        private LinkLabel lblContactUs2;
-        private Label lblDonate2;
+        private LinkLabel lblContactUs2_Confirm;
+        private Label lblDonate2_Confirm;
         private Panel panel1;
         private PictureBox picProfile;
         private Panel panel2;
         private GroupBox groupBoxContinue;
         private GroupBox groupBoxDroppoint;
         private LinkLabel llProfile;
-        private Button btnBack;
-        private Label label6;
+        private Button btnBack_Confirm;
+        private Label label6_Confirm;
     }
 }

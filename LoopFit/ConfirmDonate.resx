@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label6.Text" xml:space="preserve">
+  <data name="label6_Confirm.Text" xml:space="preserve">
     <value>This page allows you to review the estimated value of your donated clothing items and choose a drop-off point for delivery. The estimated price is calculated based on the condition and type of clothing you provided earlier. Once you’ve reviewed the details, you can confirm your donation or make adjustments. Let’s make a positive impact together!
 </value>
   </data>

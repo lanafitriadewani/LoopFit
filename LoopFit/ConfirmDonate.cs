@@ -67,7 +67,7 @@ namespace LoopFit
 
         private void btnConfirmDonate_Click(object sender, EventArgs e)
         {
-            if (!rbYesDonate.Checked && !rbNoDonate.Checked)
+            if (!rbYesDonate_Confirm.Checked && !rbNoDonate_Confirm.Checked)
             {
                 MessageBox.Show("Please select whether you want to continue the donation or not.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -76,7 +76,7 @@ namespace LoopFit
             Donate.IsAccepted = false;
 
             // Cek jika rbYesDonate dipilih
-            if (rbYesDonate.Checked)
+            if (rbYesDonate_Confirm.Checked)
             {
                 // Cek apakah ada salah satu drop point yang dipilih
                 if (rbYogya.Checked || rbSleman.Checked || rbKulonProgo.Checked || rbGunungKidul.Checked || rbBantul.Checked)
@@ -108,7 +108,7 @@ namespace LoopFit
                     MessageBox.Show("Please select a drop point location before confirming donation.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-            else if (rbNoDonate.Checked)
+            else if (rbNoDonate_Confirm.Checked)
             {
                 HomeDashboard homedashboard = new HomeDashboard(User.Username);
                 homedashboard.Show();

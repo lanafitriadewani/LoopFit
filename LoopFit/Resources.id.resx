@@ -117,11 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Black" xml:space="preserve">
+    <value>Hitam</value>
+  </data>
+  <data name="Blue" xml:space="preserve">
+    <value>Biru</value>
+  </data>
+  <data name="Brown" xml:space="preserve">
+    <value>Coklat</value>
+  </data>
   <data name="btnActivity.Text" xml:space="preserve">
     <value>Aktivitas</value>
   </data>
   <data name="btnActivity_Profile.Text" xml:space="preserve">
     <value>Aktivitas</value>
+  </data>
+  <data name="btnBack_Confirm.Text" xml:space="preserve">
+    <value>Kembali</value>
+  </data>
+  <data name="btnBack_Thanks.Text" xml:space="preserve">
+    <value>Kembali ke Beranda</value>
+  </data>
+  <data name="btnChangeImage_EditProfile.Text" xml:space="preserve">
+    <value>Ubah Gambar</value>
+  </data>
+  <data name="btnClothInfoNext_Info.Text" xml:space="preserve">
+    <value>Lanjut</value>
+  </data>
+  <data name="btnConfirmDonate_Confirm.Text" xml:space="preserve">
+    <value>Simpan</value>
   </data>
   <data name="btnEditProfile_Profile.Text" xml:space="preserve">
     <value>Edit Profil</value>
@@ -135,26 +159,224 @@
   <data name="btnLoadActivityUser_Activity.Text" xml:space="preserve">
     <value>Muat</value>
   </data>
+  <data name="btnLoginGoogle.Text" xml:space="preserve">
+    <value>Masuk dengan Google</value>
+  </data>
+  <data name="btnLogin_Login" xml:space="preserve">
+    <value>Masuk</value>
+  </data>
+  <data name="btnLogin_Welcome.Text" xml:space="preserve">
+    <value>Masuk</value>
+  </data>
   <data name="btnLogOut.Text" xml:space="preserve">
     <value>Keluar</value>
   </data>
   <data name="btnLogOut_Profile.Text" xml:space="preserve">
     <value>Keluar</value>
   </data>
+  <data name="btnSendVerifCode_EditProfile.Text" xml:space="preserve">
+    <value>Kirim Kode</value>
+  </data>
+  <data name="btnSignUp_Welcome.Text" xml:space="preserve">
+    <value>Daftar</value>
+  </data>
+  <data name="btnSubmitEdit_EditProfile.Text" xml:space="preserve">
+    <value>Simpan</value>
+  </data>
   <data name="btnSubmitLanguage_Profile.Text" xml:space="preserve">
     <value>Kirim</value>
+  </data>
+  <data name="btnSubmit_Uname.Text" xml:space="preserve">
+    <value>Kirim</value>
+  </data>
+  <data name="btnUploadImage2_Info.Text" xml:space="preserve">
+    <value>Unggah</value>
+  </data>
+  <data name="btnUploadImage_Info.Text" xml:space="preserve">
+    <value>Unggah</value>
+  </data>
+  <data name="btnVerify_EditProfile.Text" xml:space="preserve">
+    <value>Verif</value>
+  </data>
+  <data name="btnVerify_VerifEmail.Text" xml:space="preserve">
+    <value>Verifikasi</value>
+  </data>
+  <data name="btnVid1_Content.Text" xml:space="preserve">
+    <value>Tekan untuk melihat</value>
+  </data>
+  <data name="btnVid2_Content.Text" xml:space="preserve">
+    <value>Tekan untuk melihat</value>
+  </data>
+  <data name="btnVid3_Content.Text" xml:space="preserve">
+    <value>Tekan untuk melihat</value>
+  </data>
+  <data name="Cotton" xml:space="preserve">
+    <value>Katun</value>
+  </data>
+  <data name="Denim" xml:space="preserve">
+    <value>Denim</value>
+  </data>
+  <data name="EmailVerificationDescription" xml:space="preserve">
+    <value>Kami telah mengirimkan kode empat digit ke {0}. Masukkan kode di bawah untuk mengonfirmasi alamat email Anda.</value>
+  </data>
+  <data name="FillAllFieldsMessage" xml:space="preserve">
+    <value>Harap isi semua data dengan lengkap.</value>
+  </data>
+  <data name="Green" xml:space="preserve">
+    <value>Hijau</value>
+  </data>
+  <data name="Grey" xml:space="preserve">
+    <value>Abu-abu</value>
+  </data>
+  <data name="Hijab" xml:space="preserve">
+    <value>Hijab</value>
+  </data>
+  <data name="Indigo" xml:space="preserve">
+    <value>Indigo</value>
+  </data>
+  <data name="InnerTop" xml:space="preserve">
+    <value>Atasan Dalam</value>
+  </data>
+  <data name="Jersey" xml:space="preserve">
+    <value>Jersey</value>
+  </data>
+  <data name="label1_Content.Text" xml:space="preserve">
+    <value>Kunjungi akun TikTok untuk konten lain:</value>
+  </data>
+  <data name="label1_Create.Text" xml:space="preserve">
+    <value>Buat kata sandi baru Anda dan jangan lupakan!</value>
+  </data>
+  <data name="label1_Donate.Text" xml:space="preserve">
+    <value>Sisi Depan</value>
+  </data>
+  <data name="label1_Edit.Text" xml:space="preserve">
+    <value>Nama Belakang :</value>
+  </data>
+  <data name="label1_Forget.Text" xml:space="preserve">
+    <value>Masukkan alamat email terdaftar Anda di bawah ini. Kode verifikasi akan dikirimkan ke email Anda! Harap periksa kotak masuk (dan folder spam) untuk kode tersebut. Setelah Anda mendapatkan kode, masukkan kode tersebut untuk melanjutkan proses pengaturan ulang kata sandi Anda.</value>
+  </data>
+  <data name="label1_Thanks.Text" xml:space="preserve">
+    <value>Bersama, Kita Menciptakan Masa Depan yang Lebih Hijau!</value>
+  </data>
+  <data name="label1_Welcome.Text" xml:space="preserve">
+    <value>Aplikasi desktop yang memfasilitasi donasi pakaian untuk mengatasi masalah fast fashion, mempromosikan keberlanjutan, dan mendukung ekonomi sirkular dengan mengolah kembali tekstil untuk digunakan ulang atau didaur ulang.</value>
+  </data>
+  <data name="label2_Donate.Text" xml:space="preserve">
+    <value>Sisi Belakang</value>
+  </data>
+  <data name="label3_Catalog.Text" xml:space="preserve">
+    <value>Temukan berbagai produk fashion daur ulang dan berkelanjutan yang dibuat dengan cinta dan kreativitas. Dukung inisiatif ramah lingkungan dengan melihat produk unggulan kami di bawah ini!</value>
+  </data>
+  <data name="label3_Donate.Text" xml:space="preserve">
+    <value>Donasikan pakaian bekas Anda untuk diproses menjadi barang baru atau bahan baku yang bermanfaat dengan mengisi detail tentang kondisi pakaian Anda di halaman ini. Bersama LoopFit, mari ciptakan solusi berkelanjutan untuk masa depan yang lebih baik.</value>
+  </data>
+  <data name="label3_Edit.Text" xml:space="preserve">
+    <value>*Klik di sini jika Anda mengganti email dan Anda akan segera menerima kode Anda.</value>
+  </data>
+  <data name="label4_Catalog.Text" xml:space="preserve">
+    <value>Berikut beberapa produk kami. Yuk, cek sekarang!</value>
+  </data>
+  <data name="label4_Edit.Text" xml:space="preserve">
+    <value>*Klik di sini untuk memverifikasi kode Anda sebelum mengirimkan perubahan.</value>
+  </data>
+  <data name="label6_Confirm.Text" xml:space="preserve">
+    <value>Tinjau kembali estimasi harga dari pakaian yang Anda donasikan dan pilih lokasi drop-off untuk pengiriman. Perkiraan harga dihitung berdasarkan kondisi dan jenis pakaian yang telah Anda berikan sebelumnya. Setelah meninjau detailnya, Anda dapat mengonfirmasi donasi Anda atau melakukan penyesuaian. Mari bersama-sama membuat dampak positif!</value>
+  </data>
+  <data name="lblAboutUs_AboutUs.Text" xml:space="preserve">
+    <value>Tentang Kami</value>
   </data>
   <data name="lblActivity_Activity.Text" xml:space="preserve">
     <value>Aktivitas</value>
   </data>
+  <data name="lblAddress_Contact.Text" xml:space="preserve">
+    <value>Alamat :</value>
+  </data>
+  <data name="lblAlready_Login.Text" xml:space="preserve">
+    <value>Belum Memiliki Akun?</value>
+  </data>
+  <data name="lblAlready_SignUp.Text" xml:space="preserve">
+    <value>Sudah Memiliki Akun?</value>
+  </data>
+  <data name="lblAlready_VerifEmail.Text" xml:space="preserve">
+    <value>Tidak menerima kode?</value>
+  </data>
+  <data name="lblBack_Create.Text" xml:space="preserve">
+    <value>Kembali</value>
+  </data>
+  <data name="lblBack_Forget.Text" xml:space="preserve">
+    <value>Kembali</value>
+  </data>
+  <data name="lblBack_Uname.Text" xml:space="preserve">
+    <value>Kembali</value>
+  </data>
+  <data name="lblBack_VerifEmail.Text" xml:space="preserve">
+    <value>Kembali</value>
+  </data>
+  <data name="lblCatalog_Catalog.Text" xml:space="preserve">
+    <value>Katalog</value>
+  </data>
   <data name="lblChangeLanguage_Profile.Text" xml:space="preserve">
     <value>Ubah Bahasa</value>
+  </data>
+  <data name="lblChooseLoc_Confirm.Text" xml:space="preserve">
+    <value>Jika ya, pilih lokasi titik penurunan:</value>
+  </data>
+  <data name="lblClothImage_Donate.Text" xml:space="preserve">
+    <value>Gambar Pakaian :</value>
+  </data>
+  <data name="lblClothInfo_Donate.Text" xml:space="preserve">
+    <value>Informasi Pakaian</value>
+  </data>
+  <data name="lblClothType_Donate.Text" xml:space="preserve">
+    <value>Tipe Pakaian : </value>
+  </data>
+  <data name="lblColour_Donate.Text" xml:space="preserve">
+    <value>Warna (Dominan) :</value>
+  </data>
+  <data name="lblCondition_Donate.Text" xml:space="preserve">
+    <value>Kondisi :</value>
+  </data>
+  <data name="lblConfirmDonate_Confirm.Text" xml:space="preserve">
+    <value>Terima harga dan lanjutkan donasi?</value>
+  </data>
+  <data name="lblConfirmPass_Create" xml:space="preserve">
+    <value>Konfirmasi Kata Sandi :</value>
+  </data>
+  <data name="lblConfirmPw_Edit.Text" xml:space="preserve">
+    <value>Konfirmasi Kata Sandi :</value>
   </data>
   <data name="lblContactUs.Text" xml:space="preserve">
     <value>Hubungi Kami</value>
   </data>
+  <data name="lblContactUs2_Confirm.Text" xml:space="preserve">
+    <value>Hubungi Kami</value>
+  </data>
+  <data name="lblContactUs_AboutUs.Text" xml:space="preserve">
+    <value>Hubungi Kami</value>
+  </data>
+  <data name="lblContactUs_Catalog.Text" xml:space="preserve">
+    <value>Hubungi Kami</value>
+  </data>
+  <data name="lblContactUs_Content.Text" xml:space="preserve">
+    <value>Hubungi Kami</value>
+  </data>
+  <data name="lblContactUs_Donate.Text" xml:space="preserve">
+    <value>Hubungi Kami</value>
+  </data>
+  <data name="lblContent_Content.Text" xml:space="preserve">
+    <value>Konten</value>
+  </data>
   <data name="lblContent_Home.Text" xml:space="preserve">
     <value>Konten</value>
+  </data>
+  <data name="lblCPassword_Uname.Text" xml:space="preserve">
+    <value>Konfirmasi Kata Sandi</value>
+  </data>
+  <data name="lblCreateUP_Login.Text" xml:space="preserve">
+    <value>Masuk ke akun Anda</value>
+  </data>
+  <data name="lblCreateUP_Uname.Text" xml:space="preserve">
+    <value>Buat nama akun dan kata sandi</value>
   </data>
   <data name="lblDescContent_Home.Text" xml:space="preserve">
     <value>Lihat bagaimana LoopFit memproses pakaian Anda.</value>
@@ -165,17 +387,95 @@
   <data name="lblDescProduct_Home.Text" xml:space="preserve">
     <value>Temukan produk pakaian daur ulang kami.</value>
   </data>
+  <data name="lblDescription_Home.Text" xml:space="preserve">
+    <value>Mari kita ambil tindakan untuk masa depan yang berkelanjutan! Dengan LoopFit, Anda dapat mendonasikan pakaian Anda, melacak proses daur ulang melalui konten kami, dan mengeksplorasi produk unik yang dibuat dari kain hasil daur ulang. Bersama-sama kita dapat mengurangi limbah tekstil dan mendukung ekonomi sirkular!</value>
+  </data>
+  <data name="lblDesc_AboutUs1.Text" xml:space="preserve">
+    <value>LoopFit adalah aplikasi inovatif yang didedikasikan untuk menciptakan solusi berkelanjutan di industri fashion. Dengan LoopFit, Anda dapat mendonasikan pakaian bekas untuk diubah menjadi pakaian baru atau dijadikan bahan baku untuk menciptakan pakaian baru.</value>
+  </data>
+  <data name="lblDesc_AboutUs2.Text" xml:space="preserve">
+    <value>Misi kami adalah mengurangi limbah tekstil dan mendukung ekonomi sirkular serta gaya hidup berkelanjutan melalui daur ulang kreatif. Bergabunglah bersama kami menuju masa depan yang lebih hijau, di mana fashion dan lingkungan berjalan beriringan.</value>
+  </data>
+  <data name="lblDesc_AboutUs3.Text" xml:space="preserve">
+    <value>Bersama, kita menutup siklus demi planet yang lebih baik.</value>
+  </data>
+  <data name="lblDesc_Content.Text" xml:space="preserve">
+    <value>Temukan konten inspiratif dan video informatif tentang fashion berkelanjutan serta daur ulang pakaian untuk menambah wawasan Anda sambil mengisi waktu!</value>
+  </data>
+  <data name="lblDonate1_Donate.Text" xml:space="preserve">
+    <value>Donasi</value>
+  </data>
+  <data name="lblDonate1_Edit.Text" xml:space="preserve">
+    <value>Ubah Profil</value>
+  </data>
+  <data name="lblDonate2_Confirm.Text" xml:space="preserve">
+    <value>Donasi</value>
+  </data>
   <data name="lblDonate_Home.Text" xml:space="preserve">
     <value>Donasi</value>
+  </data>
+  <data name="lblEstimatedPrice_Confirm.Text" xml:space="preserve">
+    <value>Estimasi Harga</value>
+  </data>
+  <data name="lblFirstName_SignUp.Text" xml:space="preserve">
+    <value>Nama Depan</value>
+  </data>
+  <data name="lblForgetPass_Create.Text" xml:space="preserve">
+    <value>Atur Ulang Kata Sandi Anda</value>
+  </data>
+  <data name="lblForgetPass_Forget.Text" xml:space="preserve">
+    <value>Atur Ulang Kata Sandi Anda</value>
+  </data>
+  <data name="lblFullName_Edit.Text" xml:space="preserve">
+    <value>Nama Depan :</value>
   </data>
   <data name="lblFullName_Profile.Text" xml:space="preserve">
     <value>Nama Lengkap :</value>
   </data>
+  <data name="lblLastName_SignUp.Text" xml:space="preserve">
+    <value>Nama Belakang</value>
+  </data>
+  <data name="lblMaterial_Donate.Text" xml:space="preserve">
+    <value>Bahan :</value>
+  </data>
+  <data name="lblNewPass_Create.Text" xml:space="preserve">
+    <value>Kata Sandi Baru :</value>
+  </data>
+  <data name="lblNewPw_Edit.Text" xml:space="preserve">
+    <value>Kata Sandi Baru :</value>
+  </data>
+  <data name="lblOr_Login.Text" xml:space="preserve">
+    <value>________________________________ atau ________________________________</value>
+  </data>
+  <data name="lblOr_SignUp.Text" xml:space="preserve">
+    <value>________________________________ atau ________________________________</value>
+  </data>
+  <data name="lblOurContact_Contact.Text" xml:space="preserve">
+    <value>Kontak Kami</value>
+  </data>
+  <data name="lblPassword_Login.Text" xml:space="preserve">
+    <value>Kata Sandi</value>
+  </data>
+  <data name="lblPassword_Uname.Text" xml:space="preserve">
+    <value>Kata Sandi</value>
+  </data>
   <data name="lblPasword_Profile.Text" xml:space="preserve">
     <value>Kata Sandi :</value>
   </data>
+  <data name="lblPattern_Donate.Text" xml:space="preserve">
+    <value>Corak :</value>
+  </data>
+  <data name="lblPhoneNumber_Edit.Text" xml:space="preserve">
+    <value>Nomor Telepon :</value>
+  </data>
   <data name="lblPhoneNumber_Profile.Text" xml:space="preserve">
     <value>Nomor Telepon :</value>
+  </data>
+  <data name="lblPhoneNum_Contact.Text" xml:space="preserve">
+    <value>Nomor Telepon : </value>
+  </data>
+  <data name="lblPhoneNum_SignUp.Text" xml:space="preserve">
+    <value>Nomor Telepon</value>
   </data>
   <data name="lblProduct_Home.Text" xml:space="preserve">
     <value>Produk Kami</value>
@@ -183,17 +483,77 @@
   <data name="lblProfile_Profile.Text" xml:space="preserve">
     <value>Profil</value>
   </data>
+  <data name="lblSignUp_SignUp.Text" xml:space="preserve">
+    <value>Daftar akun</value>
+  </data>
+  <data name="lblSignUp_VerifEmail.Text" xml:space="preserve">
+    <value>Verifikasi alamat email Anda</value>
+  </data>
+  <data name="lblSignUp_Welcome.Text" xml:space="preserve">
+    <value>Selamat Datang di LoopFit!</value>
+  </data>
+  <data name="lblSosmed_AboutUs.Text" xml:space="preserve">
+    <value>Ikuti Media Sosial Kami</value>
+  </data>
+  <data name="lblSosmed_Catalog.Text" xml:space="preserve">
+    <value>Ikuti Media Sosial Kami</value>
+  </data>
+  <data name="lblSosmed_Contact.Text" xml:space="preserve">
+    <value>Ikuti Sosial Media Kami</value>
+  </data>
   <data name="lblSosmed_Home.Text" xml:space="preserve">
     <value>Ikuti Media Sosial Kami</value>
+  </data>
+  <data name="lblSosmed_Thanks.Text" xml:space="preserve">
+    <value>Ikuti Sosial Media Kami</value>
+  </data>
+  <data name="lblThanks_Thanks.Text" xml:space="preserve">
+    <value>Terima kasih telah berkontribusi untuk masa depan yang berkelanjutan!</value>
+  </data>
+  <data name="lblUname_Login.Text" xml:space="preserve">
+    <value>Nama Akun atau Email</value>
+  </data>
+  <data name="lblUname_Uname.Text" xml:space="preserve">
+    <value>Nama Akun</value>
+  </data>
+  <data name="lblUsername_Edit.Text" xml:space="preserve">
+    <value>Nama Akun :</value>
   </data>
   <data name="lblUsername_Profile.Text" xml:space="preserve">
     <value>Nama Akun :</value>
   </data>
+  <data name="lblVerificationCode_Edit.Text" xml:space="preserve">
+    <value>Kode Verifikasi :</value>
+  </data>
+  <data name="lblVerif_Forget.Text" xml:space="preserve">
+    <value>Kode Verifikasi :</value>
+  </data>
   <data name="lblWelcome_Home.Text" xml:space="preserve">
     <value>Hallo</value>
   </data>
+  <data name="Leather" xml:space="preserve">
+    <value>Kulit</value>
+  </data>
+  <data name="Linen" xml:space="preserve">
+    <value>Rami</value>
+  </data>
+  <data name="linkLabel2_Contact.Text" xml:space="preserve">
+    <value>Hubungi Kami</value>
+  </data>
   <data name="linkLabel2_Home.Text" xml:space="preserve">
     <value>Hubungi Kami</value>
+  </data>
+  <data name="linkLabel2_Login.Text" xml:space="preserve">
+    <value>Lupa kata sandi?</value>
+  </data>
+  <data name="linkLabel2_Thanks.Text" xml:space="preserve">
+    <value>Hubungi Kami</value>
+  </data>
+  <data name="llLogin_SignUp.Text" xml:space="preserve">
+    <value>Masuk</value>
+  </data>
+  <data name="llLogin_VerifEmail.Text" xml:space="preserve">
+    <value>Kirim Ulang</value>
   </data>
   <data name="llProfile.Text" xml:space="preserve">
     <value>Profil</value>
@@ -201,10 +561,94 @@
   <data name="llProfile_Profile.Text" xml:space="preserve">
     <value>Profil</value>
   </data>
+  <data name="llShopee1_Catalog.Text" xml:space="preserve">
+    <value>Klik Di Sini untuk Memesan</value>
+  </data>
+  <data name="llShopee2_Catalog.Text" xml:space="preserve">
+    <value>Klik Di Sini untuk Memesan</value>
+  </data>
+  <data name="llShopee3_Catalog.Text" xml:space="preserve">
+    <value>Klik Di Sini untuk Memesan</value>
+  </data>
+  <data name="llShopee4_Catalog.Text" xml:space="preserve">
+    <value>Klik Di Sini untuk Memesan</value>
+  </data>
+  <data name="llSignUp_Login.Text" xml:space="preserve">
+    <value>Daftar</value>
+  </data>
+  <data name="Nylon" xml:space="preserve">
+    <value>Nilon</value>
+  </data>
+  <data name="Orange" xml:space="preserve">
+    <value>Oranye</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Lainnya</value>
+  </data>
+  <data name="OuterTop" xml:space="preserve">
+    <value>Atasan Luar</value>
+  </data>
+  <data name="Overall" xml:space="preserve">
+    <value>Overall</value>
+  </data>
+  <data name="Pants" xml:space="preserve">
+    <value>Celana</value>
+  </data>
+  <data name="Polyester" xml:space="preserve">
+    <value>Poliester</value>
+  </data>
+  <data name="rbCondNonUsable_Info.Text" xml:space="preserve">
+    <value>Tidak Layak Pakai</value>
+  </data>
+  <data name="rbCondUsable_Info.Text" xml:space="preserve">
+    <value>Layak Pakai</value>
+  </data>
+  <data name="rbNoDonate_Confirm.Text" xml:space="preserve">
+    <value>Tidak</value>
+  </data>
+  <data name="rbPatternNo_Info.Text" xml:space="preserve">
+    <value>Tidak</value>
+  </data>
+  <data name="rbPatternYes_Info.Text" xml:space="preserve">
+    <value>Iya</value>
+  </data>
+  <data name="rbYesDonate_Confirm.Text" xml:space="preserve">
+    <value>Iya</value>
+  </data>
+  <data name="Red" xml:space="preserve">
+    <value>Merah</value>
+  </data>
+  <data name="Satin" xml:space="preserve">
+    <value>Satin</value>
+  </data>
+  <data name="Silk" xml:space="preserve">
+    <value>Sutra</value>
+  </data>
+  <data name="Skirt" xml:space="preserve">
+    <value>Rok</value>
+  </data>
+  <data name="tbDesc2_Contact.Text" xml:space="preserve">
+    <value>Pendapat dan kekhawatiran Anda penting bagi kami saat kita bekerja bersama menuju masa depan yang berkelanjutan. Jangan ragu untuk menghubungi kami!</value>
+  </data>
   <data name="txtDescription_Activity.Text" xml:space="preserve">
     <value>Halaman ini menampilkan ringkasan donasi Anda serta memberikan catatan detail tentang pakaian yang telah Anda sumbangkan. Setiap donasi memiliki peran penting dalam mendukung misi kami di dunia fashion. Terima kasih atas kebaikan dan kontribusi Anda yang benar-benar membuat perbedaan dan membantu menciptakan masa depan yang lebih berkelanjutan!</value>
   </data>
-  <data name="txtDescription_Home.Text" xml:space="preserve">
-    <value>Mari kita ambil tindakan untuk masa depan yang berkelanjutan! Dengan LoopFit, Anda dapat mendonasikan pakaian Anda, melacak proses daur ulang melalui konten kami, dan mengeksplorasi produk unik yang dibuat dari kain hasil daur ulang. Bersama-sama kita dapat mengurangi limbah tekstil dan mendukung ekonomi sirkular!</value>
+  <data name="txtDescription_Contact.Text" xml:space="preserve">
+    <value>Kami di sini untuk menghubungkan dan membantu Anda! Jika Anda memiliki pertanyaan, masukan, atau membutuhkan informasi lebih lanjut tentang LoopFit, jangan ragu untuk menghubungi kami. Tim kami siap membantu dengan pertanyaan mengenai donasi, produk daur ulang, atau peluang kolaborasi.</value>
+  </data>
+  <data name="txtDescription_Thanks.Text" xml:space="preserve">
+    <value>Kami sangat menghargai kontribusi Anda dalam mendukung keberlanjutan melalui donasi pakaian. Setiap barang yang Anda donasikan akan membantu mengurangi limbah tekstil dan memberikan manfaat bagi mereka yang membutuhkan.</value>
+  </data>
+  <data name="Violet" xml:space="preserve">
+    <value>Violet</value>
+  </data>
+  <data name="White" xml:space="preserve">
+    <value>Putih</value>
+  </data>
+  <data name="Wool" xml:space="preserve">
+    <value>Wol</value>
+  </data>
+  <data name="Yellow" xml:space="preserve">
+    <value>Kuning</value>
   </data>
 </root>

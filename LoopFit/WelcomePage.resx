@@ -117,14 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="label1_Welcome.Text" xml:space="preserve">
     <value>An desktop app that facilitates clothing donations to tackle the growing issue of fast fashion, promoting sustainability, and supporting a circular economy by repurposing textiles for reuse or recycling.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABAAAAAJYCAYAAAD8EJQjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAA/7JJREFUeF7s/Xd4VVX6/o///vle12dGBZ2Z9xSV3kFFxd5mHMcZu9LERgsdQsdO
+        vQAADr0BR/uQrQAA/7JJREFUeF7s/Xd4VVX6/o///vle12dGBZ2Z9xSV3kFFxd5mHMcZu9LERgsdQsdO
         b9J7eu+FTugQWigJJT2EDiodBLsi5f49z9p7nxxwo5QkkOT+43Xtvvc5yVr7rPtez3rW/2/H6h0ghBBC
         SNklOzQb2cGEEEIIIb8NDQBCCCGkDFOYWuj6A08IIYQQcik0AAghhJAyzPal211/4AkhhBBCLoUGACGE
         EFKGKUgpcP2BJ4QQQgi5FBoAhBBCSBkmf06+6w88IYQQQsil0AAghBBCyjB5SXmuP/CEEEIIIZdCA4AQ

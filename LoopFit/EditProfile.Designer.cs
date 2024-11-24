@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            btnLogOut = new Button();
             picProfile = new PictureBox();
             llProfile = new LinkLabel();
             panel4 = new Panel();
             btnActivity = new Button();
             btnHome = new Button();
             panel2 = new Panel();
-            lblDonate1 = new Label();
-            btnSubmitEdit = new Button();
-            btnChangeImage = new Button();
+            lblDonate1_Edit = new Label();
+            btnSubmitEdit_EditProfile = new Button();
+            btnChangeImage_EditProfile = new Button();
             profilePic = new PictureBox();
-            btnVerify = new Button();
+            btnVerify_EditProfile = new Button();
             tbLastName = new TextBox();
-            label1 = new Label();
-            btnSendVerifCode = new Button();
+            label1_Edit = new Label();
+            btnSendVerifCode_EditProfile = new Button();
             tbPhoneNumber = new TextBox();
             tbConfirmPw = new TextBox();
             tbNewPw = new TextBox();
@@ -50,38 +50,38 @@
             tbEmail = new TextBox();
             tbFirstName = new TextBox();
             tbUsername = new TextBox();
-            lblPhoneNumber = new Label();
-            lblConfirmPw = new Label();
-            lblNewPw = new Label();
-            lblVerificationCode = new Label();
+            lblPhoneNumber_Edit = new Label();
+            lblConfirmPw_Edit = new Label();
+            lblNewPw_Edit = new Label();
+            lblVerificationCode_Edit = new Label();
             lblEmail = new Label();
-            lblFullName = new Label();
-            lblUsername = new Label();
+            lblFullName_Edit = new Label();
+            lblUsername_Edit = new Label();
             label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
+            label3_Edit = new Label();
+            label4_Edit = new Label();
             ((System.ComponentModel.ISupportInitialize)picProfile).BeginInit();
             panel4.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)profilePic).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // btnLogOut
             // 
-            button1.BackColor = Color.FromArgb(208, 154, 208);
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.FromArgb(100, 23, 61);
-            button1.Location = new Point(0, 677);
-            button1.Margin = new Padding(2);
-            button1.Name = "button1";
-            button1.Size = new Size(246, 44);
-            button1.TabIndex = 30;
-            button1.Text = "Log Out";
-            button1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnLogOut.BackColor = Color.FromArgb(208, 154, 208);
+            btnLogOut.FlatAppearance.BorderSize = 0;
+            btnLogOut.FlatStyle = FlatStyle.Flat;
+            btnLogOut.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLogOut.ForeColor = Color.FromArgb(100, 23, 61);
+            btnLogOut.Location = new Point(0, 677);
+            btnLogOut.Margin = new Padding(2);
+            btnLogOut.Name = "btnLogOut";
+            btnLogOut.Size = new Size(246, 44);
+            btnLogOut.TabIndex = 30;
+            btnLogOut.Text = "Log Out";
+            btnLogOut.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnLogOut.UseVisualStyleBackColor = true;
+            btnLogOut.Click += button1_Click;
             // 
             // picProfile
             // 
@@ -90,7 +90,7 @@
             picProfile.Margin = new Padding(2);
             picProfile.Name = "picProfile";
             picProfile.Size = new Size(56, 49);
-            picProfile.SizeMode = PictureBoxSizeMode.Zoom;
+            picProfile.SizeMode = PictureBoxSizeMode.StretchImage;
             picProfile.TabIndex = 0;
             picProfile.TabStop = false;
             picProfile.Click += picProfile_Click;
@@ -156,7 +156,7 @@
             // 
             panel2.BackColor = Color.FromArgb(208, 154, 208);
             panel2.Controls.Add(panel4);
-            panel2.Controls.Add(button1);
+            panel2.Controls.Add(btnLogOut);
             panel2.Controls.Add(btnActivity);
             panel2.Controls.Add(btnHome);
             panel2.Dock = DockStyle.Left;
@@ -166,111 +166,112 @@
             panel2.Size = new Size(246, 721);
             panel2.TabIndex = 45;
             // 
-            // lblDonate1
+            // lblDonate1_Edit
             // 
-            lblDonate1.AutoSize = true;
-            lblDonate1.BackColor = Color.Transparent;
-            lblDonate1.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            lblDonate1.ForeColor = Color.FromArgb(100, 23, 61);
-            lblDonate1.Location = new Point(261, 38);
-            lblDonate1.Margin = new Padding(2, 0, 2, 0);
-            lblDonate1.Name = "lblDonate1";
-            lblDonate1.Size = new Size(255, 60);
-            lblDonate1.TabIndex = 46;
-            lblDonate1.Text = "Edit Profile";
+            lblDonate1_Edit.AutoSize = true;
+            lblDonate1_Edit.BackColor = Color.Transparent;
+            lblDonate1_Edit.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            lblDonate1_Edit.ForeColor = Color.FromArgb(100, 23, 61);
+            lblDonate1_Edit.Location = new Point(261, 38);
+            lblDonate1_Edit.Margin = new Padding(2, 0, 2, 0);
+            lblDonate1_Edit.Name = "lblDonate1_Edit";
+            lblDonate1_Edit.Size = new Size(255, 60);
+            lblDonate1_Edit.TabIndex = 46;
+            lblDonate1_Edit.Text = "Edit Profile";
             // 
-            // btnSubmitEdit
+            // btnSubmitEdit_EditProfile
             // 
-            btnSubmitEdit.BackColor = Color.FromArgb(178, 113, 178);
-            btnSubmitEdit.FlatStyle = FlatStyle.Popup;
-            btnSubmitEdit.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSubmitEdit.ForeColor = Color.FromArgb(100, 23, 61);
-            btnSubmitEdit.Location = new Point(1113, 653);
-            btnSubmitEdit.Margin = new Padding(2);
-            btnSubmitEdit.Name = "btnSubmitEdit";
-            btnSubmitEdit.Size = new Size(131, 38);
-            btnSubmitEdit.TabIndex = 64;
-            btnSubmitEdit.Text = "Submit";
-            btnSubmitEdit.UseVisualStyleBackColor = false;
-            btnSubmitEdit.Click += btnSubmitEdit_Click;
+            btnSubmitEdit_EditProfile.BackColor = Color.FromArgb(178, 113, 178);
+            btnSubmitEdit_EditProfile.FlatStyle = FlatStyle.Popup;
+            btnSubmitEdit_EditProfile.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSubmitEdit_EditProfile.ForeColor = Color.FromArgb(100, 23, 61);
+            btnSubmitEdit_EditProfile.Location = new Point(1113, 653);
+            btnSubmitEdit_EditProfile.Margin = new Padding(2);
+            btnSubmitEdit_EditProfile.Name = "btnSubmitEdit_EditProfile";
+            btnSubmitEdit_EditProfile.Size = new Size(131, 38);
+            btnSubmitEdit_EditProfile.TabIndex = 64;
+            btnSubmitEdit_EditProfile.Text = "Submit";
+            btnSubmitEdit_EditProfile.UseVisualStyleBackColor = false;
+            btnSubmitEdit_EditProfile.Click += btnSubmitEdit_Click;
             // 
-            // btnChangeImage
+            // btnChangeImage_EditProfile
             // 
-            btnChangeImage.BackColor = Color.FromArgb(178, 113, 178);
-            btnChangeImage.FlatStyle = FlatStyle.Popup;
-            btnChangeImage.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnChangeImage.ForeColor = Color.FromArgb(100, 23, 61);
-            btnChangeImage.Location = new Point(1113, 159);
-            btnChangeImage.Margin = new Padding(2);
-            btnChangeImage.Name = "btnChangeImage";
-            btnChangeImage.Size = new Size(129, 39);
-            btnChangeImage.TabIndex = 63;
-            btnChangeImage.Text = "Change Image";
-            btnChangeImage.UseVisualStyleBackColor = false;
-            btnChangeImage.Click += btnChangeImage_Click;
+            btnChangeImage_EditProfile.BackColor = Color.FromArgb(178, 113, 178);
+            btnChangeImage_EditProfile.FlatStyle = FlatStyle.Popup;
+            btnChangeImage_EditProfile.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnChangeImage_EditProfile.ForeColor = Color.FromArgb(100, 23, 61);
+            btnChangeImage_EditProfile.Location = new Point(1125, 159);
+            btnChangeImage_EditProfile.Margin = new Padding(2);
+            btnChangeImage_EditProfile.Name = "btnChangeImage_EditProfile";
+            btnChangeImage_EditProfile.Size = new Size(129, 39);
+            btnChangeImage_EditProfile.TabIndex = 63;
+            btnChangeImage_EditProfile.Text = "Change Image";
+            btnChangeImage_EditProfile.UseVisualStyleBackColor = false;
+            btnChangeImage_EditProfile.Click += btnChangeImage_Click;
             // 
             // profilePic
             // 
-            profilePic.Location = new Point(855, 159);
+            profilePic.Location = new Point(867, 159);
             profilePic.Margin = new Padding(2);
             profilePic.Name = "profilePic";
             profilePic.Size = new Size(387, 435);
+            profilePic.SizeMode = PictureBoxSizeMode.StretchImage;
             profilePic.TabIndex = 62;
             profilePic.TabStop = false;
             // 
-            // btnVerify
+            // btnVerify_EditProfile
             // 
-            btnVerify.BackColor = Color.FromArgb(178, 113, 178);
-            btnVerify.FlatStyle = FlatStyle.Popup;
-            btnVerify.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnVerify.ForeColor = Color.FromArgb(100, 23, 61);
-            btnVerify.Location = new Point(465, 431);
-            btnVerify.Margin = new Padding(2);
-            btnVerify.Name = "btnVerify";
-            btnVerify.Size = new Size(97, 31);
-            btnVerify.TabIndex = 82;
-            btnVerify.Text = "Verify";
-            btnVerify.UseVisualStyleBackColor = false;
-            btnVerify.Click += btnVerify_Click;
+            btnVerify_EditProfile.BackColor = Color.FromArgb(178, 113, 178);
+            btnVerify_EditProfile.FlatStyle = FlatStyle.Popup;
+            btnVerify_EditProfile.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVerify_EditProfile.ForeColor = Color.FromArgb(100, 23, 61);
+            btnVerify_EditProfile.Location = new Point(521, 431);
+            btnVerify_EditProfile.Margin = new Padding(2);
+            btnVerify_EditProfile.Name = "btnVerify_EditProfile";
+            btnVerify_EditProfile.Size = new Size(97, 31);
+            btnVerify_EditProfile.TabIndex = 82;
+            btnVerify_EditProfile.Text = "Verify";
+            btnVerify_EditProfile.UseVisualStyleBackColor = false;
+            btnVerify_EditProfile.Click += btnVerify_Click;
             // 
             // tbLastName
             // 
-            tbLastName.Location = new Point(465, 254);
+            tbLastName.Location = new Point(521, 254);
             tbLastName.Margin = new Padding(2);
             tbLastName.Name = "tbLastName";
             tbLastName.Size = new Size(315, 27);
             tbLastName.TabIndex = 81;
             // 
-            // label1
+            // label1_Edit
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(100, 23, 61);
-            label1.Location = new Point(360, 254);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(100, 23);
-            label1.TabIndex = 80;
-            label1.Text = "Last Name :";
+            label1_Edit.AutoSize = true;
+            label1_Edit.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
+            label1_Edit.ForeColor = Color.FromArgb(100, 23, 61);
+            label1_Edit.Location = new Point(324, 254);
+            label1_Edit.Margin = new Padding(2, 0, 2, 0);
+            label1_Edit.Name = "label1_Edit";
+            label1_Edit.Size = new Size(100, 23);
+            label1_Edit.TabIndex = 80;
+            label1_Edit.Text = "Last Name :";
             // 
-            // btnSendVerifCode
+            // btnSendVerifCode_EditProfile
             // 
-            btnSendVerifCode.BackColor = Color.FromArgb(178, 113, 178);
-            btnSendVerifCode.FlatStyle = FlatStyle.Popup;
-            btnSendVerifCode.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSendVerifCode.ForeColor = Color.FromArgb(100, 23, 61);
-            btnSendVerifCode.Location = new Point(465, 343);
-            btnSendVerifCode.Margin = new Padding(2);
-            btnSendVerifCode.Name = "btnSendVerifCode";
-            btnSendVerifCode.Size = new Size(97, 31);
-            btnSendVerifCode.TabIndex = 79;
-            btnSendVerifCode.Text = "Send Code";
-            btnSendVerifCode.UseVisualStyleBackColor = false;
-            btnSendVerifCode.Click += btnSendVerifCode_Click;
+            btnSendVerifCode_EditProfile.BackColor = Color.FromArgb(178, 113, 178);
+            btnSendVerifCode_EditProfile.FlatStyle = FlatStyle.Popup;
+            btnSendVerifCode_EditProfile.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSendVerifCode_EditProfile.ForeColor = Color.FromArgb(100, 23, 61);
+            btnSendVerifCode_EditProfile.Location = new Point(521, 343);
+            btnSendVerifCode_EditProfile.Margin = new Padding(2);
+            btnSendVerifCode_EditProfile.Name = "btnSendVerifCode_EditProfile";
+            btnSendVerifCode_EditProfile.Size = new Size(97, 31);
+            btnSendVerifCode_EditProfile.TabIndex = 79;
+            btnSendVerifCode_EditProfile.Text = "Send Code";
+            btnSendVerifCode_EditProfile.UseVisualStyleBackColor = false;
+            btnSendVerifCode_EditProfile.Click += btnSendVerifCode_Click;
             // 
             // tbPhoneNumber
             // 
-            tbPhoneNumber.Location = new Point(465, 571);
+            tbPhoneNumber.Location = new Point(521, 571);
             tbPhoneNumber.Margin = new Padding(2);
             tbPhoneNumber.Name = "tbPhoneNumber";
             tbPhoneNumber.Size = new Size(315, 27);
@@ -278,7 +279,7 @@
             // 
             // tbConfirmPw
             // 
-            tbConfirmPw.Location = new Point(465, 526);
+            tbConfirmPw.Location = new Point(521, 526);
             tbConfirmPw.Margin = new Padding(2);
             tbConfirmPw.Name = "tbConfirmPw";
             tbConfirmPw.Size = new Size(315, 27);
@@ -287,7 +288,7 @@
             // 
             // tbNewPw
             // 
-            tbNewPw.Location = new Point(465, 481);
+            tbNewPw.Location = new Point(521, 481);
             tbNewPw.Margin = new Padding(2);
             tbNewPw.Name = "tbNewPw";
             tbNewPw.Size = new Size(315, 27);
@@ -296,7 +297,7 @@
             // 
             // tbVerifCode
             // 
-            tbVerifCode.Location = new Point(465, 392);
+            tbVerifCode.Location = new Point(521, 392);
             tbVerifCode.Margin = new Padding(2);
             tbVerifCode.Name = "tbVerifCode";
             tbVerifCode.Size = new Size(315, 27);
@@ -304,7 +305,7 @@
             // 
             // tbEmail
             // 
-            tbEmail.Location = new Point(465, 303);
+            tbEmail.Location = new Point(521, 303);
             tbEmail.Margin = new Padding(2);
             tbEmail.Name = "tbEmail";
             tbEmail.Size = new Size(315, 27);
@@ -312,7 +313,7 @@
             // 
             // tbFirstName
             // 
-            tbFirstName.Location = new Point(465, 207);
+            tbFirstName.Location = new Point(521, 207);
             tbFirstName.Margin = new Padding(2);
             tbFirstName.Name = "tbFirstName";
             tbFirstName.Size = new Size(315, 27);
@@ -320,131 +321,131 @@
             // 
             // tbUsername
             // 
-            tbUsername.Location = new Point(465, 159);
+            tbUsername.Location = new Point(521, 159);
             tbUsername.Margin = new Padding(2);
             tbUsername.Name = "tbUsername";
             tbUsername.Size = new Size(315, 27);
             tbUsername.TabIndex = 72;
             // 
-            // lblPhoneNumber
+            // lblPhoneNumber_Edit
             // 
-            lblPhoneNumber.AutoSize = true;
-            lblPhoneNumber.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPhoneNumber.ForeColor = Color.FromArgb(100, 23, 61);
-            lblPhoneNumber.Location = new Point(328, 571);
-            lblPhoneNumber.Margin = new Padding(2, 0, 2, 0);
-            lblPhoneNumber.Name = "lblPhoneNumber";
-            lblPhoneNumber.Size = new Size(136, 23);
-            lblPhoneNumber.TabIndex = 71;
-            lblPhoneNumber.Text = "Phone Number :";
+            lblPhoneNumber_Edit.AutoSize = true;
+            lblPhoneNumber_Edit.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPhoneNumber_Edit.ForeColor = Color.FromArgb(100, 23, 61);
+            lblPhoneNumber_Edit.Location = new Point(324, 571);
+            lblPhoneNumber_Edit.Margin = new Padding(2, 0, 2, 0);
+            lblPhoneNumber_Edit.Name = "lblPhoneNumber_Edit";
+            lblPhoneNumber_Edit.Size = new Size(136, 23);
+            lblPhoneNumber_Edit.TabIndex = 71;
+            lblPhoneNumber_Edit.Text = "Phone Number :";
             // 
-            // lblConfirmPw
+            // lblConfirmPw_Edit
             // 
-            lblConfirmPw.AutoSize = true;
-            lblConfirmPw.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
-            lblConfirmPw.ForeColor = Color.FromArgb(100, 23, 61);
-            lblConfirmPw.Location = new Point(306, 526);
-            lblConfirmPw.Margin = new Padding(2, 0, 2, 0);
-            lblConfirmPw.Name = "lblConfirmPw";
-            lblConfirmPw.Size = new Size(158, 23);
-            lblConfirmPw.TabIndex = 70;
-            lblConfirmPw.Text = "Confirm Password :";
+            lblConfirmPw_Edit.AutoSize = true;
+            lblConfirmPw_Edit.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
+            lblConfirmPw_Edit.ForeColor = Color.FromArgb(100, 23, 61);
+            lblConfirmPw_Edit.Location = new Point(324, 526);
+            lblConfirmPw_Edit.Margin = new Padding(2, 0, 2, 0);
+            lblConfirmPw_Edit.Name = "lblConfirmPw_Edit";
+            lblConfirmPw_Edit.Size = new Size(158, 23);
+            lblConfirmPw_Edit.TabIndex = 70;
+            lblConfirmPw_Edit.Text = "Confirm Password :";
             // 
-            // lblNewPw
+            // lblNewPw_Edit
             // 
-            lblNewPw.AutoSize = true;
-            lblNewPw.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
-            lblNewPw.ForeColor = Color.FromArgb(100, 23, 61);
-            lblNewPw.Location = new Point(333, 480);
-            lblNewPw.Margin = new Padding(2, 0, 2, 0);
-            lblNewPw.Name = "lblNewPw";
-            lblNewPw.Size = new Size(131, 23);
-            lblNewPw.TabIndex = 69;
-            lblNewPw.Text = "New Password :";
+            lblNewPw_Edit.AutoSize = true;
+            lblNewPw_Edit.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNewPw_Edit.ForeColor = Color.FromArgb(100, 23, 61);
+            lblNewPw_Edit.Location = new Point(324, 481);
+            lblNewPw_Edit.Margin = new Padding(2, 0, 2, 0);
+            lblNewPw_Edit.Name = "lblNewPw_Edit";
+            lblNewPw_Edit.Size = new Size(131, 23);
+            lblNewPw_Edit.TabIndex = 69;
+            lblNewPw_Edit.Text = "New Password :";
             // 
-            // lblVerificationCode
+            // lblVerificationCode_Edit
             // 
-            lblVerificationCode.AutoSize = true;
-            lblVerificationCode.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
-            lblVerificationCode.ForeColor = Color.FromArgb(100, 23, 61);
-            lblVerificationCode.Location = new Point(314, 393);
-            lblVerificationCode.Margin = new Padding(2, 0, 2, 0);
-            lblVerificationCode.Name = "lblVerificationCode";
-            lblVerificationCode.Size = new Size(150, 23);
-            lblVerificationCode.TabIndex = 68;
-            lblVerificationCode.Text = "Verification Code :";
+            lblVerificationCode_Edit.AutoSize = true;
+            lblVerificationCode_Edit.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
+            lblVerificationCode_Edit.ForeColor = Color.FromArgb(100, 23, 61);
+            lblVerificationCode_Edit.Location = new Point(324, 393);
+            lblVerificationCode_Edit.Margin = new Padding(2, 0, 2, 0);
+            lblVerificationCode_Edit.Name = "lblVerificationCode_Edit";
+            lblVerificationCode_Edit.Size = new Size(150, 23);
+            lblVerificationCode_Edit.TabIndex = 68;
+            lblVerificationCode_Edit.Text = "Verification Code :";
             // 
             // lblEmail
             // 
             lblEmail.AutoSize = true;
             lblEmail.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
             lblEmail.ForeColor = Color.FromArgb(100, 23, 61);
-            lblEmail.Location = new Point(402, 305);
+            lblEmail.Location = new Point(324, 303);
             lblEmail.Margin = new Padding(2, 0, 2, 0);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(60, 23);
             lblEmail.TabIndex = 67;
             lblEmail.Text = "Email :";
             // 
-            // lblFullName
+            // lblFullName_Edit
             // 
-            lblFullName.AutoSize = true;
-            lblFullName.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
-            lblFullName.ForeColor = Color.FromArgb(100, 23, 61);
-            lblFullName.Location = new Point(358, 211);
-            lblFullName.Margin = new Padding(2, 0, 2, 0);
-            lblFullName.Name = "lblFullName";
-            lblFullName.Size = new Size(102, 23);
-            lblFullName.TabIndex = 66;
-            lblFullName.Text = "First Name :";
+            lblFullName_Edit.AutoSize = true;
+            lblFullName_Edit.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
+            lblFullName_Edit.ForeColor = Color.FromArgb(100, 23, 61);
+            lblFullName_Edit.Location = new Point(324, 211);
+            lblFullName_Edit.Margin = new Padding(2, 0, 2, 0);
+            lblFullName_Edit.Name = "lblFullName_Edit";
+            lblFullName_Edit.Size = new Size(102, 23);
+            lblFullName_Edit.TabIndex = 66;
+            lblFullName_Edit.Text = "First Name :";
             // 
-            // lblUsername
+            // lblUsername_Edit
             // 
-            lblUsername.AutoSize = true;
-            lblUsername.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
-            lblUsername.ForeColor = Color.FromArgb(100, 23, 61);
-            lblUsername.Location = new Point(364, 163);
-            lblUsername.Margin = new Padding(2, 0, 2, 0);
-            lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(96, 23);
-            lblUsername.TabIndex = 65;
-            lblUsername.Text = "Username :";
+            lblUsername_Edit.AutoSize = true;
+            lblUsername_Edit.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUsername_Edit.ForeColor = Color.FromArgb(100, 23, 61);
+            lblUsername_Edit.Location = new Point(324, 159);
+            lblUsername_Edit.Margin = new Padding(2, 0, 2, 0);
+            lblUsername_Edit.Name = "lblUsername_Edit";
+            lblUsername_Edit.Size = new Size(96, 23);
+            lblUsername_Edit.TabIndex = 65;
+            lblUsername_Edit.Text = "Username :";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(100, 23, 61);
-            label2.Location = new Point(579, 343);
+            label2.Location = new Point(635, 343);
             label2.MaximumSize = new Size(210, 0);
             label2.Name = "label2";
             label2.Size = new Size(201, 34);
             label2.TabIndex = 83;
             label2.Text = "*Click it if you change your email and you will get your code soon";
             // 
-            // label3
+            // label3_Edit
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.FromArgb(100, 23, 61);
-            label3.Location = new Point(574, 343);
-            label3.MaximumSize = new Size(210, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(201, 34);
-            label3.TabIndex = 84;
-            label3.Text = "*Click it if you change your email and you will get your code soon";
+            label3_Edit.AutoSize = true;
+            label3_Edit.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label3_Edit.ForeColor = Color.FromArgb(100, 23, 61);
+            label3_Edit.Location = new Point(630, 343);
+            label3_Edit.MaximumSize = new Size(210, 0);
+            label3_Edit.Name = "label3_Edit";
+            label3_Edit.Size = new Size(201, 34);
+            label3_Edit.TabIndex = 84;
+            label3_Edit.Text = "*Click it if you change your email and you will get your code soon";
             // 
-            // label4
+            // label4_Edit
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(100, 23, 61);
-            label4.Location = new Point(574, 428);
-            label4.MaximumSize = new Size(210, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(207, 34);
-            label4.TabIndex = 85;
-            label4.Text = "*Click it to verify your code before submitting changes";
+            label4_Edit.AutoSize = true;
+            label4_Edit.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label4_Edit.ForeColor = Color.FromArgb(100, 23, 61);
+            label4_Edit.Location = new Point(630, 428);
+            label4_Edit.MaximumSize = new Size(210, 0);
+            label4_Edit.Name = "label4_Edit";
+            label4_Edit.Size = new Size(207, 34);
+            label4_Edit.TabIndex = 85;
+            label4_Edit.Text = "*Click it to verify your code before submitting changes";
             // 
             // EditProfile
             // 
@@ -452,13 +453,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Thistle;
             ClientSize = new Size(1348, 721);
-            Controls.Add(label4);
-            Controls.Add(label3);
+            Controls.Add(label4_Edit);
+            Controls.Add(label3_Edit);
             Controls.Add(label2);
-            Controls.Add(btnVerify);
+            Controls.Add(btnVerify_EditProfile);
             Controls.Add(tbLastName);
-            Controls.Add(label1);
-            Controls.Add(btnSendVerifCode);
+            Controls.Add(label1_Edit);
+            Controls.Add(btnSendVerifCode_EditProfile);
             Controls.Add(tbPhoneNumber);
             Controls.Add(tbConfirmPw);
             Controls.Add(tbNewPw);
@@ -466,17 +467,17 @@
             Controls.Add(tbEmail);
             Controls.Add(tbFirstName);
             Controls.Add(tbUsername);
-            Controls.Add(lblPhoneNumber);
-            Controls.Add(lblConfirmPw);
-            Controls.Add(lblNewPw);
-            Controls.Add(lblVerificationCode);
+            Controls.Add(lblPhoneNumber_Edit);
+            Controls.Add(lblConfirmPw_Edit);
+            Controls.Add(lblNewPw_Edit);
+            Controls.Add(lblVerificationCode_Edit);
             Controls.Add(lblEmail);
-            Controls.Add(lblFullName);
-            Controls.Add(lblUsername);
-            Controls.Add(btnSubmitEdit);
-            Controls.Add(btnChangeImage);
+            Controls.Add(lblFullName_Edit);
+            Controls.Add(lblUsername_Edit);
+            Controls.Add(btnSubmitEdit_EditProfile);
+            Controls.Add(btnChangeImage_EditProfile);
             Controls.Add(profilePic);
-            Controls.Add(lblDonate1);
+            Controls.Add(lblDonate1_Edit);
             Controls.Add(panel2);
             Name = "EditProfile";
             Text = "EditProfile";
@@ -491,21 +492,21 @@
 
         #endregion
 
-        private Button button1;
+        private Button btnLogOut;
         private PictureBox picProfile;
         private LinkLabel llProfile;
         private Panel panel4;
         private Button btnActivity;
         private Button btnHome;
         private Panel panel2;
-        private Label lblDonate1;
-        private Button btnSubmitEdit;
-        private Button btnChangeImage;
+        private Label lblDonate1_Edit;
+        private Button btnSubmitEdit_EditProfile;
+        private Button btnChangeImage_EditProfile;
         private PictureBox profilePic;
-        private Button btnVerify;
+        private Button btnVerify_EditProfile;
         private TextBox tbLastName;
-        private Label label1;
-        private Button btnSendVerifCode;
+        private Label label1_Edit;
+        private Button btnSendVerifCode_EditProfile;
         private TextBox tbPhoneNumber;
         private TextBox tbConfirmPw;
         private TextBox tbNewPw;
@@ -513,15 +514,15 @@
         private TextBox tbEmail;
         private TextBox tbFirstName;
         private TextBox tbUsername;
-        private Label lblPhoneNumber;
-        private Label lblConfirmPw;
-        private Label lblNewPw;
-        private Label lblVerificationCode;
+        private Label lblPhoneNumber_Edit;
+        private Label lblConfirmPw_Edit;
+        private Label lblNewPw_Edit;
+        private Label lblVerificationCode_Edit;
         private Label lblEmail;
-        private Label lblFullName;
-        private Label lblUsername;
+        private Label lblFullName_Edit;
+        private Label lblUsername_Edit;
         private Label label2;
-        private Label label3;
-        private Label label4;
+        private Label label3_Edit;
+        private Label label4_Edit;
     }
 }
