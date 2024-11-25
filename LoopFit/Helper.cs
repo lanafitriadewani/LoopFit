@@ -106,17 +106,22 @@ namespace LoopFit
             return html;
         }
 
-        public static void LoadContentLabels(DataTable videoData, params Label[] labels)
+        public static void LoadContentLabelsById(DataTable videoData, Dictionary<int, Label> labelMapping)
         {
-            for (int i = 0; i < labels.Length; i++)
+            foreach (var pair in labelMapping)
             {
-                if (videoData.Rows.Count > i)
+                int contentId = pair.Key;
+                Label label = pair.Value;
+
+                // Mencari baris berdasarkan contentid
+                DataRow[] rows = videoData.Select($"contentid = {contentId}");
+                if (rows.Length > 0)
                 {
-                    labels[i].Text = videoData.Rows[i]["contenttitle"].ToString();
+                    label.Text = rows[0]["contenttitle"].ToString();
                 }
                 else
                 {
-                    labels[i].Text = "No Title";
+                    label.Text = "No Title";
                 }
             }
         }

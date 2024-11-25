@@ -126,7 +126,7 @@ namespace LoopFit
                 User.Email = email;
                 User.PhoneNumber = "Unfilled"; // Mengisi Phone Number otomatis dengan "Unfilled"
                 User.Username = (User.FirstName + User.LastName).ToLower();
-                User.Password = (User.FirstName + User.LastName).ToLower();
+                User.Password = User.EncryptPassword((User.FirstName + User.LastName).ToLower());
 
                 // Simpan pengguna ke database
                 if (User.SaveUserToDatabase("Host=localhost;Port=5432;Username=postgres;Password=admin;Database=loopfit"))

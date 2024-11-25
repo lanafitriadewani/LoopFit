@@ -23,7 +23,7 @@ namespace LoopFit
         private void AboutUs_Load(object sender, EventArgs e)
         {
 
-        }      
+        }
 
         private void picTwitter_Click(object sender, EventArgs e)
         {

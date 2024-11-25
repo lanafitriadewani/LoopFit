@@ -47,10 +47,15 @@ namespace LoopFit
                 }
             }
 
-            Helper.LoadContentLabels(videoData, lblContent1, lblContent2, lblContent3);
-
+            Helper.LoadContentLabelsById(videoData,
+                new Dictionary<int, Label>
+                {
+                    { 1, lblContent1 },
+                    { 2, lblContent2 },
+                    { 3, lblContent3 }
+                });
         }
-                
+
         private void picProfile_Click(object sender, EventArgs e)
         {
             Profile profile = new Profile();

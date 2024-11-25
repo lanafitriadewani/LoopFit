@@ -102,8 +102,8 @@ namespace LoopFit
             string newLastName = tbLastName.Text;
             string newEmail = tbEmail.Text;
             string newPhoneNumber = tbPhoneNumber.Text;
-            string newPassword = tbNewPw.Text;
-            string confirmPassword = tbConfirmPw.Text;
+            string newPassword = User.EncryptPassword(tbNewPw.Text);
+            string confirmPassword = User.EncryptPassword(tbConfirmPw.Text);
 
             // Validasi verifikasi email
             if (newEmail != User.Email) // Jika email berubah

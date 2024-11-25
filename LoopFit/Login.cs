@@ -46,7 +46,7 @@ namespace LoopFit
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string input = tbUname.Text; // Masukkan input sementara
-            User.Password = tbPassword.Text;
+            User.Password = User.EncryptPassword(tbPassword.Text);
 
             // Cek jika input Username atau Password kosong
             if (string.IsNullOrEmpty(input) || string.IsNullOrEmpty(User.Password))

@@ -25,7 +25,7 @@ namespace LoopFit
 
             // Simpan username dan password dari input
             User.Username = tbUname.Text;
-            User.Password = tbPassword.Text;
+            User.Password = User.EncryptPassword(tbPassword.Text);
 
             // Cek apakah username sudah digunakan
             if (User.IsUsernameRegistered(User.Username, connectionString))

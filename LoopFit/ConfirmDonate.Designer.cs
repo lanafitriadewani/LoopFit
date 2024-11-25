@@ -437,13 +437,12 @@
             // 
             // picProfile
             // 
-            picProfile.Image = (Image)resources.GetObject("picProfile.Image");
             picProfile.InitialImage = null;
             picProfile.Location = new Point(26, 27);
             picProfile.Margin = new Padding(2);
             picProfile.Name = "picProfile";
             picProfile.Size = new Size(56, 49);
-            picProfile.SizeMode = PictureBoxSizeMode.Zoom;
+            picProfile.SizeMode = PictureBoxSizeMode.StretchImage;
             picProfile.TabIndex = 4;
             picProfile.TabStop = false;
             picProfile.Click += picProfile_Click;

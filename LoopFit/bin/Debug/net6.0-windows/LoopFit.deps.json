@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "LoopFit/1.0.0": {
         "dependencies": {
+          "Eramake.eCryptography": "1.1.6",
           "GMap.NET.WindowsForms": "1.7.5",
           "Google.Apis": "1.68.0",
           "Google.Apis.Auth": "1.68.0",
@@ -45,6 +46,14 @@
           "lib/netstandard2.1/EntityFramework.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.400.420.21404"
+          }
+        }
+      },
+      "Eramake.eCryptography/1.1.6": {
+        "runtime": {
+          "lib/net45/eCryptography.dll": {
+            "assemblyVersion": "1.0.0.1",
+            "fileVersion": "1.0.0.1"
           }
         }
       },
@@ -445,6 +454,13 @@
       "sha512": "sha512-yj1+/4tci7Panu3jKDHYizxwVm0Jvm7b7m057b5h4u8NUHGCR8WIWirBTw+8EptRffwftIWPBeIRGNKD1ewEMQ==",
       "path": "entityframework/6.4.4",
       "hashPath": "entityframework.6.4.4.nupkg.sha512"
+    },
+    "Eramake.eCryptography/1.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nyj1noN2q/hAKz3waqTLZnu6fGgTpyd0Z7pOSgwwYTF1WUGbKiXjTr2jChWHSef3J3QyHMNh8EjtMWb7AOkecw==",
+      "path": "eramake.ecryptography/1.1.6",
+      "hashPath": "eramake.ecryptography.1.1.6.nupkg.sha512"
     },
     "GMap.NET.WindowsForms/1.7.5": {
       "type": "package",

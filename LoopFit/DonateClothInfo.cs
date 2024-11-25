@@ -65,7 +65,7 @@ namespace LoopFit
             cbClothColour.Items.Add("Other");*/
         }
 
-        
+
 
         private void btnClothInfoNext_Click(object sender, EventArgs e)
         {

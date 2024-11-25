@@ -19,7 +19,7 @@ namespace LoopFit
             User.DisplayProfileImage(User.Username, picProfile);
             LanguageHelper.UpdateUI(this);
         }
-             
+
         private void picTwitter_Click(object sender, EventArgs e)
         {
             Helper.OpenUrl("https://x.com/KMTETI");

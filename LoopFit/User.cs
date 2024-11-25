@@ -560,6 +560,12 @@ namespace LoopFit
             }
         }
 
+        public static string EncryptPassword (string password)
+        {
+            string encrypt = Eramake.eCryptography.Encrypt(password);
+            return encrypt;
+        }
+
 
     }
 }

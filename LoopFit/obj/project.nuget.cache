@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "TtqWNfhA+m84Pckna8/SrqfphQv9WGFbxXIlb9Y5PxCcwYqe3rGJ6qZhljsgp9+1vfYyQd4/odArpcRfdgZlpA==",
+  "dgSpecHash": "TYNskv8k2rvLCs1xMEsEq0SVJ3Hr3U42fb1CD5DzbmXqjbyu8sEagTT8vYHHBqJt2H4BirBSJ1/eN6gjf5WW9g==",
   "success": true,
   "projectFilePath": "D:\\LANA\\UGM\\DTETI\\S5\\JUNPRO\\LoopFit\\LoopFit\\LoopFit.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\eramake.ecryptography\\1.1.6\\eramake.ecryptography.1.1.6.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\gmap.net.windowsforms\\1.7.5\\gmap.net.windowsforms.1.7.5.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\google.apis\\1.68.0\\google.apis.1.68.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\google.apis.auth\\1.68.0\\google.apis.auth.1.68.0.nupkg.sha512",
@@ -45,6 +46,16 @@
     "C:\\Users\\DELL\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Eramake.eCryptography 1.1.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Eramake.eCryptography",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

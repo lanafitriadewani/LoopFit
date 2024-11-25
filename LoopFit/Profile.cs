@@ -48,7 +48,7 @@ namespace LoopFit
 
                             // Mask password with stars
                             string password = reader["password"].ToString();
-                            lblDataPassword_Profile.Text = new string('*', password.Length);
+                            lblDataPassword_Profile.Text = new string('*', 8);
 
                             // Optionally display profile image if available
                             byte[] profileImageBytes = reader["profileimage"] as byte[];
